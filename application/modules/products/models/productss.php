@@ -311,7 +311,7 @@ class productss extends CI_Model
 	
     {	
 	
-		
+		// добавление главной картинки product_image_front
 		if ($_FILES['product_image_front']['name'] != false){
 				$file_name = $this->Gallery_model->do_upload('product_image_front');
 		
