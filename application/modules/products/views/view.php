@@ -66,7 +66,6 @@
                 
                     <th>Чисто просмотров</th>   
                 
-                    <th>Свойства</th>   
                 
                     <th>Главная картинка</th>   
                 
@@ -103,7 +102,7 @@
                
                <td><?php echo $products['product_views']; ?></td>
                
-               <td><?php echo $products['product_properties']; ?></td>
+
                
                <td>
 			   <?if ($products["product_image_front"]) {?>
@@ -113,11 +112,13 @@
                 <td>    
                     
                     <?php
+					/*
                                   echo anchor(
                                           site_url('products/show/' . $products['id_product']),
                                             '<i class="glyphicon glyphicon-eye-open"></i>',
                                             'class="btn btn-sm btn-info" data-tooltip="tooltip" data-placement="top" title="'.$this->lang->line('view').'"'
                                           );
+					*/					  
                    ?>
                     
                     <?php

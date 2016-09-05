@@ -69,7 +69,7 @@ class products extends MY_Controller
                 $("#form_products").parsley();
                         });','embed');
       
-        $this->template->render('products/form',$data);
+        $this->template->render('products/add',$data);
 
     }
 
@@ -115,8 +115,6 @@ class products extends MY_Controller
     */
     public function save($id =NULL) 
     {		
-	//print_r($_FILES);die;
-	//var_dump($this->input->post());die;
 	
         // validation config
         $config = array(
@@ -334,6 +332,25 @@ class products extends MY_Controller
             $this->productss->destroy($id);           
              $this->session->set_flashdata('notif', notify('success','success'));
              redirect('products');
+        } 
+        else 
+        {
+            $this->session->set_flashdata('notif', notify('not deleted','warning'));
+            redirect('products');
+        }       
+    }
+	
+	
+	 public function delete_img() 
+    {    
+		$id = $this->input->post('id');
+		$img = $this->input->post('img');
+        
+		if ($id AND $img) 
+        {
+            $this->productss->delete_img($img, $id);           
+             $this->session->set_flashdata('notif', notify('success','success'));
+             redirect('products/edit/'.$id);
         } 
         else 
         {

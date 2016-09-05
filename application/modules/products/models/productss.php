@@ -243,9 +243,11 @@ class productss extends CI_Model
     */
     public function save() 
     {
-		$file_name = $this->Gallery_model->do_upload('product_image_front');
 		
-		if (count($this->input->post('properties_value')) > 0) {
+		
+		
+		
+		if ($this->input->post('properties_value')) {
 			$product_properties = serialize ($this->input->post('properties_value', TRUE));
 		}else{
 			$product_properties = '';
@@ -275,24 +277,36 @@ class productss extends CI_Model
         
             'product_views' => '',
         
-            'product_properties' => $product_properties,
-        
-            'product_image_front' => $file_name,
-        
-            'product_image_1' => strip_tags($this->input->post('product_image_1', TRUE)),
-        
-            'product_image_2' => strip_tags($this->input->post('product_image_2', TRUE)),
-        
-            'product_image_3' => strip_tags($this->input->post('product_image_3', TRUE)),
-        
-            'product_image_4' => strip_tags($this->input->post('product_image_4', TRUE)),
-        
-            'product_image_5' => strip_tags($this->input->post('product_image_5', TRUE)),
+            'product_properties' => $product_properties
         
         );
         
         
         $this->db->insert('products', $data);
+		
+		$id = $this->db->insert_id();
+		
+		/* Этот код добавляет новые рисунки */
+		$data = array();
+		if ($_FILES !== null){
+			foreach ($_FILES as $img => $value) {
+				
+				if ($value['name'] != false){
+				
+				// upload new file and add it to $data array
+					$data[$img] = trim($this->Gallery_model->do_upload($img));
+				
+				}	
+			}
+
+			if ($data){
+				$this->db->where('id_product', $id);
+				$this->db->update('products', $data);
+			}	
+		}
+		/* КОНЕЦ! Этот код добавляет новые рисунки */
+		
+		
     }
     
     
@@ -399,7 +413,23 @@ class productss extends CI_Model
     *
     */
     public function destroy($id)
-    {       
+    { 
+	$imgs = ['product_image_front', 'product_image_1', 'product_image_2', 'product_image_3', 'product_image_4', 'product_image_5'];
+		foreach ($imgs as $img) {
+				// Delete old image
+					  $old_file = $this->Gallery_model->gallery_path . '/' . $this->get_img($img, $id)[$img];
+					  $thumbnail_name = $this->Gallery_model->gallery_path . '/thumbs/' . $this->get_img($img, $id)[$img];
+					  
+					  if ( is_file ($old_file))
+					  {	
+						unlink($old_file);
+					  }
+					  if ( is_file ($thumbnail_name))
+					  {
+						unlink($thumbnail_name);
+					  }	
+				}
+		
         $this->db->where('id_product', $id);
         $this->db->delete('products');
         
@@ -472,6 +502,28 @@ class productss extends CI_Model
         }
     }
     
+	// delete img	
+ public function delete_img($img, $id) 
+    {	
+	
+		// Delete old image
+					  $old_file = $this->Gallery_model->gallery_path . '/' . $this->get_img($img, $id)[$img];
+					  $thumbnail_name = $this->Gallery_model->gallery_path . '/thumbs/' . $this->get_img($img, $id)[$img];
+					  
+					  if ( is_file ($old_file))
+					  {	
+						unlink($old_file);
+					  }
+					  if ( is_file ($thumbnail_name))
+					  {
+						unlink($thumbnail_name);
+					  }	
+		
+		$data = [$img => ''];
+        $this->db->where('id_product', $id);
+        $this->db->update('products', $data);
+		
+    }
 
 
 
