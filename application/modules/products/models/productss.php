@@ -310,32 +310,38 @@ class productss extends CI_Model
     public function update($id)
 	
     {	
-	
-		// добавление главной картинки product_image_front
-		if ($_FILES['product_image_front']['name'] != false){
-				$file_name = $this->Gallery_model->do_upload('product_image_front');
-		
-		
-			$data = array(
-                'product_image_front' => $file_name,
+		/* Этот код добавляет новые рисунки */
+		$data = array();
+		if ($_FILES !== null){
+			foreach ($_FILES as $img => $value) {
 				
-				'product_image_1' => strip_tags($this->input->post('product_image_1', TRUE)),
-        
-                'product_image_2' => strip_tags($this->input->post('product_image_2', TRUE)),
-        
-                'product_image_3' => strip_tags($this->input->post('product_image_3', TRUE)),
-        
-                'product_image_4' => strip_tags($this->input->post('product_image_4', TRUE)),
-        
-                'product_image_5' => strip_tags($this->input->post('product_image_5', TRUE))
-        );
-		
-			$this->db->where('id_product', $id);
-			$this->db->update('products', $data);
-        }
-        
-        
-		
+				if ($value['name'] != false){
+				
+					// Delete old image
+					  $old_file = $this->Gallery_model->gallery_path . '/' . $this->get_img($img, $id)[$img];
+					  $thumbnail_name = $this->Gallery_model->gallery_path . '/thumbs/' . $this->get_img($img, $id)[$img];
+					  
+					  if ( is_file ($old_file))
+					  {	
+						unlink($old_file);
+					  }
+					  if ( is_file ($thumbnail_name))
+					  {
+						unlink($thumbnail_name);
+					  }
+					
+					// upload new file and add it to $data array
+					$data[$img] = trim($this->Gallery_model->do_upload($img));
+				
+				}	
+			}
+
+			if ($data){
+				$this->db->where('id_product', $id);
+				$this->db->update('products', $data);
+			}	
+		}
+		/* КОНЕЦ! Этот код добавляет новые рисунки */
 		
 		
 		if ($this->input->post('properties_value')) {
@@ -448,7 +454,23 @@ class productss extends CI_Model
         return $ret;
     }
 
+ // get img	
+ public function get_img($img, $id) 
+    {
+        
+		$this->db->select($img);
+		$this->db->where('id_product', $id);
+        $result = $this->db->get('products');
 
+        if ($result->num_rows() == 1) 
+        {
+            return $result->row_array();
+        } 
+        else 
+        {
+            return array();
+        }
+    }
     
 
 

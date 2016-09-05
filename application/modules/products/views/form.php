@@ -184,12 +184,17 @@
               </div> <!--/ Product Properties -->
                           
                <div class="form-group">
-                   <label for="product_image_front" class="col-sm-2 control-label">Главная картинка <span class="required-input">*</span></label>
+                   <label for="product_image_front" class="col-sm-2 control-label">Главная картинка
+				   
+				   <?if ($products["product_image_front"]) {?>
+					<img src="<?=site_url('/images/products/thumbs/'.$products["product_image_front"]);?>">
+				<? $value = 'Заменить';
+				}?>
+				   
+				   <span class="required-input">*</span></label>
                 <div class="col-sm-6">
 				
-				<?if ($products["product_image_front"]) {?>
-					<img src="<?=site_url('/images/products/thumbs/'.$products["product_image_front"]);?>">
-				<?}?>
+				
 				
                   <?php 
 
@@ -198,7 +203,9 @@
                                  'name'         => 'product_image_front',
                                  'id'           => 'product_image_front',                       
                                  'style'        => 'left: -182.667px; top: 20px;', 
-                                 'title'         => 'Выбрать File.....'
+                                 'title'         => 'Выбрать File.....',
+								 'value'         => $value,
+								 
                                  )
                                 
                            );             
@@ -211,96 +218,148 @@
               </div> <!--/ Product Image Front -->
                           
                <div class="form-group">
-                   <label for="product_image_1" class="col-sm-2 control-label">Image 1</label>
+                   <label for="product_image_1" class="col-sm-2 control-label">Image 1
+				   
+				   <?if ($products["product_image_1"]) {?>
+					<img src="<?=site_url('/images/products/thumbs/'.$products["product_image_1"]);?>">
+				<?}?>
+				   
+				   </label>
                 <div class="col-sm-6">                                   
-                  <?php                  
-                   echo form_input(
+                 
+				 
+				
+                  <?php 
+
+					echo form_upload(
                                 array(
                                  'name'         => 'product_image_1',
                                  'id'           => 'product_image_1',                       
-                                 'class'        => 'form-control input-sm ',
-                                 'placeholder'  => 'Product Image 1',
-                                 'maxlength'=>'255'
-                                 ),
-                                 set_value('product_image_1',$products['product_image_1'])
+                                 'style'        => 'left: -182.667px; top: 20px;', 
+                                 'title'         => 'Выбрать File.....'
+                                 )
+                                
                            );             
                   ?>
+				 
                  <?php echo form_error('product_image_1');?>
                 </div>
               </div> <!--/ Product Image 1 -->
                           
                <div class="form-group">
-                   <label for="product_image_2" class="col-sm-2 control-label">Image 2</label>
+                   <label for="product_image_2" class="col-sm-2 control-label">Image 2
+				   
+				    <?if ($products["product_image_2"]) {?>
+					<img src="<?=site_url('/images/products/thumbs/'.$products["product_image_2"]);?>">
+				<?}?>
+				   
+				   </label>
                 <div class="col-sm-6">                                   
-                  <?php                  
-                   echo form_input(
+                 
+				 
+				 
+				
+                  <?php 
+
+					echo form_upload(
                                 array(
                                  'name'         => 'product_image_2',
                                  'id'           => 'product_image_2',                       
-                                 'class'        => 'form-control input-sm ',
-                                 'placeholder'  => 'Product Image 2',
-                                 'maxlength'=>'255'
-                                 ),
-                                 set_value('product_image_2',$products['product_image_2'])
+                                 'style'        => 'left: -182.667px; top: 20px;', 
+                                 'title'         => 'Выбрать File.....'
+                                 )
+                                
                            );             
                   ?>
+				 
                  <?php echo form_error('product_image_2');?>
                 </div>
               </div> <!--/ Product Image 2 -->
                           
                <div class="form-group">
-                   <label for="product_image_3" class="col-sm-2 control-label">Image 3</label>
+                   <label for="product_image_3" class="col-sm-2 control-label">Image 3
+				   
+				   <?if ($products["product_image_3"]) {?>
+					<img src="<?=site_url('/images/products/thumbs/'.$products["product_image_3"]);?>">
+				<?}?>
+				   
+				   </label>
                 <div class="col-sm-6">                                   
-                  <?php                  
-                   echo form_input(
+                
+				  
+				
+                  <?php 
+
+					echo form_upload(
                                 array(
                                  'name'         => 'product_image_3',
                                  'id'           => 'product_image_3',                       
-                                 'class'        => 'form-control input-sm ',
-                                 'placeholder'  => 'Product Image 3',
-                                 'maxlength'=>'255'
-                                 ),
-                                 set_value('product_image_3',$products['product_image_3'])
+                                 'style'        => 'left: -182.667px; top: 20px;', 
+                                 'title'         => 'Выбрать File.....'
+                                 )
+                                
                            );             
                   ?>
+				
                  <?php echo form_error('product_image_3');?>
                 </div>
               </div> <!--/ Product Image 3 -->
                           
                <div class="form-group">
-                   <label for="product_image_4" class="col-sm-2 control-label">Image 4</label>
+                   <label for="product_image_4" class="col-sm-2 control-label">Image 4
+				   
+				    <?if ($products["product_image_4"]) {?>
+					<img src="<?=site_url('/images/products/thumbs/'.$products["product_image_4"]);?>">
+				<?}?>
+				
+				   
+				   </label>
                 <div class="col-sm-6">                                   
-                  <?php                  
-                   echo form_input(
+                  
+				  
+                  <?php 
+
+					echo form_upload(
                                 array(
                                  'name'         => 'product_image_4',
                                  'id'           => 'product_image_4',                       
-                                 'class'        => 'form-control input-sm ',
-                                 'placeholder'  => 'Product Image 4',
-                                 'maxlength'=>'255'
-                                 ),
-                                 set_value('product_image_4',$products['product_image_4'])
+                                 'style'        => 'left: -182.667px; top: 20px;', 
+                                 'title'         => 'Выбрать File.....'
+                                 )
+                                
                            );             
                   ?>
+				
+				  
                  <?php echo form_error('product_image_4');?>
                 </div>
               </div> <!--/ Product Image 4 -->
                           
                <div class="form-group">
-                   <label for="product_image_5" class="col-sm-2 control-label">Image 5</label>
+                   <label for="product_image_5" class="col-sm-2 control-label">Image 5
+				   
+				    <?if ($products["product_image_5"]) {?>
+					<img src="<?=site_url('/images/products/thumbs/'.$products["product_image_5"]);?>">
+				<?}?>
+				   
+				   </label>
                 <div class="col-sm-6">                                   
-                  <?php                  
-                   echo form_input(
+                 
+				 
+				
+                  <?php 
+
+					echo form_upload(
                                 array(
                                  'name'         => 'product_image_5',
                                  'id'           => 'product_image_5',                       
-                                 'class'        => 'form-control input-sm ',
-                                 'placeholder'  => 'Product Image 5',
-                                 'maxlength'=>'255'
-                                 ),
-                                 set_value('product_image_5',$products['product_image_5'])
+                                 'style'        => 'left: -182.667px; top: 20px;', 
+                                 'title'         => 'Выбрать File.....'
+                                 )
+                                
                            );             
                   ?>
+				 
                  <?php echo form_error('product_image_5');?>
                 </div>
               </div> <!--/ Product Image 5 -->
