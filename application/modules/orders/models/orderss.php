@@ -253,8 +253,52 @@ class orderss extends CI_Model
     *  @return void
     *
     */
+
+    /*
+    так как у нас много может быть продуктов в корзине,
+    мы их обозвали в форме id_product_2 count_2 price_2
+    перебираем $_POST (stristr($key, 'id_product') на предмет этих продуктов
+    и формируем масив типа:
+    array (size=1)
+      2 =>
+        array (size=5)
+              'count' => int 1
+              'price' => int 150
+              'total' => int 150
+              'name' => string 'Белые розы' (length=19)
+              'img' => string '/images/products/thumbs/bosch-b20-mod-dKXAygqOPy.jpg'
+
+    где 2 =>  это id_product, а сам масив, это то что попали из корзины.
+
+
+    который потом серилизируем addslashes(serialize($order_content))
+
+    */
+
     public function update($id)
     {
+
+        foreach ($this->input->post() as $key => $value){
+            if (stristr($key, 'id_product')) {
+
+                $id_product =  explode("_", $key)[2];
+                $this->load->model('products/productss');
+                $product = $this->productss->get_one($id_product);
+
+                    $order_content[$value] = [
+                        'count' => (int)$this->input->post('count_'.$id_product),
+                        'price' => (int)$this->input->post('price_'.$id_product),
+                        'total' => (int)$this->input->post('price_'.$id_product) * (int)$this->input->post('count_'.$id_product),
+                        'name' => $this->input->post('name_product_'.$id_product),
+                        'img' => '/images/products/thumbs/'. $product['product_image_front']
+                    ];
+
+
+            }
+        }
+
+        //var_dump($order_content);die;
+
         $data = array(
         
                 'order_name' => strip_tags($this->input->post('order_name', TRUE)),
@@ -263,7 +307,7 @@ class orderss extends CI_Model
         
                 'order_address' => strip_tags($this->input->post('order_address', TRUE)),
         
-                'order_content' => strip_tags($this->input->post('order_content', TRUE)),
+                'order_content' => addslashes(serialize($order_content)),
         
         
                 'order_date_update' => date('Y-m-d H:i:s'),

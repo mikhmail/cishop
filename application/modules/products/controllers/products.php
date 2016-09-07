@@ -359,6 +359,21 @@ class products extends MY_Controller
         }       
     }
 
+    public function get_one()
+    {
+        $this->db->where('id_product', $this->input->post('id'));
+        $result = $this->db->get('products');
+
+        if ($result->num_rows() == 1)
+        {
+            echo json_encode($result->row_array());
+        }
+        else
+        {
+            echo 0;
+        }
+    }
+
 }
 
 ?>

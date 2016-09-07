@@ -30,6 +30,10 @@ class Cart extends BaseController {
 
         $data['cart'] = $this->cart;
 
+        $data['title'] = 'Корзина';
+        $data['description'] = '';
+        $data['keywords'] = 'купить алмазною вышивку';
+
         $this->layout('cart/checkout',$data);
     }
 

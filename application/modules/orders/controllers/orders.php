@@ -141,11 +141,7 @@ class orders extends MY_Controller
                         'rules' => 'trim|xss_clean|required'
                         ),
                     
-                    array(
-                        'field' => 'order_content',
-                        'label' => 'Order Content',
-                        'rules' => 'trim|xss_clean|required'
-                        ),
+
                     
                     array(
                         'field' => 'order_date_create',

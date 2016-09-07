@@ -163,7 +163,7 @@ class productss extends CI_Model
     *  @return array
     *
     */
-    public function get_one($id) 
+    public function get_one($id)
     {
         $this->db->where('id_product', $id);
         $result = $this->db->get('products');

@@ -76,26 +76,119 @@
                <div class="form-group">
                    <label for="order_content" class="col-sm-2 control-label">Покупка <span class="required-input">*</span></label>
                 <div class="col-sm-6">                                   
-                  <?php                  
-                   echo form_input(
-                                array(
-                                 'name'         => 'order_content',
-                                 'id'           => 'order_content',                       
-                                 'class'        => 'form-control input-sm  required',
-                                 'placeholder'  => 'Order Content',
-                                 
-                                 ),
-                                 set_value('order_content',$orders['order_content'])
-                           );             
+                  <?php
+                  $this->load->model('products/productss');
+                  $products = $this->productss->get_all(1000,0);
+
+
+                    foreach ($products as $pr){
+                        $product[$pr['id_product']] = $pr['category_title'].'/'.$pr['product_title'];
+                    }
+
+
+                  $content = unserialize(stripslashes($orders['order_content']));
+                    //var_dump($content);die;
+                  foreach ($content as $id_product => $content){
+
+
+                            echo form_dropdown(
+                                'id_product_'.$id_product,
+                                $product,
+                                set_value('id_product',$id_product),
+                                'class="form-control input-sm" id='.$id_product.''
+                            );
+
+                      echo form_input(
+                          array(
+                              'name'         => 'count_'.$id_product,
+                              'class'        => 'form-control input-sm  required',
+                              'placeholder'  => 'Order count',
+                              'maxlength'=>'2'
+                          ),
+                          set_value('count',$content['count'])
+                      );
+
+                      echo form_input(
+                          array(
+                              'name'         => 'price_'.$id_product,
+                              'id'         => 'price_'.$id_product,
+                              'class'        => 'form-control input-sm  required',
+                              'placeholder'  => 'Order price',
+                              'maxlength'=>'100'
+                          ),
+                          set_value('price',$content['price'])
+                      );
+
+                      echo form_input(
+                          array(
+                              'name'         => 'name_product_'.$id_product,
+                              'class'        => 'form-control input-sm',
+                              'type'  => 'hidden',
+                              'maxlength'=>'100'
+                          ),
+                          set_value('name_product',$content['name'])
+                      );
+
+                      echo form_input(
+                          array(
+                              'name'         => 'img_'.$id_product,
+                              'class'        => 'form-control input-sm',
+                              'type'  => 'hidden',
+                              'maxlength'=>'100'
+                          ),
+                          set_value('img',$content['img'])
+                      );
+
+                  }
+
                   ?>
                  <?php echo form_error('order_content');?>
                 </div>
               </div> <!--/ Order Content -->
-                          
+          <script>
+              $(document).ready(function(){
+
+                  $('select[name^=id_product_]').on('change', function(event) {
+                      event.preventDefault();
+
+                      var id = $('#'+this.id+' option:selected').val();
+
+                      var data = {
+                          'id' :  id
+                      };
+
+                      $.ajax({
+                          type     : 'POST',
+                          url      : '/products/get_one/',
+                          data     : data,
+                          cache    : false,
+                          async    : false,
+
+                          success: function(data){
+                              //window.location.reload();
+                              //console.log(JSON.parse(data));
+                              product_price = JSON.parse(data).product_price;
+                              alert(product_price);
+                              $('input[id=price_+id+]').
+                          },
+                          complete: function(){
+                              $("#loader").hide();
+                          },
+                          beforeSend : function(){
+                              alert('Вы поменяли продукт, сейчас установится новая цена!');
+                          },
+                          error: function(xhr, textStatus, errorThrown){
+                              console.log("status : " + errorThrown);
+                          }
+                      });
+
+                  });
+              });
+          </script>
                <div class="form-group">
                    <label for="delivery_id" class="col-sm-2 control-label">Вид доставки</label>
                 <div class="col-sm-6">                                   
-                  <?php                  
+                  <?php    //var_dump($delivery_method);die;
                    echo form_dropdown(
                            'delivery_id',
                            $delivery_method,  

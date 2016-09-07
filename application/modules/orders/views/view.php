@@ -88,10 +88,15 @@
                <td><?php echo $orders['order_address']; ?></td>
 			   
                <td><?php
-			   
-			   $content = unserialize(stripslashes($orders['order_content']));
-			   print_r ($content);
-			   
+
+                   $content = unserialize(stripslashes($orders['order_content']));
+                      foreach ($content as $product) {
+
+                        echo '<img src="'.$product['img'].'"><br>';
+                        echo $product['name'] .' ('.$product['count'].' шт. &#8727; '. $product['price'] .' = <b>'.$product['total'].' грн.</b>)'.'<hr>';
+
+                      }
+
 			   ?></td>
                
                
