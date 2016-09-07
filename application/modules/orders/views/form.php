@@ -97,7 +97,6 @@
                                 set_value('id_product',$id_product),
                                 'class="form-control input-sm required" id='.$id_product.''
                             );
-
                       echo form_input(
                           array(
                               'name'         => 'count_'.$id_product,

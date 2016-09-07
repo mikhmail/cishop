@@ -38,7 +38,7 @@ class Cart extends BaseController {
     }
 
     public function complete()
-    {
+    {   
         $this->load->model('orders_model');
         $data = $this->orders_model->_default();
 

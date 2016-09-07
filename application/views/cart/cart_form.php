@@ -26,6 +26,8 @@
                                value="<?=(int)$i['count'];?>">
                         <input type="hidden" name="item[<?=$id;?>][total]" value="<?=round($i['total'],2);?>">
                         <input type="hidden" name="item[<?=$id;?>][price]" value="<?=round($i['price'],2);?>">
+                    
+
                     </td>
                     <td><?=$i['name'];?></td>
                     <td><?=round($i['price'],2);?></td>

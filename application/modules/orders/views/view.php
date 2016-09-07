@@ -90,10 +90,13 @@
                <td><?php
 
                    $content = unserialize(stripslashes($orders['order_content']));
-                      foreach ($content as $product) {
+                      foreach ($content as $id_product => $product_) {
 
-                        echo '<img src="'.$product['img'].'"><br>';
-                        echo $product['name'] .' ('.$product['count'].' шт. &#8727; '. $product['price'] .' = <b>'.$product['total'].' грн.</b>)'.'<hr>';
+                          $this->load->model('products/productss');
+                          $product = $this->productss->get_one($id_product);
+                        //var_dump($product);
+                        echo '<img src="/images/products/thumbs/'.$product['product_image_front'].'"><br>';
+                        echo $product['product_title'] .' ('.$product_['count'].' шт. &#8727; '. $product_['price'] .' = <b>'.$product_['total']. currency . '</b>)'.'<hr>';
 
                       }
 

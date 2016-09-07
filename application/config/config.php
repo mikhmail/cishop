@@ -16,6 +16,10 @@
 | environments.
 |
 */
+
+// Валюта
+const currency = 'грн.';
+
 //$config['base_url'] = '';
 $config['base_url']	= 'http://' . $_SERVER['SERVER_NAME'] . str_replace(basename($_SERVER['SCRIPT_NAME']), '', $_SERVER['SCRIPT_NAME']);
 
