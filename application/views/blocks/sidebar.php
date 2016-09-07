@@ -3,8 +3,8 @@
     <ul>
         <?php if(!empty($catalogs)):?>
             <?php foreach($catalogs as $cats): ?>
-                <!--<li><a href="/catalogs/<?=$cats->catalog_id;?>/<?=$cats->catalog_url;?>/0/"><?=$cats->catalog_title;?></a></li>-->
-                <li><?=$cats->catalog_title;?></li>
+                <li><a href="/catalogs/<?=$cats->catalog_id;?>/<?=$cats->catalog_url;?>/0/"><?=$cats->catalog_title;?></a></li>
+                <!--<li><?=$cats->catalog_title;?></li>-->
                 <div class="line"></div>
                     <li>
                         <ul>

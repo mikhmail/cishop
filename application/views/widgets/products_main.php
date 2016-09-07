@@ -1,11 +1,3 @@
-<div id="path">
-    <ul class="breadcrumb">
-        <li ><a href="/">Главная страница</a></li> /
-        <li ><a href="/catalogs/<?=$catalog->catalog_id;?>/<?=$catalog->catalog_url;?>/0/"><?=$catalog->catalog_title;?></a></li> /
-        <li ><a href="/category/<?=$category->category_id;?>/<?=$category->category_url;?>/0/"><?=$category->category_title;?></a></li>
-    </ul>
-</div>
-
 <?php if(!empty($products)): //var_dump($products);die;?>
     <div class="products-wrapper">
         <?php foreach($products as $p): ?>

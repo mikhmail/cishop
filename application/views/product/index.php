@@ -4,7 +4,7 @@
     <div id="path">
         <ul class="breadcrumb">
             <li ><a href="/">Главная страница</a></li> /
-            <li ><a href="/">Алмазная вышивка</a></li> /
+            <li ><a href="/catalogs/<?=$product->catalog_id;?>/<?=$product->catalog_url;?>/0/"><?=$product->catalog_title;?></a></li> /
             <li ><a href="/category/<?=$product->category_id;?>/<?=$product->category_url;?>/0/"><?=$product->category_title;?></a></li> /
             <li class="active"><?=$product->product_title;?></li>
         </ul>
@@ -74,7 +74,7 @@
             </table>
         </article>
     </div>
-    <?php $this->load->view('widgets/comments',array('key'=>$product->product_comment_status)); ?>
+    <?php //$this->load->view('widgets/comments',array('key'=>$product->product_comment_status)); ?>
 
 <?php else: ?>
 

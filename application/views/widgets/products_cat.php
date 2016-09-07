@@ -2,7 +2,6 @@
     <ul class="breadcrumb">
         <li ><a href="/">Главная страница</a></li> /
         <li ><a href="/catalogs/<?=$catalog->catalog_id;?>/<?=$catalog->catalog_url;?>/0/"><?=$catalog->catalog_title;?></a></li> /
-        <li ><a href="/category/<?=$category->category_id;?>/<?=$category->category_url;?>/0/"><?=$category->category_title;?></a></li>
     </ul>
 </div>
 

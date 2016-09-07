@@ -31,6 +31,10 @@ class Blog extends BaseController {
             10
         );
 
+        $data['title'] = 'Блог';
+        $data['description'] = '';
+        $data['keywords'] = 'купить алмазною вышивку';
+
         $this->layout('blog/index',$data);
     }
 }

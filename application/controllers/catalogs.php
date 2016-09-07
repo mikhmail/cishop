@@ -8,6 +8,7 @@ class Catalogs extends BaseController {
     {	
         parent::__construct();
         $this->load->model('catalog_model');
+        $this->load->model('categories_model');
     }
 
     public function index($id = 0, $separate = '', $start = 0)
@@ -32,9 +33,14 @@ class Catalogs extends BaseController {
         );
 
         $catalog = $this->catalog_model->get_catalog($id);
-        $data['title'] = $catalog->catalog_title;
 
-        $this->layout('category/index',$data);
+        $data['catalog'] = $catalog;
+        $data['title'] = $catalog->catalog_title;
+        $data['description'] = $catalog->catalog_seo_description;
+        $data['keywords'] = $catalog->catalog_seo_keywords;
+
+
+        $this->layout('catalog/index',$data);
     }
 
 

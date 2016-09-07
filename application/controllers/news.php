@@ -31,6 +31,10 @@ class News extends BaseController {
             10
         );
 
+        $data['title'] = 'Новости';
+        $data['description'] = '';
+        $data['keywords'] = 'купить алмазною вышивку';
+
         $this->layout('news/index',$data);
     }
 

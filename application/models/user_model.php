@@ -44,8 +44,13 @@ class User_Model extends CI_Model
             ->get_where($this->table,array($this->pk => (int)$id))
             ->row();
 		*/
-			$prod_sql = "SELECT * FROM products AS p LEFT OUTER JOIN categories AS cp ON cp.category_id = p.category_id WHERE $this->pk = $id ORDER BY p.id_product DESC LIMIT 0,9";
-           return $this->db->query($prod_sql)->result();
+        $prod_sql = "SELECT * FROM products AS p
+        LEFT OUTER JOIN categories AS cp ON cp.category_id = p.category_id
+        LEFT OUTER JOIN catalog AS ck ON ck.catalog_id = cp.catalog_id
+        
+        WHERE $this->pk = $id ORDER BY p.id_product DESC LIMIT 0,9";
+
+        return $this->db->query($prod_sql)->result();
     }
 
 

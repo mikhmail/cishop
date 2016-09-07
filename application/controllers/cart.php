@@ -61,6 +61,10 @@ class Cart extends BaseController {
             }
         }
 
+        $data['title'] = 'Корзина';
+        $data['description'] = '';
+        $data['keywords'] = 'купить алмазною вышивку';
+
         $data['cart'] = array();
         $this->layout('cart/complete',$data);
     }

@@ -9,6 +9,13 @@ class Product extends BaseController {
         $this->load->model('product_model');
         $data = $this->product_model->_default();
         $data['product'] = $this->product_model->get_by_pk($id);
+
+        //var_dump($data['product']);die;
+
+        $data['title'] = $data['product'][0]->product_title;
+        $data['description'] = $data['product'][0]->product_description;
+        $data['keywords'] = 'купить алмазною вышивку';
+
         $this->layout('product/index',$data);
     }
 }

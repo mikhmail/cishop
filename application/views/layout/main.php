@@ -1,11 +1,12 @@
+<? //var_dump($data);die; ?>
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
-    <title><?=$this->title;?></title>
-    <!--
-    <description><?=$this->description;?></description>
-    -->
+    <title><?=$data['title'];?></title>
+    <meta name="description" content="<?=$data['description'];?>">
+    <meta name="keywords" content="<?=$data['keywords'];?>">
+
 
     <link media="screen" href="/additions/fancyBox/source/jquery.fancybox.css?v=2.1.4" type="text/css" rel="stylesheet">
     <link type="text/css" rel="stylesheet" media="screen" href="/css/style.css">

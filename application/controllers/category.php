@@ -8,6 +8,8 @@ class Category extends BaseController {
     {	
         parent::__construct();
         $this->load->model('categories_model');
+        $this->load->model('catalog_model');
+
     }
 
     public function index($id = 0, $separate = '', $start = 0)
@@ -32,7 +34,15 @@ class Category extends BaseController {
         );
 
         $category = $this->categories_model->get_category($id);
+        $data['category'] = $category;
         $data['title'] = $category->category_title;
+
+        $data['description'] = $category->category_seo_description;
+        $data['keywords'] = $category->category_seo_keywords;
+
+        $catalog = $this->catalog_model->get_catalog($category->catalog_id);
+        $data['catalog'] = $catalog;
+
 
         $this->layout('category/index',$data);
     }

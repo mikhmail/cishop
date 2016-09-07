@@ -13,6 +13,11 @@ class Post extends BaseController {
             redirect('error/404','location',301);
             return;
         }
+
+        $data['title'] = 'Новости';
+        $data['description'] = '';
+        $data['keywords'] = 'купить алмазною вышивку';
+
         $this->layout('post/index',$data);
     }
 }

@@ -7,7 +7,15 @@ class Contact extends BaseController {
     public function index()
     {
         $data = $this->user_model->_default();
+
+        $data['title'] = 'Контакты';
+        $data['description'] = '';
+        $data['keywords'] = 'купить алмазною вышивку';
+
         $this->layout('contact/index',$data);
+
+
+
     }
 
     public function send()
@@ -28,6 +36,8 @@ class Contact extends BaseController {
                 strip_tags(nl2br($_POST['message']),'<br>')
             );
         }
+
+
 
         $this->layout('contact/complete',$data);
     }

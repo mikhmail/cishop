@@ -8,6 +8,11 @@ class Main extends BaseController {
     {
         $data = $this->user_model->_default();
         $data['products'] = $this->user_model->get_products();
+
+        $data['title'] = 'алмазная вышивка';
+        $data['description'] = '';
+        $data['keywords'] = 'купить алмазною вышивку';
+
         $this->layout('main/index',$data);
     }
 }
