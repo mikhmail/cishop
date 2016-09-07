@@ -277,19 +277,22 @@ class orderss extends CI_Model
 
     public function update($id)
     {
-
+        //var_dump($this->input->post());die;
         foreach ($this->input->post() as $key => $value){
             if (stristr($key, 'id_product')) {
 
-                $id_product =  explode("_", $key)[2];
+                $id_product = explode("_", $key)[2];
+                $new_id_product = $value;
+
                 $this->load->model('products/productss');
-                $product = $this->productss->get_one($id_product);
+                $product = $this->productss->get_one($new_id_product);
+
 
                     $order_content[$value] = [
                         'count' => (int)$this->input->post('count_'.$id_product),
                         'price' => (int)$this->input->post('price_'.$id_product),
                         'total' => (int)$this->input->post('price_'.$id_product) * (int)$this->input->post('count_'.$id_product),
-                        'name' => $this->input->post('name_product_'.$id_product),
+                        'name' => $product['product_title'],
                         'img' => '/images/products/thumbs/'. $product['product_image_front']
                     ];
 

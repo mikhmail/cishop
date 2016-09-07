@@ -95,7 +95,7 @@
                                 'id_product_'.$id_product,
                                 $product,
                                 set_value('id_product',$id_product),
-                                'class="form-control input-sm" id='.$id_product.''
+                                'class="form-control input-sm required" id='.$id_product.''
                             );
 
                       echo form_input(
@@ -148,34 +148,37 @@
           <script>
               $(document).ready(function(){
 
-                  $('select[name^=id_product_]').on('change', function(event) {
-                      event.preventDefault();
+                  $('select[name^=id_product_]').change(function() {
 
-                      var id = $('#'+this.id+' option:selected').val();
 
-                      var data = {
-                          'id' :  id
+                      var id = this.id;
+                      var dat = {
+                          'id' :  $('#'+this.id+' option:selected').val()
                       };
 
                       $.ajax({
                           type     : 'POST',
                           url      : '/products/get_one/',
-                          data     : data,
+                          data     : dat,
                           cache    : false,
-                          async    : false,
 
                           success: function(data){
-                              //window.location.reload();
-                              //console.log(JSON.parse(data));
-                              product_price = JSON.parse(data).product_price;
-                              alert(product_price);
-                              $('input[id=price_+id+]').
+                              //console.log(JSON.parse(data).product_price);
+
+                              var product_price = JSON.parse(data).product_price;
+
+                              alert('Вы поменяли продукт! \nПроверьте новую цену: '+product_price+'');
+
+                              $('#price_'+id+'').val(product_price).addClass("parsley-success").fadeOut("slow").fadeIn().focus();
+
+
+
                           },
                           complete: function(){
-                              $("#loader").hide();
+
                           },
                           beforeSend : function(){
-                              alert('Вы поменяли продукт, сейчас установится новая цена!');
+                              //alert('Вы поменяли продукт, сейчас установится новая цена!');
                           },
                           error: function(xhr, textStatus, errorThrown){
                               console.log("status : " + errorThrown);
