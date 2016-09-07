@@ -286,6 +286,7 @@ class productss extends CI_Model
 		
 		$id = $this->db->insert_id();
 		
+		
 		/* Этот код добавляет новые рисунки */
 		$data = array();
 		if ($_FILES !== null){
@@ -293,7 +294,7 @@ class productss extends CI_Model
 				
 				if ($value['name'] != false){
 				
-				// upload new file and add it to $data array
+					// upload new file and add it to $data array
 					$data[$img] = trim($this->Gallery_model->do_upload($img));
 				
 				}	
@@ -305,7 +306,6 @@ class productss extends CI_Model
 			}	
 		}
 		/* КОНЕЦ! Этот код добавляет новые рисунки */
-		
 		
     }
     

@@ -14,28 +14,30 @@ class Gallery_model extends CI_Model {
 
 
     public function do_upload($filename)
-    {	//var_dump($_FILES);die;
-        
+    {
+	//var_dump($_FILES);die;
+    
+
+		$img_name = $this->get_img_name ($_FILES[$filename]["name"]);
+		
         $config = array(
 				
-               'file_name' => $this->get_img_name ($_FILES[$filename]["name"]),
+              'file_name' => $img_name,
               'allowed_types' => 'jpg|jpeg|gif|png',
               'upload_path' => $this->gallery_path,
               'max_size' => 2000   // 2Mb
 
         	);
 			
-// 'file_name' => $this->get_img_name ($_FILES[$filename]["name"]),
-
+	
 
         $this->load->library('upload', $config);
         $this->upload->do_upload($filename);  // call the loaded library upload and perform the upload, giving the config to the upload
 
         $image_data = $this->upload->data();  // return an array that contains data about the upload process
-        
 		
-		
-        $config = array(
+		/* resize_img */
+		 $config = array(
                 'source_image' => $image_data['full_path'],
                 'new_image' => $this->gallery_path . '/thumbs',
                 'maintain_ration' => true,
@@ -43,15 +45,29 @@ class Gallery_model extends CI_Model {
                 'height' => 100
         	);
 
-        $this->load->library('image_lib', $config);    // load image manipulation class
-        $this->image_lib->resize();    // take the original image, save as a new image under the path we have given in new_image,
-                                       // with width, height of 150x100 and same ratio
-
-		//var_dump($image_data);die;
+        $this->load->library('image_lib', $config); 
+        $this->image_lib->resize();    
+		/* end resize_img */
 		
-	return $image_data['file_name'];
+		return $image_data['file_name'];
+		
+
     }
 
+	public function resize_img ($img_name) {
+		
+		 $config = array(
+                'source_image' => $this->gallery_path .'/'. $img_name,
+                'new_image' => $this->gallery_path . '/thumbs',
+                'maintain_ration' => true,
+                'width' => 150,
+                'height' => 100
+        	);
+
+        $this->load->library('image_lib', $config); 
+        $this->image_lib->resize();    
+		
+	}
 
     public function get_images()
     {

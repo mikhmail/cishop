@@ -38,8 +38,11 @@
 |
 */
 
-$route['default_controller'] = "builder";
+$route['default_controller'] = "main";
 $route['404_override'] = '';
+
+$route['category/(:num)/(:any)/(:num)'] = "category/index/$1/$2/$3";
+$route['(post|error|product|blog|news|action)/(:any)'] = "$1/index/$2";
 
 
 /* End of file routes.php */
