@@ -2,37 +2,37 @@
 
 include_once 'base_controller.php';
 
-class Category extends BaseController {
+class Catalogs extends BaseController {
 
     public function __construct()
     {	
         parent::__construct();
-        $this->load->model('categories_model');
+        $this->load->model('catalog_model');
     }
 
     public function index($id = 0, $separate = '', $start = 0)
     {		
         $this->load->library('pagination');
 
-        $data = $this->categories_model->_default();
+        $data = $this->catalog_model->_default();
 
         $config = array(
             'first_url' => '/category/'.$id.'/'.$separate.'/0/',
             'base_url' => '/category/'.$id.'/'.$separate.'/',
-            'total_rows' => $this->categories_model->count_all($id),
+            'total_rows' => $this->catalog_model->count_all($id),
             'uri_segment' => 4,
         );
 
         $this->pagination->initialize($config);
         $data['pagination'] = $this->pagination->create_links();
-        $data['products'] = $this->categories_model->pagination(
+        $data['products'] = $this->catalog_model->pagination(
             $id,
             $start,
             9
         );
 
-        $category = $this->categories_model->get_category($id);
-        $data['title'] = $category->category_title;
+        $catalog = $this->catalog_model->get_catalog($id);
+        $data['title'] = $catalog->catalog_title;
 
         $this->layout('category/index',$data);
     }

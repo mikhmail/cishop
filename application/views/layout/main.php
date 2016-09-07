@@ -57,7 +57,7 @@
     <footer>
         <div class="grid_12">
             <div class="padding">
-                <p><?=$this->lang->line('site_name');?> 2013 &copy;</p>
+                <p><?=$this->lang->line('site_name');?> 2016 &copy;</p>
             </div>
         </div>
         <div class="clear">&nbsp;</div>

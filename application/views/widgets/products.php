@@ -16,7 +16,6 @@
 
                 <div class="info">
                     <p><small><?=$p->product_price;?></small> <?=$this->lang->line('currency');?></p>
-					<p><small><? //$p->category_title;?></small></p>
 					
                 </div>
 

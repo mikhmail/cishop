@@ -42,4 +42,11 @@ class Posts_Model extends User_Model
 
         return $this->db->query($sql,array($key))->row();
     }
+
+    public function get_by_pk($id)
+    {	return $this->db
+            ->get_where($this->table,array($this->pk => (int)$id))
+            ->row();
+		}
+
 }

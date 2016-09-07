@@ -1,5 +1,14 @@
-<?php if(!empty($product)): $product = $product[0];?>
+<?php if(!empty($product)): $product = $product[0]; //var_dump($product);?>
 
+
+    <div id="path">
+        <ul class="breadcrumb">
+            <li ><a href="/">Главная страница</a></li> /
+            <li ><a href="/">Алмазная вышивка</a></li> /
+            <li ><a href="/category/<?=$product->category_id;?>/<?=$product->category_url;?>/0/"><?=$product->category_title;?></a></li> /
+            <li class="active"><?=$product->product_title;?></li>
+        </ul>
+    </div>
     <h2><?=$product->product_title;?></h2>
 
     <div class="product">

@@ -8,14 +8,23 @@ class User_Model extends CI_Model
     public function _default()
     {
         return array(
-            'categories' => $this->db->order_by('category_priority','asc')->get('categories')->result(),
+
+            'catalogs' => $this->db->order_by('catalog_priority','asc')->get('catalog')->result(),
             'pages' => $this->db->get_where('posts',array('post_type'=>'page'))->result(),
         );
     }
 
     public function get_products()
     {
-        $prod_sql = "SELECT * FROM products AS p LEFT OUTER JOIN categories AS cp ON cp.category_id = p.category_id ORDER BY p.id_product DESC LIMIT 0,9";
+        $prod_sql = "SELECT *
+
+                      FROM products AS p
+                      LEFT OUTER JOIN categories AS cp ON cp.category_id = p.category_id
+                      WHERE p.product_active = 1
+                      ORDER BY p.id_product DESC LIMIT 0,9";
+
+        //$this->db->query($prod_sql);
+        //var_dump($this->db->last_query());die;
         return $this->db->query($prod_sql)->result();
     }
 
@@ -34,10 +43,13 @@ class User_Model extends CI_Model
         return $this->db
             ->get_where($this->table,array($this->pk => (int)$id))
             ->row();
-		*/	
+		*/
 			$prod_sql = "SELECT * FROM products AS p LEFT OUTER JOIN categories AS cp ON cp.category_id = p.category_id WHERE $this->pk = $id ORDER BY p.id_product DESC LIMIT 0,9";
-			return $this->db->query($prod_sql)->result();
+           return $this->db->query($prod_sql)->result();
     }
+
+
+
 
     /*
     Get all records
