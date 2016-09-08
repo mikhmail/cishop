@@ -20,6 +20,13 @@ class products extends MY_Controller
 		$this->load->model('Gallery_model');
 		$this->load->helper(array('form', 'url'));
 
+        $this->load->library('Auth');
+        $auth = new Auth();
+        if(!$auth->is_logged_in()){
+            redirect('admin/login');
+            die;
+        }
+
     }
     
 

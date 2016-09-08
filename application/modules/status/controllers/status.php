@@ -17,6 +17,13 @@ class status extends MY_Controller
     {
         parent::__construct();         
         $this->load->model('statuss');
+
+        $this->load->library('Auth');
+        $auth = new Auth();
+        if(!$auth->is_logged_in()){
+            redirect('admin/login');
+            die;
+        }
     }
     
 

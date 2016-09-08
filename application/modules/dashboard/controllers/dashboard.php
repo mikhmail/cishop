@@ -16,7 +16,14 @@ class dashboard extends MY_Controller
 
     public function __construct() 
     {
-        parent::__construct();         
+        parent::__construct();
+
+        $this->load->library('Auth');
+        $auth = new Auth();
+        if(!$auth->is_logged_in()){
+            redirect('admin/login');
+            die;
+        }
        
     }
     

@@ -18,6 +18,13 @@ class orders extends MY_Controller
         parent::__construct();         
         $this->load->model('orderss');
 		$this->load->model('Gallery_model');
+
+        $this->load->library('Auth');
+        $auth = new Auth();
+        if(!$auth->is_logged_in()){
+            redirect('admin/login');
+            die;
+        }
 		
 		//$this->Gallery_model->get_images();
 		
