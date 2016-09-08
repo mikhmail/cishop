@@ -72,7 +72,7 @@ class orders extends MY_Controller
                 $("#form_orders").parsley();
                         });','embed');
       
-        $this->template->render('orders/form',$data);
+        $this->template->render('orders/add',$data);
 
     }
 
@@ -135,12 +135,12 @@ class orders extends MY_Controller
                         'rules' => 'trim|xss_clean|required'
                         ),
                     
+
                     array(
                         'field' => 'order_address',
                         'label' => 'Order Address',
                         'rules' => 'trim|xss_clean|required'
-                        ),
-                    
+                    ),
 
                     
                     array(
@@ -189,7 +189,7 @@ class orders extends MY_Controller
             
         // if id NULL then add new data
         if(!$id)
-        {    
+        {
                   $this->form_validation->set_rules($config);
 
                   if ($this->form_validation->run() == TRUE) 
@@ -208,7 +208,7 @@ class orders extends MY_Controller
                   }
          }
          else // Update data if Form Edit send Post and ID available
-         {               
+         {
                 $this->form_validation->set_rules($config);
 
                 if ($this->form_validation->run() == TRUE) 

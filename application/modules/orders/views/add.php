@@ -55,23 +55,23 @@
               </div> <!--/ Order Phone -->
                           
                <div class="form-group">
-                   <label for="order_address" class="col-sm-2 control-label">Адрес клиента <span class="required-input">*</span></label>
-                <div class="col-sm-6">                                   
-                  <?php                  
-                   echo form_input(
-                                array(
-                                 'name'         => 'order_address',
-                                 'id'           => 'order_address',                       
-                                 'class'        => 'form-control input-sm  required',
-                                 'placeholder'  => 'Order Address',
-                                 'maxlength'=>'255'
-                                 ),
-                                 set_value('order_address',$orders['order_address'])
-                           );             
+              <label for="order_address" class="col-sm-2 control-label">Адрес доставки <span class="required-input">*</span></label>
+              <div class="col-sm-6">
+                  <?php
+                  echo form_input(
+                      array(
+                          'name'         => 'order_address',
+                          'id'           => 'order_address',
+                          'class'        => 'form-control input-sm  required',
+                          'placeholder'  => 'Order Address',
+                          'maxlength'=>'255'
+                      ),
+                      set_value('order_address',$orders['order_address'])
+                  );
                   ?>
-                 <?php echo form_error('order_address');?>
-                </div>
-              </div> <!--/ Order Address -->
+                  <?php echo form_error('order_address');?>
+              </div>
+          </div> <!--/ Order Address -->
 
           <div class="form-group">
               <label for="order_email" class="col-sm-2 control-label">Email клиента <span class="required-input">*</span></label>
@@ -84,8 +84,7 @@
                           'class'        => 'form-control input-sm  required',
                           'placeholder'  => 'Order Email',
                           'maxlength'=>'255'
-                      ),
-                      set_value('order_email',$orders['order_email'])
+                      )
                   );
                   ?>
                   <?php echo form_error('order_email');?>
@@ -99,65 +98,61 @@
                   $this->load->model('products/productss');
                   $products = $this->productss->get_all(1000,0);
 
-
+                  $product = array('' => 'Выбрать');
                     foreach ($products as $pr){
                         $product[$pr['id_product']] = $pr['category_title'].'/'.$pr['product_title'];
                     }
 
 
-                  $content = unserialize(stripslashes($orders['order_content']));
-                    //var_dump($content);die;
-                  foreach ($content as $id_product => $content){
 
-
-                            echo form_dropdown(
-                                'id_product_'.$id_product,
+                      echo form_dropdown(
+                                'id_product',
                                 $product,
-                                set_value('id_product',$id_product),
-                                'class="form-control input-sm required" id='.$id_product.''
+
+                                'class="form-control input-sm required"'
                             );
                       echo form_input(
                           array(
-                              'name'         => 'count_'.$id_product,
+                              'name'         => 'count',
                               'class'        => 'form-control input-sm  required',
                               'placeholder'  => 'Order count',
                               'maxlength'=>'2'
-                          ),
-                          set_value('count',$content['count'])
+                          )
+
                       );
 
                       echo form_input(
                           array(
-                              'name'         => 'price_'.$id_product,
-                              'id'         => 'price_'.$id_product,
+                              'name'         => 'price',
+                              'id'         => 'price',
                               'class'        => 'form-control input-sm  required',
                               'placeholder'  => 'Order price',
                               'maxlength'=>'100'
-                          ),
-                          set_value('price',$content['price'])
+                          )
+
                       );
 
                       echo form_input(
                           array(
-                              'name'         => 'name_product_'.$id_product,
+                              'name'         => 'name_product',
                               'class'        => 'form-control input-sm',
                               'type'  => 'hidden',
                               'maxlength'=>'100'
-                          ),
-                          set_value('name_product',$content['name'])
+                          )
+
                       );
 
                       echo form_input(
                           array(
-                              'name'         => 'img_'.$id_product,
+                              'name'         => 'img',
                               'class'        => 'form-control input-sm',
                               'type'  => 'hidden',
                               'maxlength'=>'100'
-                          ),
-                          set_value('img',$content['img'])
+                          )
+
                       );
 
-                  }
+
 
                   ?>
                  <?php echo form_error('order_content');?>
@@ -166,44 +161,7 @@
           <script>
               $(document).ready(function(){
 
-                  $('select[name^=id_product_]').change(function() {
 
-
-                      var id = this.id;
-                      var dat = {
-                          'id' :  $('#'+this.id+' option:selected').val()
-                      };
-
-                      $.ajax({
-                          type     : 'POST',
-                          url      : '/products/get_one/',
-                          data     : dat,
-                          cache    : false,
-
-                          success: function(data){
-                              //console.log(JSON.parse(data).product_price);
-
-                              var product_price = JSON.parse(data).product_price;
-
-                              alert('Вы поменяли продукт! \nПроверьте новую цену: '+product_price+'');
-
-                              $('#price_'+id+'').val(product_price).addClass("parsley-success").fadeOut("slow").fadeIn().focus();
-
-
-
-                          },
-                          complete: function(){
-
-                          },
-                          beforeSend : function(){
-                              //alert('Вы поменяли продукт, сейчас установится новая цена!');
-                          },
-                          error: function(xhr, textStatus, errorThrown){
-                              console.log("status : " + errorThrown);
-                          }
-                      });
-
-                  });
               });
           </script>
                <div class="form-group">

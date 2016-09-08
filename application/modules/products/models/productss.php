@@ -36,7 +36,7 @@ class productss extends CI_Model
 		$this->db->join('categories', 'products.category_id = categories.category_id');
 		//$this->db->join('delivery_method', 'delivery_method.delivery_id = orders.delivery_id');
 		//$this->db->join('payment_method', 'payment_method.payment_id = orders.payment_id');
-		
+        $this->db->order_by('id_product', 'DESC');
 		
 		$this->db->limit($limit, $offset);	
 		

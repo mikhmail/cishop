@@ -35,11 +35,10 @@ class orderss extends CI_Model
 		$this->db->join('status', 'status.status_id = orders.status_id');
 		$this->db->join('delivery_method', 'delivery_method.delivery_id = orders.delivery_id');
 		$this->db->join('payment_method', 'payment_method.payment_id = orders.payment_id');
-		
-		
-		
-		
-		$this->db->limit($limit, $offset);	
+        $this->db->order_by('order_id', 'DESC');
+
+        $this->db->limit($limit, $offset);
+
 		
 		$result = $this->db->get();
 		
@@ -211,6 +210,27 @@ class orderss extends CI_Model
     */
     public function save() 
     {
+
+        //var_dump($this->input->post());die;
+
+            if ($this->input->post('id_product')) {
+
+                $this->load->model('products/productss');
+                $product = $this->productss->get_one($this->input->post('id_product'));
+
+
+                $order_content[$product['id_product']] = [
+                    'count' => (int)$this->input->post('count'),
+                    'price' => (int)$this->input->post('price'),
+                    'total' => (int)$this->input->post('price') * (int)$this->input->post('count'),
+                    'name' => $product['product_title'],
+                    'img' => '/images/products/thumbs/'. $product['product_image_front']
+                ];
+            }
+
+
+        //var_dump($order_content);die;
+
         $data = array(
         
             'order_name' => strip_tags($this->input->post('order_name', TRUE)),
@@ -218,8 +238,10 @@ class orderss extends CI_Model
             'order_phone' => strip_tags($this->input->post('order_phone', TRUE)),
         
             'order_address' => strip_tags($this->input->post('order_address', TRUE)),
-        
-            'order_content' => strip_tags($this->input->post('order_content', TRUE)),
+
+            'order_email' => strip_tags($this->input->post('order_email', TRUE)),
+
+            'order_content' => addslashes(serialize($order_content)),
         
             'order_date_create' => date('Y-m-d H:i:s'),
         
@@ -309,6 +331,8 @@ class orderss extends CI_Model
                 'order_phone' => strip_tags($this->input->post('order_phone', TRUE)),
         
                 'order_address' => strip_tags($this->input->post('order_address', TRUE)),
+
+                'order_email' => strip_tags($this->input->post('order_email', TRUE)),
         
                 'order_content' => addslashes(serialize($order_content)),
         
