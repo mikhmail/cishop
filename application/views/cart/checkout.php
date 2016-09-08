@@ -42,7 +42,7 @@
                 <input type="text" name="name" id="name"  required="required" placeholder="<?=$this->lang->line('contact_name');?> *">
             </td>
             <td rowspan="3">
-                <textarea class="contact-block" placeholder="<?=$this->lang->line('contact_message');?>" name="message"></textarea>
+                <textarea class="contact-block" placeholder="<?=$this->lang->line('delivery_address');?>" name="address"></textarea>
             </td>
         </tr>
         <tr>
@@ -55,6 +55,37 @@
                 <input type="email" name="email" id="email" placeholder="<?=$this->lang->line('contact_email');?> *" required="required">
             </td>
         </tr>
+
+        <tr>
+            <td>
+                <?php
+
+                echo form_dropdown(
+                    'delivery_id',
+                    $delivery_method,
+                    set_value('delivery_id',1),
+                    'class="" id="delivery_id"'
+                );
+                ?>
+                <?php echo form_error('delivery_id');?>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <?php
+
+                echo form_dropdown(
+                    'payment_id',
+                    $payment_method,
+                    set_value('payment_id',1),
+                    'class=""  id="payment_id"'
+                );
+                ?>
+                <?php echo form_error('payment_id');?>
+            </td>
+        </tr>
+
         </tbody>
     </table>
     <br>

@@ -56,7 +56,8 @@ input {
 }
 
 input,
-textarea {
+textarea,
+select {
     border: 1px solid #d5d5d5;
 }
 
@@ -240,6 +241,7 @@ nav a {
 }
 
 .user-data-checkout input,
+.user-data-checkout select,
 .contact input[type="text"],
 .contact input[type="email"],
 .user-data-checkout textarea,

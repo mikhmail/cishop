@@ -26,6 +26,7 @@ class Cart extends BaseController {
     public function checkout()
     {
         $this->load->model('orders_model');
+        $this->load->model('orders/orderss');
         $data =  $this->orders_model->_default();
 
         $data['cart'] = $this->cart;
@@ -33,6 +34,9 @@ class Cart extends BaseController {
         $data['title'] = 'Корзина';
         $data['description'] = '';
         $data['keywords'] = 'купить алмазною вышивку';
+
+        $data['delivery_method'] = $this->orderss->get_delivery_method();
+        $data['payment_method']  = $this->orderss->get_payment_method();
 
         $this->layout('cart/checkout',$data);
     }
@@ -48,7 +52,12 @@ class Cart extends BaseController {
             $this->user['email'] = $_POST['email'];
             $this->user['name'] = $_POST['name'];
             $this->user['phone'] = $_POST['phone'];
-            $this->user['message'] = $_POST['message'];
+            $this->user['message'] = '';
+            $this->user['address'] = $_POST['address'];
+            $this->user['delivery_id'] = $_POST['delivery_id'];
+            $this->user['payment_id'] = $_POST['payment_id'];
+
+
 
             // Save data
             if($this->orders_model->order_create($this->cart,$this->user)){

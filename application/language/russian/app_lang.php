@@ -1,6 +1,9 @@
 <?php
 
 $lang['site_name'] = 'Codeigniter.shop';
+$lang['delivery_address'] = 'Введите адрес доставки';
+$lang['contact_message_send'] = 'Спасибо! Ваше сообщение успешно отправлено.';
+
 
 $lang['header_menu_home'] = 'Главная';
 $lang['header_menu_blog'] = 'Блог';

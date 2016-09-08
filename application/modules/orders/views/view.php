@@ -118,11 +118,13 @@
                 <td>    
                     
                     <?php
+                    /*
                                   echo anchor(
                                           site_url('orders/show/' . $orders['order_id']),
                                             '<i class="glyphicon glyphicon-eye-open"></i>',
                                             'class="btn btn-sm btn-info" data-tooltip="tooltip" data-placement="top" title="'.$this->lang->line('view').'"'
                                           );
+                    */
                    ?>
                     
                     <?php

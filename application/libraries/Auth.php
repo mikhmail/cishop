@@ -496,7 +496,7 @@ class Auth {
      * @param string $mode Hash key mode, accepted values are session, password and cookie
      * @return string 64 characters hash of has_key concat with the given data
      */
-    protected function get_sha256($to_hash, $mode = 'password') {
+    function get_sha256($to_hash, $mode = 'password') {
         if(is_array($to_hash))
             $to_hash = implode('', $to_hash);
 

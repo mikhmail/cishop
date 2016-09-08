@@ -1,5 +1,14 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
+/**
+ * Controller Contact
+ * @created on : Friday, 02-Sep-2016 13:22:18
+ * @author Mikhail Khorunzhenko <activex.mail@gmail.com>
+ * Copyright 2016
+ *
+ *
+ */
+
 include_once 'base_controller.php';
 
 class Contact extends BaseController {
@@ -37,7 +46,9 @@ class Contact extends BaseController {
             );
         }
 
-
+        $data['title'] = 'Контакты';
+        $data['description'] = '';
+        $data['keywords'] = 'купить алмазною вышивку';
 
         $this->layout('contact/complete',$data);
     }

@@ -53,6 +53,25 @@
                  <?php echo form_error('user_email');?>
                 </div>
               </div> <!--/ User Email -->
+
+          <div class="form-group">
+              <label for="user_password" class="col-sm-2 control-label">Пароль <span class="required-input">*</span></label>
+              <div class="col-sm-6">
+                  <?php
+                  echo form_input(
+                      array(
+                          'name'         => 'user_password',
+                          'id'           => 'user_password',
+                          'class'        => 'form-control input-sm  required',
+                          'placeholder'  => 'User password',
+                          'maxlength'=>'255'
+                      ),
+                      set_value('user_password',$users['user_password_hash'])
+                  );
+                  ?>
+                  <?php echo form_error('user_password');?>
+              </div>
+          </div> <!--/ User password -->
                           
                <div class="form-group">
                    <label for="user_activated" class="col-sm-2 control-label">Активен? <span class="required-input">*</span></label>

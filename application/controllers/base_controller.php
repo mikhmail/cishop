@@ -1,5 +1,14 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
+/**
+ * Controller base
+ * @created on : Friday, 02-Sep-2016 13:22:18
+ * @author Mikhail Khorunzhenko <activex.mail@gmail.com>
+ * Copyright 2016
+ *
+ *
+ */
+
 session_start();
 
 class BaseController extends CI_Controller {

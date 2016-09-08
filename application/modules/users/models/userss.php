@@ -163,7 +163,9 @@ class userss extends CI_Model
                 'user_password_hash' => '',
             
                 'user_email' => '',
-            
+
+                'user_password_hash' => '',
+
                 'user_ip' => '',
             
                 'user_date_create' => '',
@@ -189,14 +191,17 @@ class userss extends CI_Model
     */
     public function save() 
     {
+        $this->load->library('Auth');
+        $auth = new Auth();
+
         $data = array(
         
             'user_name' => strip_tags($this->input->post('user_name', TRUE)),
         
-            'user_password_hash' => strip_tags($this->input->post('user_password_hash', TRUE)),
-        
             'user_email' => strip_tags($this->input->post('user_email', TRUE)),
-        
+
+            'user_password_hash' => $auth->get_sha256($this->input->post('user_password', TRUE), 'password'),
+
             'user_ip' => '',
         
             'user_date_create' =>  date('Y-m-d H:i:s'),
@@ -225,23 +230,48 @@ class userss extends CI_Model
     */
     public function update($id)
     {
-        $data = array(
-        
+
+        $this->load->library('Auth');
+        $auth = new Auth();
+
+        if ($this->input->post('new_user_password')){
+
+            $data = array(
+
                 'user_name' => strip_tags($this->input->post('user_name', TRUE)),
-        
-                'user_password_hash' => strip_tags($this->input->post('user_password_hash', TRUE)),
-        
+
                 'user_email' => strip_tags($this->input->post('user_email', TRUE)),
-        
+
+                'user_password_hash' => $auth->get_sha256($this->input->post('new_user_password', TRUE), 'password'),
+
                 'user_ip' => '',
-        
+
                 'user_date_create' => strip_tags($this->input->post('user_date_create', TRUE)),
-        
+
                 'user_last_date_visited' =>  '',
-        
+
                 'user_activated' => strip_tags($this->input->post('user_activated', TRUE)),
-        
-        );
+
+            );
+        }else{
+            $data = array(
+
+                'user_name' => strip_tags($this->input->post('user_name', TRUE)),
+
+                'user_email' => strip_tags($this->input->post('user_email', TRUE)),
+
+                'user_ip' => '',
+
+                'user_date_create' => strip_tags($this->input->post('user_date_create', TRUE)),
+
+                'user_last_date_visited' =>  '',
+
+                'user_activated' => strip_tags($this->input->post('user_activated', TRUE)),
+
+            );
+        }
+
+
         
         
         $this->db->where('user_id', $id);

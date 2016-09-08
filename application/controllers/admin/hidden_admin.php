@@ -1,5 +1,14 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
+/**
+ * Controller Hidden_Admin
+ * @created on : Friday, 02-Sep-2016 13:22:18
+ * @author Mikhail Khorunzhenko <activex.mail@gmail.com>
+ * Copyright 2016
+ *
+ *
+ */
+
 class Hidden_Admin extends CI_Controller {
 
 

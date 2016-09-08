@@ -53,8 +53,7 @@
                 
                   
                     <th>Дата создание</th>   
-                
-                    <th>Последний визит</th>   
+
                 
                     <th>Активен?</th>   
                 
@@ -76,8 +75,7 @@
                
                
                <td><?php echo $users['user_date_create']; ?></td>
-               
-               <td><?php echo $users['user_last_date_visited']; ?></td>
+                  
                
                <td><?php if($users['user_activated']==0) {echo 'НЕТ';} else {echo 'ДА';} ?></td>
                

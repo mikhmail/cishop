@@ -108,9 +108,10 @@
                       echo form_dropdown(
                                 'id_product',
                                 $product,
-
-                                'class="form-control input-sm required"'
+                                set_value('id_product', ''),
+                                'class="form-control input-sm required" id="id_product"'
                             );
+
                       echo form_input(
                           array(
                               'name'         => 'count',
@@ -132,35 +133,52 @@
 
                       );
 
-                      echo form_input(
-                          array(
-                              'name'         => 'name_product',
-                              'class'        => 'form-control input-sm',
-                              'type'  => 'hidden',
-                              'maxlength'=>'100'
-                          )
-
-                      );
-
-                      echo form_input(
-                          array(
-                              'name'         => 'img',
-                              'class'        => 'form-control input-sm',
-                              'type'  => 'hidden',
-                              'maxlength'=>'100'
-                          )
-
-                      );
-
 
 
                   ?>
-                 <?php echo form_error('order_content');?>
+
                 </div>
               </div> <!--/ Order Content -->
           <script>
               $(document).ready(function(){
+                  $('select[name=id_product]').change(function() {
 
+
+                      var id = this.id;
+                      var dat = {
+                          'id' :  $('#'+this.id+' option:selected').val()
+                      };
+
+                      $.ajax({
+                          type     : 'POST',
+                          url      : '/products/get_one/',
+                          data     : dat,
+                          cache    : false,
+
+                          success: function(data){
+                              //console.log(JSON.parse(data).product_price);
+
+                              var product_price = JSON.parse(data).product_price;
+
+                              //alert('Вы поменяли продукт! \nПроверьте новую цену: '+product_price+'');
+
+                              $('#price').val(product_price).addClass("parsley-success").fadeOut("slow").fadeIn().focus();
+
+
+
+                          },
+                          complete: function(){
+
+                          },
+                          beforeSend : function(){
+                              //alert('Вы поменяли продукт, сейчас установится новая цена!');
+                          },
+                          error: function(xhr, textStatus, errorThrown){
+                              console.log("status : " + errorThrown);
+                          }
+                      });
+
+                  });
 
               });
           </script>
@@ -172,7 +190,7 @@
                            'delivery_id',
                            $delivery_method,  
                            set_value('delivery_id',$orders['delivery_id']),
-                           'class="form-control input-sm "  id="delivery_id"'
+                           'class="form-control input-sm" id="delivery_id"'
                            );             
                   ?>
                  <?php echo form_error('delivery_id');?>

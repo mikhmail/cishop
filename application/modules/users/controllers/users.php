@@ -93,7 +93,7 @@ class users extends MY_Controller
                     $("#form_users").parsley();
                                     });','embed');
             
-            $this->template->render('users/form',$data);
+            $this->template->render('users/edit',$data);
             
         }
         else 

@@ -33,20 +33,18 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-            <a class="navbar-brand" href="<?php echo site_url(); ?>">Brain Labs</a>
+
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="<?php echo site_url('dashboard'); ?>"><i class="fa fa-windows"></i> Dahsboard</a></li>
-            <li><a href="<?php echo site_url('builder'); ?>"><i class="fa fa-code"></i> Builder</a></li>
-            <!--  <li><a href="<?php echo site_url('builder/tools'); ?>"><i class="fa fa-wrench"></i> Tools</a></li> -->
-			<?php
+            <?php
 				$menus = menu(APPPATH . 'modules/');
 			?>
 			
             <?php   if($menus) : ?>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-signal"></i> Content <b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-signal"></i> Admin <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 
                  <?php 
@@ -67,11 +65,19 @@
                              
               </ul>
             </li>
+
             
             <?php  endif; ?>
-            
-            
+             
           </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="<?php echo site_url('/'); ?>"><i class=""></i> Site</a></li>
+
+                <li><a href="<?php echo site_url('/admin/login/logout'); ?>"><i class="fa fa-code"></i> Logout</a></li>
+
+            </ul>
+
         </div><!--/.nav-collapse -->
       </div>
     </div>

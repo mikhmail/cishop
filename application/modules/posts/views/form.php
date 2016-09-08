@@ -78,8 +78,8 @@
                 <div class="col-sm-6">                                   
                          
                    <select name="post_status" class="form-control input-sm  required" id="post_status" data-parsley-id="4">
-						<option value="1" <?if ($posts['post_status'] == 1) echo 'selected'?>>ДА</option>
-						<option value="0" <?if ($posts['post_status'] == 0) echo 'selected'?>>НЕТ</option>
+						<option value="1" <?if (@$posts['post_status'] == 1) echo 'selected'?>>ДА</option>
+						<option value="0" <?if (@$posts['post_status'] == 0) echo 'selected'?>>НЕТ</option>
 					</select>
                    
                 
