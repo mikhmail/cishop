@@ -41,10 +41,24 @@
                             </div>
                         </td>
                         <td class="description">
-                            <p><?=$product->product_description;?></p>
-							
-							<p>Категория: <?=$product->category_title;?></p>
-							
+
+                            <p><b>Категория:</b><br> <?=$product->category_title;?></p>
+                            <br>
+                            <p><b>Описание:</b><br> <?=$product->product_description;?></p>
+                            <br>
+                            <p><b>Свойства:</b><br>
+                            <?
+                            if ($product->product_properties) {
+                                    $product_properties = unserialize ($product->product_properties);
+
+                                        foreach ($properties as $id => $value) {
+
+                                                if (@array_key_exists($id, $product_properties)) {?>
+                                                   <p><?=$value?>: <?=$product_properties[$id]?>
+                                                <?}
+                                }
+                            }
+                            ?>
                         </td>
                     </tr>
                     <tr>

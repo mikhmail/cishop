@@ -16,6 +16,7 @@ class Product extends BaseController {
     public function index($id = 0)
     {
         $this->load->model('product_model');
+        $this->load->model('products/productss');
         $data = $this->product_model->_default();
         $data['product'] = $this->product_model->get_by_pk($id);
 
@@ -24,6 +25,8 @@ class Product extends BaseController {
         $data['title'] = $data['product'][0]->product_title;
         $data['description'] = $data['product'][0]->product_description;
         $data['keywords'] = 'купить алмазною вышивку';
+
+        $data['properties'] = $this->productss->get_properties();
 
         $this->layout('product/index',$data);
     }
