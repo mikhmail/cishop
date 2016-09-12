@@ -78,7 +78,7 @@
              
                <?php foreach ($orderss as $orders) : ?>
               <tr>
-              	<td><?php echo $number++;; ?> </td>
+              	<td><?php echo $orders['order_id'] ?> </td>
                
                <td><?php echo $orders['order_name']; ?></td>
                

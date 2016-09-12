@@ -22,9 +22,9 @@ class Product extends BaseController {
 
         //var_dump($data['product']);die;
 
-        $data['title'] = $data['product'][0]->product_title;
+        $data['title'] = 'Купить набор алмазной вышивки (мозаики) &quot;'. $data['product'][0]->product_title . '&quot; на тему: '. $data['product'][0]->category_title;;
         $data['description'] = $data['product'][0]->product_description;
-        $data['keywords'] = 'купить алмазною вышивку';
+        $data['keywords'] = 'алмазная вышивка, алмазная мозаика';
 
         $data['properties'] = $this->productss->get_properties();
 

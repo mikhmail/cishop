@@ -13,11 +13,11 @@
     <meta http-equiv="pragma" content="no-cache" />
    
     <title>Home</title>
-    <link href="<?php echo base_url(); ?>assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="<?php echo base_url(); ?>assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="<?php echo base_url(); ?>assets/css/main.css" rel="stylesheet" type="text/css">
-    <link href="<?php echo base_url(); ?>assets/parsley/parsley.css" rel="stylesheet" type="text/css">
-	<link href="<?php echo base_url(); ?>assets/datepicker/datepicker3.min.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo base_url();?>assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo base_url();?>assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo base_url();?>assets/css/main.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo base_url();?>assets/parsley/parsley.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo base_url();?>assets/datepicker/datepicker3.min.css" rel="stylesheet" type="text/css">
 	
     <script type="text/javascript" src="<?php echo base_url(); ?>assets/jquery/jquery-2.1.1.min.js"></script>
 </head>
@@ -33,19 +33,19 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-            <a class="navbar-brand" href="<?php echo site_url(); ?>">Brain Labs</a>
+            <a class="navbar-brand" href="<?php echo base_url();?><?php echo site_url(); ?>">Brain Labs</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">              
-              <li><a href="<?php echo site_url('dashboard'); ?>"><i class="fa fa-windows"></i> Dashboard</a></li>  
-            <li><a href="<?php echo site_url('builder'); ?>"><i class="fa fa-code"></i> Builder</a></li> 
-            <!-- <li><a href="<?php echo site_url('builder/tools'); ?>"><i class="fa fa-wrench"></i> Tools</a></li> -->
+              <li><a href="<?php echo base_url();?><?php echo site_url('dashboard'); ?>"><i class="fa fa-windows"></i> Dashboard</a></li>  
+            <li><a href="<?php echo base_url();?><?php echo site_url('builder'); ?>"><i class="fa fa-code"></i> Builder</a></li> 
+            <!-- <li><a href="<?php echo base_url();?><?php echo site_url('builder/tools'); ?>"><i class="fa fa-wrench"></i> Tools</a></li> -->
             <?php
 				$menus = menu(APPPATH . 'modules/');
 			?>
                 <?php   if($menus) : ?>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-signal"></i> Content <b class="caret"></b></a>
+              <a href="<?php echo base_url();?>#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-signal"></i> Content <b class="caret"></b></a>
               
               <ul class="dropdown-menu">
             
@@ -56,7 +56,7 @@
                 {   
 					 if($val['name'] !='dashboard' && $val['name'] !='builder') : 
                 ?>
-                    <li><a href="<?php  echo site_url($val['name']);  ?>"><?php echo $val['label'];  ?></a></li>
+                    <li><a href="<?php echo base_url();?><?php  echo site_url($val['name']);  ?>"><?php echo $val['label'];  ?></a></li>
                 
                <?php
                		endif;
@@ -70,7 +70,7 @@
             
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><img src="<?php echo base_url('assets/img/ajax-loader.gif'); ?>" id="loader" style="display:none;"/></a></li>
+            <li><a href="<?php echo base_url();?>#"><img src="<?php echo base_url('assets/img/ajax-loader.gif'); ?>" id="loader" style="display:none;"/></a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>

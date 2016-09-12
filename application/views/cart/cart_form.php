@@ -13,7 +13,7 @@
                 <?php foreach($cart as $id => $i): ?>
                 <tr>
                     <td>
-                        <a href="/product/<?=$id;?>">
+                        <a href="<?php echo base_url();?>product/<?=$id;?>">
                             <img class="cart-img" src="<?=$i['img'];?>">
                         </a>
                     </td>

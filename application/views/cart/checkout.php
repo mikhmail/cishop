@@ -16,7 +16,7 @@
             <?php $total += $i['total']; ?>
         <tr>
             <td>
-                <a href="/product/<?=$id;?>">
+                <a href="<?php echo base_url();?>product/<?=$id;?>">
                     <img class="cart-img" src="<?=$i['img'];?>">
                 </a>
             </td>
@@ -92,7 +92,7 @@
     <button type="submit" name="pay" class="btn btn-info">
         <i class="ok"></i>
         <?=$this->lang->line('button_checkout');?>
-    </button> <small><a href="#" class="go_back"><?=$this->lang->line('go_back');?></a></small>
+    </button> <small><a href="<?php echo base_url();?>#" class="go_back"><?=$this->lang->line('go_back');?></a></small>
     <br>
     <br>
     <br>

@@ -3,9 +3,9 @@
 
     <div id="path">
         <ul class="breadcrumb">
-            <li ><a href="/">Главная страница</a></li> /
-            <li ><a href="/catalogs/<?=$product->catalog_id;?>/<?=$product->catalog_url;?>/0/"><?=$product->catalog_title;?></a></li> /
-            <li ><a href="/category/<?=$product->category_id;?>/<?=$product->category_url;?>/0/"><?=$product->category_title;?></a></li> /
+            <li ><a href="<?php echo base_url();?>">Главная страница</a></li> /
+            <li ><a href="<?php echo base_url();?>catalogs/<?=$product->catalog_id;?>/<?=$product->catalog_url;?>/0/"><?=$product->catalog_title;?></a></li> /
+            <li ><a href="<?php echo base_url();?>category/<?=$product->category_id;?>/<?=$product->category_url;?>/0/"><?=$product->category_title;?></a></li> /
             <li class="active"><?=$product->product_title;?></li>
         </ul>
     </div>
@@ -20,16 +20,16 @@
                             <div class="padding">
                                 <ul class="gallery">
                                     <li class="first">
-                                        <a class="fancybox-thumb" rel="fancybox-thumb" href="/images/products/<?=$product->product_image_front; ?>" title="<?=$product->product_title; ?>">
-                                            <img alt="" src="/images/products/<?=$product->product_image_front;?>">
+                                        <a class="fancybox-thumb" rel="fancybox-thumb" href="<?php echo base_url();?>images/products/<?=$product->product_image_front; ?>" title="<?=$product->product_title; ?>">
+                                            <img alt="" src="<?php echo base_url();?>images/products/<?=$product->product_image_front;?>">
                                         </a>
                                     </li>
                                     <?php for($i=1; $i<=5; $i++): ?>
                                         <?php $img = 'product_image_'.$i; ?>
                                         <?php if(!empty($product->$img)): ?>
                                             <li class="thumb">
-                                                <a class="fancybox-thumb" rel="fancybox-thumb" href="/images/products/<?=$product->$img;?>" title="<?=$product->product_title . ' photo ' . $i;?>">
-                                                    <img alt="" src="/images/products/thumbs/<?=$product->$img?>">
+                                                <a class="fancybox-thumb" rel="fancybox-thumb" href="<?php echo base_url();?>images/products/<?=$product->$img;?>" title="<?=$product->product_title . ' photo ' . $i;?>">
+                                                    <img alt="" src="<?php echo base_url();?>images/products/thumbs/<?=$product->$img?>">
                                                 </a>
                                             </li>
                                         <?php endif; ?>

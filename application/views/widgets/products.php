@@ -1,8 +1,8 @@
 <div id="path">
     <ul class="breadcrumb">
-        <li ><a href="/">Главная страница</a></li> /
-        <li ><a href="/catalogs/<?=$catalog->catalog_id;?>/<?=$catalog->catalog_url;?>/0/"><?=$catalog->catalog_title;?></a></li> /
-        <li ><a href="/category/<?=$category->category_id;?>/<?=$category->category_url;?>/0/"><?=$category->category_title;?></a></li>
+        <li ><a href="<?php echo base_url();?>">Главная страница</a></li> /
+        <li ><a href="<?php echo base_url();?>catalogs/<?=$catalog->catalog_id;?>/<?=$catalog->catalog_url;?>/0/"><?=$catalog->catalog_title;?></a></li> /
+        <li ><a href="<?php echo base_url();?>category/<?=$category->category_id;?>/<?=$category->category_url;?>/0/"><?=$category->category_title;?></a></li>
     </ul>
 </div>
 
@@ -11,12 +11,12 @@
         <?php foreach($products as $p): ?>
             <article>
                 <div class="block-image">
-                    <a href="/product/<?=$p->id_product;?>/" title="<?=$p->product_title;?>">
-                        <img src="/images/products/thumbs/<?=$p->product_image_front?>" >
+                    <a href="<?php echo base_url();?>product/<?=$p->id_product;?>/" title="<?=$p->product_title;?>">
+                        <img src="<?php echo base_url();?>images/products/thumbs/<?=$p->product_image_front?>" >
                     </a>
                 </div>
                 <div class="line"></div>
-                <p class="product-title"><a href="/product/<?=$p->id_product;?>/"><?=$p->product_title;?></a></p>
+                <p class="product-title"><a href="<?php echo base_url();?>product/<?=$p->id_product;?>/"><?=$p->product_title;?></a></p>
 
                 <?php if($p->product_status == 'action'): ?>
                     <div class="action"></div>

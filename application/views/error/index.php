@@ -2,6 +2,6 @@
 <div class="line"></div>
 <div class="page">
     <?php if($error == 404): ?>
-        <img src="/img/error.jpg">
+        <img src="<?php echo base_url();?>img/error.jpg">
     <?php endif; ?>
 </div>

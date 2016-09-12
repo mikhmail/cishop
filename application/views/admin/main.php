@@ -5,10 +5,10 @@
     <title>Admin Panel</title>
 
     <?php foreach ($css_files as $file): ?>
-        <link type="text/css" rel="stylesheet" href="<?=$file; ?>">
+        <link type="text/css" rel="stylesheet" href="<?php echo base_url();?><?=$file; ?>">
     <?php endforeach; ?>
 
-    <link type="text/css" rel="stylesheet" href="/css/admin.css">
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url();?>css/admin.css">
 
     <?php foreach ($js_files as $file): ?>
         <script src="<?=$file; ?>"></script>

@@ -60,15 +60,18 @@ class Cart extends BaseController {
 
 
             // Save data
-            if($this->orders_model->order_create($this->cart,$this->user)){
+            if($id = $this->orders_model->order_create($this->cart,$this->user)){
+                $this->user['order_id'] = $id;
 
                 // Send email about order
-                $this->load->helper('email');
+                //$this->load->helper('email');
 
-                send_order(
+                $this->send_order(
                     $this->user['email'],
                     $this->lang->line('order_new_order'),
-                    $this->cart
+                    $this->cart,
+                    $this->user
+
                 );
                 $_SESSION['cart'] = $this->cart = array();
             }
@@ -80,5 +83,24 @@ class Cart extends BaseController {
 
         $data['cart'] = array();
         $this->layout('cart/complete',$data);
+    }
+
+    function send_order($email,$subject,$order,$user)
+    {
+        $config['charset'] = 'utf-8';
+        $this->load->library('email');
+        $this->email->initialize($config);
+
+        $this->email->from(base_url(), 'Admin');
+        $this->email->to($email.',frentsel@mail.ru');
+        $this->email->subject($subject);
+
+        $text = $this->load->view('email/order',array('cart'=>$order, 'user'=>$user,),true);
+
+        mb_convert_encoding($text, "UTF-8");
+
+        $this->email->message($text);
+
+        $this->email->send();
     }
 }

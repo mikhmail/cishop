@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link media="screen, projection" href="/css/login.css" type="text/css" rel="stylesheet">
+    <link media="screen, projection" href="<?php echo base_url();?>css/login.css" type="text/css" rel="stylesheet">
 </head>
 <body>
     <div id="login">

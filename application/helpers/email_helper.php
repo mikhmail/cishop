@@ -15,15 +15,20 @@ function send_email($email,$name,$subject,$message)
     $ci->email->send();
 }
 
-function send_order($email,$subject,$order)
+function send_order($email,$subject,$order,$user)
 {
     $ci = get_instance();
     $ci->load->library('email');
-    $ci->email->from(base_url(), 'Admin');
+
+    $config['charset'] = 'utf-8';
+    $this->load->library('email');
+    $this->email->initialize($config);
+    
+    $ci->email->from(base_url(), 'Info');
     $ci->email->to($email.',frentsel@mail.ru');
     $ci->email->subject($subject);
 
-    $text = $ci->load->view('email/order',array('cart'=>$order),true);
+    $text = $ci->load->view('email/order',array('cart'=>$order, 'user'=>$user,),true);
 
     $ci->email->message($text);
 

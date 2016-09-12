@@ -2,7 +2,7 @@
     <div class="posts">
         <?php foreach($posts as $p): ?>
             <article>
-                <h1><a href="/post/<?=$p->post_id;?>/"><?=$p->post_title;?></a></h1>
+                <h1><a href="<?php echo base_url();?>post/<?=$p->post_id;?>/"><?=$p->post_title;?></a></h1>
                 <p><?=$p->post_description;?></p>
                 <div class="post-info">
                     <ul>

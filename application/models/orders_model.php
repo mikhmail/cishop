@@ -26,6 +26,7 @@ class Orders_Model extends User_Model
 
         );
 
-        return $this->add($order);
+        $this->add($order);
+        return $this->db->insert_id();
     }
 }

@@ -3,12 +3,12 @@
         <?php foreach($products as $p): ?>
             <article>
                 <div class="block-image">
-                    <a href="/product/<?=$p->id_product;?>/" title="<?=$p->product_title;?>">
-                        <img src="/images/products/thumbs/<?=$p->product_image_front?>" >
+                    <a href="<?php echo base_url();?>product/<?=$p->id_product;?>/" title="<?=$p->product_title;?>">
+                        <img src="<?php echo base_url();?>images/products/thumbs/<?=$p->product_image_front?>" >
                     </a>
                 </div>
                 <div class="line"></div>
-                <p class="product-title"><a href="/product/<?=$p->id_product;?>/"><?=$p->product_title;?></a></p>
+                <p class="product-title"><a href="<?php echo base_url();?>product/<?=$p->id_product;?>/"><?=$p->product_title;?></a></p>
 
                 <?php if($p->product_status == 'action'): ?>
                     <div class="action"></div>
