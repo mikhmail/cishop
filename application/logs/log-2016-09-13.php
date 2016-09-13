@@ -369,3 +369,7 @@ ERROR - 2016-09-13 15:03:34 --> upload_no_file_selected
 ERROR - 2016-09-13 15:03:34 --> Language file contains no data: language/russian/upload_lang.php
 ERROR - 2016-09-13 15:03:34 --> Could not find the language line "upload_no_file_selected"
 ERROR - 2016-09-13 15:03:34 --> upload_no_file_selected
+ERROR - 2016-09-13 15:54:23 --> 404 Page Not Found --> catalog/1
+ERROR - 2016-09-13 15:55:05 --> 404 Page Not Found --> catalog/1
+ERROR - 2016-09-13 15:55:14 --> 404 Page Not Found --> catalog/1
+ERROR - 2016-09-13 15:55:20 --> 404 Page Not Found --> catalog/1

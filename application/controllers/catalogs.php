@@ -27,8 +27,8 @@ class Catalogs extends BaseController {
         $data = $this->catalog_model->_default();
 
         $config = array(
-            'first_url' => '/category/'.$id.'/'.$separate.'/0/',
-            'base_url' => '/category/'.$id.'/'.$separate.'/',
+            'first_url' => '/catalogs/'.$id.'/'.$separate.'/0/',
+            'base_url' => '/catalogs/'.$id.'/'.$separate.'/',
             'total_rows' => $this->catalog_model->count_all($id),
             'uri_segment' => 4,
         );
