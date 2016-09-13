@@ -358,3 +358,14 @@ ERROR - 2016-09-13 15:00:49 --> upload_no_file_selected
 ERROR - 2016-09-13 15:00:49 --> Language file contains no data: language/russian/upload_lang.php
 ERROR - 2016-09-13 15:00:49 --> Could not find the language line "upload_no_file_selected"
 ERROR - 2016-09-13 15:00:49 --> upload_no_file_selected
+ERROR - 2016-09-13 15:02:35 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-13 15:03:32 --> Language file contains no data: language/russian/form_validation_lang.php
+ERROR - 2016-09-13 15:03:34 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-13 15:03:34 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-13 15:03:34 --> upload_no_file_selected
+ERROR - 2016-09-13 15:03:34 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-13 15:03:34 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-13 15:03:34 --> upload_no_file_selected
+ERROR - 2016-09-13 15:03:34 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-13 15:03:34 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-13 15:03:34 --> upload_no_file_selected

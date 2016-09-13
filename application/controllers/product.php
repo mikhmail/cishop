@@ -20,6 +20,9 @@ class Product extends BaseController {
         $data = $this->product_model->_default();
         $data['product'] = $this->product_model->get_by_pk($id);
 
+        // add +1 to products view count
+        $this->product_model->set_product_score($id);
+
         //var_dump($data['product']);die;
 
         $data['title'] = 'Купить набор алмазной вышивки (мозаики) &quot;'. $data['product'][0]->product_title . '&quot; на тему: '. $data['product'][0]->category_title;;
