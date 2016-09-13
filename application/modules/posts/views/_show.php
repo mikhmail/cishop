@@ -11,15 +11,15 @@
     <tbody>
    
     <tr>
-        <td><b><?php echo $posts['post_title'] ?></b></td>
+        <td><span class="form-control input-sm  required"><b><?php echo $posts['post_title'] ?></b></span></td>
     </tr>
     
 	<tr>
-        <td><?php echo $posts['post_description'] ?></td>
+        <td><span class="form-control input-sm  required"><?php echo $posts['post_description'] ?></span></td>
     </tr>
 	
 	<tr>
-        <td><?php echo $posts['post_text'] ?></td>
+        <td><textarea class="form-control input-sm  required"><?php echo $posts['post_text'] ?></textarea></td>
     </tr>
 	
      </tbody>

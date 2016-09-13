@@ -129,7 +129,7 @@ class posts extends MY_Controller
                     array(
                         'field' => 'post_text',
                         'label' => 'Post Text',
-                        'rules' => 'trim|xss_clean|required'
+                        'rules' => 'trim|xss_clean'
                         ),
                     
                     array(

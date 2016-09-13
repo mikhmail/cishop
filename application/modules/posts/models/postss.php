@@ -29,7 +29,7 @@ class postss extends CI_Model
     public function get_all($limit, $offset) 
     {
 
-        $result = $this->db->get('posts', $limit, $offset);
+        $result = $this->db->order_by("post_id","desc")->get('posts', $limit, $offset);
 
         if ($result->num_rows() > 0) 
         {
@@ -205,7 +205,7 @@ class postss extends CI_Model
         
             'post_description' => strip_tags($this->input->post('post_description', TRUE)),
         
-            'post_text' => strip_tags($this->input->post('post_text', TRUE)),
+            'post_text' => $this->input->post('post_text'),
         
             'post_date_create' => strip_tags($this->input->post('post_date_create', TRUE)),
         
@@ -247,7 +247,7 @@ class postss extends CI_Model
         
                 'post_description' => strip_tags($this->input->post('post_description', TRUE)),
         
-                'post_text' => strip_tags($this->input->post('post_text', TRUE)),
+                'post_text' => $this->input->post('post_text'),
         
                 'post_date_create' => strip_tags($this->input->post('post_date_create', TRUE)),
         

@@ -39,7 +39,7 @@
                    <label for="post_description" class="col-sm-2 control-label">Описание <span class="required-input">*</span></label>
                 <div class="col-sm-6">                                   
                   <?php                  
-                   echo form_input(
+                   echo form_textarea(
                                 array(
                                  'name'         => 'post_description',
                                  'id'           => 'post_description',                       
@@ -58,11 +58,11 @@
                    <label for="post_text" class="col-sm-2 control-label">Текст <span class="required-input">*</span></label>
                 <div class="col-sm-6">                                   
                   <?php                  
-                   echo form_input(
+                   echo form_textarea(
                                 array(
                                  'name'         => 'post_text',
                                  'id'           => 'post_text',                       
-                                 'class'        => 'form-control input-sm  required',
+                                 'class'        => 'form-control input-sm',
                                  'placeholder'  => 'Post Text',
                                  
                                  ),
@@ -101,4 +101,8 @@
           </div>
     </div><!--/ Panel Footer -->       
 </div><!--/ Panel -->
-<?php echo form_close(); ?>  
+<?php echo form_close(); ?>
+<script src="<?echo base_url()?>additions/ckeditor/ckeditor.js"></script>
+<script type="text/javascript">
+    CKEDITOR.replace('post_text');
+</script>

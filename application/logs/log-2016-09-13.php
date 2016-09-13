@@ -380,3 +380,71 @@ ERROR - 2016-09-13 16:11:00 --> Could not find the language line "cart_image"
 ERROR - 2016-09-13 16:16:39 --> Could not find the language line "cart_image"
 ERROR - 2016-09-13 16:18:08 --> Could not find the language line "cart_image"
 ERROR - 2016-09-13 16:18:09 --> Could not find the language line "cart_image"
+ERROR - 2016-09-13 16:19:06 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\views\view.php 98
+ERROR - 2016-09-13 16:19:06 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\views\view.php 99
+ERROR - 2016-09-13 16:19:06 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\views\view.php 98
+ERROR - 2016-09-13 16:19:06 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\views\view.php 99
+ERROR - 2016-09-13 16:19:06 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\views\view.php 98
+ERROR - 2016-09-13 16:19:06 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\views\view.php 99
+ERROR - 2016-09-13 16:19:06 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\views\view.php 98
+ERROR - 2016-09-13 16:19:06 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\views\view.php 99
+ERROR - 2016-09-13 16:19:06 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\views\view.php 98
+ERROR - 2016-09-13 16:19:06 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\views\view.php 99
+ERROR - 2016-09-13 16:19:06 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\views\view.php 98
+ERROR - 2016-09-13 16:19:06 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\views\view.php 99
+ERROR - 2016-09-13 16:19:06 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\views\view.php 98
+ERROR - 2016-09-13 16:19:06 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\views\view.php 99
+ERROR - 2016-09-13 16:19:06 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\views\view.php 98
+ERROR - 2016-09-13 16:19:06 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\views\view.php 99
+ERROR - 2016-09-13 16:19:06 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\views\view.php 98
+ERROR - 2016-09-13 16:19:06 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\views\view.php 99
+ERROR - 2016-09-13 16:19:06 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\views\view.php 98
+ERROR - 2016-09-13 16:19:06 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\views\view.php 99
+ERROR - 2016-09-13 16:19:06 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\views\view.php 98
+ERROR - 2016-09-13 16:19:06 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\views\view.php 99
+ERROR - 2016-09-13 16:19:06 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\views\view.php 98
+ERROR - 2016-09-13 16:19:06 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\views\view.php 99
+ERROR - 2016-09-13 16:19:35 --> Could not find the language line "cart_image"
+ERROR - 2016-09-13 16:19:36 --> Could not find the language line "cart_image"
+ERROR - 2016-09-13 16:19:37 --> Could not find the language line "cart_image"
+ERROR - 2016-09-13 16:19:42 --> Could not find the language line "cart_image"
+ERROR - 2016-09-13 16:19:44 --> Could not find the language line "cart_image"
+ERROR - 2016-09-13 16:19:46 --> Could not find the language line "cart_image"
+ERROR - 2016-09-13 16:20:00 --> Language file contains no data: language/russian/email_lang.php
+ERROR - 2016-09-13 16:20:00 --> Could not find the language line "email_sent"
+ERROR - 2016-09-13 16:20:06 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\views\view.php 98
+ERROR - 2016-09-13 16:20:06 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\views\view.php 99
+ERROR - 2016-09-13 16:20:06 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\views\view.php 98
+ERROR - 2016-09-13 16:20:06 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\views\view.php 99
+ERROR - 2016-09-13 16:20:06 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\views\view.php 98
+ERROR - 2016-09-13 16:20:06 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\views\view.php 99
+ERROR - 2016-09-13 16:20:06 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\views\view.php 98
+ERROR - 2016-09-13 16:20:06 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\views\view.php 99
+ERROR - 2016-09-13 16:20:06 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\views\view.php 98
+ERROR - 2016-09-13 16:20:06 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\views\view.php 99
+ERROR - 2016-09-13 16:20:06 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\views\view.php 98
+ERROR - 2016-09-13 16:20:06 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\views\view.php 99
+ERROR - 2016-09-13 16:20:06 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\views\view.php 98
+ERROR - 2016-09-13 16:20:06 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\views\view.php 99
+ERROR - 2016-09-13 16:20:06 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\views\view.php 98
+ERROR - 2016-09-13 16:20:06 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\views\view.php 99
+ERROR - 2016-09-13 16:20:06 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\views\view.php 98
+ERROR - 2016-09-13 16:20:06 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\views\view.php 99
+ERROR - 2016-09-13 16:20:06 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\views\view.php 98
+ERROR - 2016-09-13 16:20:06 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\views\view.php 99
+ERROR - 2016-09-13 16:20:06 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\views\view.php 98
+ERROR - 2016-09-13 16:20:06 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\views\view.php 99
+ERROR - 2016-09-13 17:12:12 --> Severity: Notice  --> Undefined index: post_status D:\openserver\domains\ci3\application\modules\posts\views\form.php 81
+ERROR - 2016-09-13 17:12:12 --> Severity: Notice  --> Undefined index: post_status D:\openserver\domains\ci3\application\modules\posts\views\form.php 82
+ERROR - 2016-09-13 17:12:59 --> Severity: Notice  --> Undefined index: post_status D:\openserver\domains\ci3\application\modules\posts\views\form.php 81
+ERROR - 2016-09-13 17:12:59 --> Severity: Notice  --> Undefined index: post_status D:\openserver\domains\ci3\application\modules\posts\views\form.php 82
+ERROR - 2016-09-13 17:13:37 --> Severity: Notice  --> Undefined index: post_status D:\openserver\domains\ci3\application\modules\posts\views\form.php 81
+ERROR - 2016-09-13 17:13:37 --> Severity: Notice  --> Undefined index: post_status D:\openserver\domains\ci3\application\modules\posts\views\form.php 82
+ERROR - 2016-09-13 17:13:46 --> Language file contains no data: language/russian/form_validation_lang.php
+ERROR - 2016-09-13 17:31:02 --> Language file contains no data: language/russian/form_validation_lang.php
+ERROR - 2016-09-13 17:33:09 --> Language file contains no data: language/russian/form_validation_lang.php
+ERROR - 2016-09-13 17:36:46 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-13 17:37:33 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-13 17:37:34 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-13 17:37:36 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-13 17:38:30 --> Language file contains no data: language/russian/form_validation_lang.php

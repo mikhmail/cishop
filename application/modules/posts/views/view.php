@@ -63,7 +63,7 @@
              
                <?php foreach ($postss as $posts) : ?>
               <tr>
-              	<td><?php echo $number++;; ?> </td>
+              	<td><?php echo $posts['post_id']; ?> </td>
                
                <td><?php echo $posts['post_title']; ?></td>
                
@@ -76,12 +76,14 @@
                 <td>    
                     
                     <?php
+                    /*
                                   echo anchor(
                                           site_url('posts/show/' . $posts['post_id']),
                                             '<i class="glyphicon glyphicon-eye-open"></i>',
                                             'class="btn btn-sm btn-info" data-tooltip="tooltip" data-placement="top" title="'.$this->lang->line('view').'"'
                                           );
-                   ?>
+                   */
+                    ?>
                     
                     <?php
                                   echo anchor(
