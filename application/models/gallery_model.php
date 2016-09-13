@@ -13,10 +13,74 @@ class Gallery_model extends CI_Model {
     }
 
 
+	function upload_files($files)
+	{
+		$config = array(
+			'allowed_types' => 'jpg|gif|png',
+			'upload_path' => $this->gallery_path,
+			'max_size' => 2000   // 2Mb
+
+		);
+
+
+		$this->load->library('upload', $config);
+
+		foreach ($files as $key => $image) {
+			$_FILES['images[]']['name']= $image['name'];
+			$_FILES['images[]']['type']= $image['type'];
+			$_FILES['images[]']['tmp_name']= $image['tmp_name'];
+			$_FILES['images[]']['error']= $image['error'];
+			$_FILES['images[]']['size']= $image['size'];
+
+			switch ($image['type']) {
+				case 'image/jpeg':
+					$extension = '.jpg';
+					break;
+				case 'image/gif':
+					$extension = '.gif';
+					break;
+				case 'image/png':
+					$extension = '.png';
+					break;
+				default:
+					$extension = NULL;
+			}
+
+			$config['file_name'] =  $this->get_img_name ($image['name']);
+
+
+
+
+			$this->upload->initialize($config);
+
+			if ($this->upload->do_upload('images[]')) {
+
+				$images[$key] = $config['file_name'] . $extension;
+					$this->resize_img ($config['file_name'] . $extension);
+
+			}
+		}
+
+		return $images;
+	}
+
     public function do_upload($filename)
     {
-	//var_dump($_FILES);die;
-    
+		//var_dump($_FILES);die;
+
+		switch ($_FILES[$filename]["type"]) {
+			case 'image/jpeg':
+				$extension = '.jpg';
+				break;
+			case 'image/gif':
+				$extension = '.gif';
+				break;
+			case 'image/png':
+				$extension = '.png';
+				break;
+			default:
+				$extension = NULL;
+		}
 
 		$img_name = $this->get_img_name ($_FILES[$filename]["name"]);
 		
@@ -37,16 +101,7 @@ class Gallery_model extends CI_Model {
         $image_data = $this->upload->data();  // return an array that contains data about the upload process
 		
 		/* resize_img */
-		 $config = array(
-                'source_image' => $image_data['full_path'],
-                'new_image' => $this->gallery_path . '/thumbs',
-                'maintain_ration' => true,
-                'width' => 150,
-                'height' => 100
-        	);
-
-        $this->load->library('image_lib', $config); 
-        $this->image_lib->resize();    
+			$this->resize_img ($img_name.$extension);
 		/* end resize_img */
 		
 		return $image_data['file_name'];
@@ -56,7 +111,8 @@ class Gallery_model extends CI_Model {
 
 	public function resize_img ($img_name) {
 		
-		 $config = array(
+		/*
+		  $config = array(
                 'source_image' => $this->gallery_path .'/'. $img_name,
                 'new_image' => $this->gallery_path . '/thumbs',
                 'maintain_ration' => true,
@@ -64,8 +120,21 @@ class Gallery_model extends CI_Model {
                 'height' => 100
         	);
 
-        $this->load->library('image_lib', $config); 
-        $this->image_lib->resize();    
+        $this->load->library('image_lib', $config);
+		if ( ! $this->image_lib->resize())
+		{
+			echo $this->image_lib->display_errors();
+		}
+		$this->image_lib->clear();
+		*/
+
+		$this->load->library('thumb');
+		$pathToImages = $this->gallery_path .'\\';
+		$pathToThumbs = $this->gallery_path . '\\thumbs\\';
+		$imagename = $img_name;
+		$thumbWidth ='150';
+		$thumbHeight = '100';
+		$this->thumb->createThumbs($pathToImages,$imagename, $pathToThumbs, $thumbWidth ,$thumbHeight);
 		
 	}
 

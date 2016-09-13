@@ -285,27 +285,35 @@ class productss extends CI_Model
         $this->db->insert('products', $data);
 		
 		$id = $this->db->insert_id();
-		
-		
-		/* Этот код добавляет новые рисунки */
-		$data = array();
-		if ($_FILES !== null){
-			foreach ($_FILES as $img => $value) {
-				
-				if ($value['name'] != false){
-				
-					// upload new file and add it to $data array
-					$data[$img] = trim($this->Gallery_model->do_upload($img));
-				
-				}	
-			}
 
-			if ($data){
-				$this->db->where('id_product', $id);
-				$this->db->update('products', $data);
-			}	
-		}
-		/* КОНЕЦ! Этот код добавляет новые рисунки */
+
+        $data = $this->Gallery_model->upload_files($_FILES);
+
+        if ($data){
+            $this->db->where('id_product', $id);
+            $this->db->update('products', $data);
+        }
+        /* Этот код добавляет новые рисунки
+
+        $data = array();
+        if ($_FILES !== null){
+            foreach ($_FILES as $img => $value) {
+
+                if ($value['name'] != false){
+
+                    // upload new file and add it to $data array
+                    $data[$img] = trim($this->Gallery_model->upload_files($img));
+
+                }
+            }
+
+            if ($data){
+                $this->db->where('id_product', $id);
+                $this->db->update('products', $data);
+            }
+        }
+
+         КОНЕЦ! Этот код добавляет новые рисунки */
 		
     }
     
@@ -343,12 +351,12 @@ class productss extends CI_Model
 					  {
 						unlink($thumbnail_name);
 					  }
-					
-					// upload new file and add it to $data array
-					$data[$img] = trim($this->Gallery_model->do_upload($img));
 				
-				}	
+				}
 			}
+
+            // upload new file and add it to $data array
+            $data = $this->Gallery_model->upload_files($_FILES);
 
 			if ($data){
 				$this->db->where('id_product', $id);

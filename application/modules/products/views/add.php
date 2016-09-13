@@ -113,8 +113,8 @@
 
 				  
 				  <select name="product_status" class="form-control input-sm  required" id="product_status" data-parsley-id="4">
-						<option value="1" <?if ($products['product_status'] == 1) echo 'selected'?>>ДА</option>
-						<option value="0" <?if ($products['product_status'] == 0) echo 'selected'?>>НЕТ</option>
+						<option value="1">ДА</option>
+						<option value="0" selected >НЕТ</option>
 					</select>
 				  
                  <?php echo form_error('product_status');?>
@@ -128,8 +128,8 @@
 
 				  
 				   <select name="product_active" class="form-control input-sm  required" id="product_active" data-parsley-id="4">
-						<option value="1" <?if ($products['product_active'] == 1) echo 'selected'?>>ДА</option>
-						<option value="0" <?if ($products['product_active'] == 0) echo 'selected'?>>НЕТ</option>
+						<option value="1" selected>ДА</option>
+						<option value="0">НЕТ</option>
 					</select>
 				  
                  <?php echo form_error('product_active');?>
@@ -215,7 +215,17 @@
 				   <?php echo form_error('product_properties_value');?>
                 </div>
               </div> <!--/ Product Properties -->
-                 
+          <!-- test uploads
+
+          <div class="form-group">
+
+              <label>Image : </label>
+              <input type="file" multiple="" name="images[]">
+
+          </div>
+
+          <!--/ end test uploads -->
+
 
                <div class="form-group">
                    <label for="product_image_front" class="col-sm-2 control-label">Главная картинка

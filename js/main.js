@@ -143,12 +143,12 @@ var cart = {
     },
     sync: function(){
         if($.isEmptyObject(items))
-            $.post('/cart/',{data:'empty'});
+            $.post(''+base_url+'cart/',{data:'empty'});
         else
-            $.post('/cart/',{data:items});
+            $.post(''+base_url+'cart/',{data:items});
     },
     init: function(){
-        $.getJSON('/cart/init/',{},function(data,status){
+        $.getJSON(''+base_url+'cart/init/',{},function(data,status){
             if(status && !$.isEmptyObject(data))
                 items = data;
             else

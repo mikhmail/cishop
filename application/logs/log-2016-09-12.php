@@ -62,3 +62,7 @@ ERROR - 2016-09-12 17:23:04 --> Could not find the language line "cart_image"
 ERROR - 2016-09-12 17:23:18 --> Language file contains no data: language/russian/email_lang.php
 ERROR - 2016-09-12 17:23:18 --> Could not find the language line "email_sent"
 ERROR - 2016-09-12 17:46:08 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-12 17:51:19 --> 404 Page Not Found --> additions/fancyBox/lib/jquery.min.map
+ERROR - 2016-09-12 18:12:47 --> Could not find the language line "cart_image"
+ERROR - 2016-09-12 18:12:48 --> Could not find the language line "cart_image"
+ERROR - 2016-09-12 18:12:51 --> Could not find the language line "cart_image"

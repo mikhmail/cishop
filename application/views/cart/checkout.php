@@ -1,7 +1,7 @@
 <?php if(!empty($cart)): ?>
 <h2><?=$this->lang->line('cart_checkout');?></h2>
 <div class="line"></div>
-<form action="/cart/complete/" method="post">
+<form action="<?php echo base_url();?>cart/complete/" method="post">
     <table id="checkout" class="checkout-form">
         <tbody>
         <tr>

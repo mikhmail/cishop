@@ -1,5 +1,5 @@
 <?php if(!empty($cart)): ?>
-    <form action="/cart/checkout/" method="post">
+    <form action="<?php echo base_url();?>cart/checkout/" method="post">
         <table id="cart">
             <tbody>
             <tr>

@@ -72,6 +72,9 @@
 <script src="<?php echo base_url();?>additions/fancyBox/source/helpers/jquery.fancybox-thumbs.js" type="text/javascript"></script>
 <?php endif; ?>
 
+<script type="text/javascript">
+    var base_url = "<?php echo base_url(); ?>";    
+</script>
 <script src="<?php echo base_url();?>js/main.js" type="text/javascript"></script>
 </body>
 </html>

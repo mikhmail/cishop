@@ -7,7 +7,7 @@
 </head>
 <body>
     <div id="login">
-        <form action="/admin/login/check/" method="post" accept-charset="utf-8">
+        <form action="<?php echo base_url();?>admin/login/check/" method="post" accept-charset="utf-8">
             <fieldset>
                 <legend>Log in</legend>
                 <p>
