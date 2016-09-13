@@ -35,8 +35,8 @@ class Cart extends BaseController {
         $data['description'] = '';
         $data['keywords'] = 'купить алмазною вышивку';
 
-        $data['delivery_method'] = $this->orderss->get_delivery_method();
-        $data['payment_method']  = $this->orderss->get_payment_method();
+        $data['delivery_method'] = $this->orderss->get_delivery_method($active=1);
+        $data['payment_method']  = $this->orderss->get_payment_method($active=1);
 
         $this->layout('cart/checkout',$data);
     }

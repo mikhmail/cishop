@@ -384,11 +384,18 @@ class orderss extends CI_Model
     
     
     // get delivery_method
-    public function get_delivery_method() 
+    public function get_delivery_method($active=null)
     {
-      
-        $result = $this->db->get('delivery_method')
-                           ->result();
+      if ($active=1){
+          $result = $this->db
+              ->where('is_active', 1)
+              ->get('delivery_method')
+              ->result();
+      }else{
+          $result = $this->db->get('delivery_method')
+              ->result();
+
+      }
 
         $ret ['']= 'Выбрать :';
         if($result)
@@ -406,11 +413,19 @@ class orderss extends CI_Model
     
     
     // get payment_method
-    public function get_payment_method() 
+    public function get_payment_method($active=null)
     {
-      
-        $result = $this->db->get('payment_method')
-                           ->result();
+        if ($active=1){
+            $result = $this->db
+                ->where('is_active', 1)
+                ->get('payment_method')
+                ->result();
+
+        }else{
+            $result = $this->db->get('payment_method')
+                ->result();
+
+        }
 
         $ret ['']= 'Выбрать :';
         if($result)

@@ -373,3 +373,10 @@ ERROR - 2016-09-13 15:54:23 --> 404 Page Not Found --> catalog/1
 ERROR - 2016-09-13 15:55:05 --> 404 Page Not Found --> catalog/1
 ERROR - 2016-09-13 15:55:14 --> 404 Page Not Found --> catalog/1
 ERROR - 2016-09-13 15:55:20 --> 404 Page Not Found --> catalog/1
+ERROR - 2016-09-13 15:57:57 --> Language file contains no data: language/russian/form_validation_lang.php
+ERROR - 2016-09-13 16:10:58 --> Could not find the language line "cart_image"
+ERROR - 2016-09-13 16:10:59 --> Could not find the language line "cart_image"
+ERROR - 2016-09-13 16:11:00 --> Could not find the language line "cart_image"
+ERROR - 2016-09-13 16:16:39 --> Could not find the language line "cart_image"
+ERROR - 2016-09-13 16:18:08 --> Could not find the language line "cart_image"
+ERROR - 2016-09-13 16:18:09 --> Could not find the language line "cart_image"
