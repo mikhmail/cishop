@@ -396,7 +396,6 @@ class productss extends CI_Model
         
                 'product_date_update' => date('Y-m-d H:i:s'),
         
-                'product_views' => '',
         
                 'product_properties' => $product_properties
         

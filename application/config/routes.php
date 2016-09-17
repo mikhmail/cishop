@@ -44,7 +44,7 @@ $route['404_override'] = '';
 $route['category/(:num)/(:any)/(:num)'] = "category/index/$1/$2/$3";
 $route['catalogs/(:num)/(:any)/(:num)'] = "catalogs/index/$1/$2/$3";
 
-$route['(post|error|product|blog|news|action)/(:any)'] = "$1/index/$2";
+$route['(post|page|error|product|blog|news|action)/(:any)'] = "$1/index/$2";
 
 
 /* End of file routes.php */

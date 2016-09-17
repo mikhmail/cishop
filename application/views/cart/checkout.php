@@ -53,7 +53,7 @@
                   lg-grid-2 sm-grid-3 _mc-grid-12
                   padded-sides">
                                     <a href="<?php echo base_url();?>product/<?=$id;?>" class="image-square">
-                                        <img class="cart-img" src="<?=$i['img'];?>">
+                                        <img class="cart-img" src="<?=base_url()?><?=$i['img'];?>">
                                     </a>
                                 </div>
 
@@ -229,10 +229,10 @@
     <div class="address-autocomplete" id="delivery_address">
         <div class="field fc input--required">
             <div class="field-label input-label">
-                <label for="shipping_address_address">Адрес:</label>
+                <label for="shipping_address_address">Адрес доставки:</label>
             </div>
             <div class="field-content">
-                <textarea required="required" class="textfield input-field" id="shipping_address_address" name="address" rows="2"></textarea>
+                <textarea required="required" class="textfield input-field" id="shipping_address_address" name="address" rows="2" placeholder="Например: Киев, Новая почта - склад 72"></textarea>
                 <div class="small">
 
                 </div>

@@ -5673,7 +5673,7 @@ h6, .h6 {
 .product_preview-title {
   color: #5A5A5A;
   text-align: center;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 20px; }
   /* line 75, _product_preview.scss */
   .product_preview-title:hover {

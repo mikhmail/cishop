@@ -42,6 +42,14 @@
             </a>
         </div>
         <!--/span-->
+         <!--/span-->
+        <div class="col-6 col-sm-6 col-lg-4">
+            <h2>Страницы</h2>
+            <a href="<?php  echo site_url('pages'); ?>">
+                <img class="img-circle" src="<?php echo base_url();?>assets/images/admin/icons/dashboard/pages.png" style="width: 140px; height: 140px;">
+            </a>
+        </div>
+        <!--/span-->
         <div class="col-6 col-sm-6 col-lg-4">
             <h2>Методы доставки</h2>
             <a href="<?php  echo site_url('delivery_method'); ?>">

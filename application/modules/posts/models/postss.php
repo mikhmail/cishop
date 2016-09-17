@@ -29,7 +29,7 @@ class postss extends CI_Model
     public function get_all($limit, $offset) 
     {
 
-        $result = $this->db->order_by("post_id","desc")->get('posts', $limit, $offset);
+        $result = $this->db->order_by("post_id","desc")->where("post_type","news")->get('posts', $limit, $offset);
 
         if ($result->num_rows() > 0) 
         {
@@ -51,7 +51,7 @@ class postss extends CI_Model
      */
     public function count_all()
     {
-        $this->db->from('posts');
+        $this->db->from('posts')->where("post_type","news");
         return $this->db->count_all_results();
     }
     
@@ -213,13 +213,13 @@ class postss extends CI_Model
         
             'post_url' => strip_tags($this->input->post('post_url', TRUE)),
         
-            'post_type' => strip_tags($this->input->post('post_type', TRUE)),
+            'post_type' => 'news',
         
             'post_seo_description' => strip_tags($this->input->post('post_seo_description', TRUE)),
         
             'user_id' => 1,
         
-            'post_status' => strip_tags($this->input->post('post_comment_status', TRUE)),
+            'post_status' => strip_tags($this->input->post('post_status', TRUE)),
         
         );
         
@@ -255,13 +255,13 @@ class postss extends CI_Model
         
                 'post_url' => strip_tags($this->input->post('post_url', TRUE)),
         
-                'post_type' => strip_tags($this->input->post('post_type', TRUE)),
+                'post_type' => 'news',
         
                 'post_seo_description' => strip_tags($this->input->post('post_seo_description', TRUE)),
         
                 'user_id' => 1,
         
-                'post_status' => strip_tags($this->input->post('post_comment_status', TRUE)),
+                'post_status' => strip_tags($this->input->post('post_status', TRUE)),
         
         );
         

@@ -32,7 +32,8 @@ class Categories_Model extends User_Model
                     ON cp.category_id = p.category_id
                 WHERE cp.category_id = ".(int)$id;
 
-        return $this->db->query($sql)->row('count');
+         return $this->db->query($sql)->row('count');
+        //var_dump($this->db->last_query());die;
     }
 
     public function get_category($id)

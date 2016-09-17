@@ -1,0 +1,329 @@
+<?php if (!defined('BASEPATH')) exit('No direct script access allowed');
+
+/**
+ * Description of posts
+ * @created on : Sunday, 04-Sep-2016 13:46:47
+ * @author Mikhail Khorunzhenko <activex.mail@gmail.com>
+ * Copyright 2016    
+ */
+ 
+ 
+class pagess extends CI_Model
+{
+
+    public function __construct() 
+    {
+        parent::__construct();
+    }
+
+
+    /**
+     *  Get All data posts
+     *
+     *  @param limit  : Integer
+     *  @param offset : Integer
+     *
+     *  @return array
+     *
+     */
+    public function get_all($limit, $offset) 
+    {
+
+        $result = $this->db->order_by("post_id","desc")->where("post_type","page")->get('posts', $limit, $offset);
+
+        if ($result->num_rows() > 0) 
+        {
+            return $result->result_array();
+        } 
+        else 
+        {
+            return array();
+        }
+    }
+
+    
+
+    /**
+     *  Count All posts
+     *    
+     *  @return Integer
+     *
+     */
+    public function count_all()
+    {
+        $this->db->from('posts')->where("post_type","page");
+        return $this->db->count_all_results();
+    }
+    
+
+    /**
+    * Search All posts
+    *
+    *  @param limit   : Integer
+    *  @param offset  : Integer
+    *  @param keyword : mixed
+    *
+    *  @return array
+    *
+    */
+    public function get_search($limit, $offset) 
+    {
+        $keyword = $this->session->userdata('keyword');
+                
+        $this->db->like('post_title', $keyword);  
+                
+        $this->db->like('post_description', $keyword);  
+                
+        $this->db->like('post_text', $keyword);  
+                
+        $this->db->like('post_url', $keyword);  
+                
+        $this->db->like('post_seo_description', $keyword);  
+        
+        $this->db->limit($limit, $offset);
+        $result = $this->db->get('posts');
+
+        if ($result->num_rows() > 0) 
+        {
+            return $result->result_array();
+        } 
+        else 
+        {
+            return array();
+        }
+    }
+
+    
+    
+    
+    
+    
+    /**
+    * Search All posts
+    * @param keyword : mixed
+    *
+    * @return Integer
+    *
+    */
+    public function count_all_search()
+    {
+        $keyword = $this->session->userdata('keyword');
+        $this->db->from('posts');        
+                
+        $this->db->like('post_title', $keyword);  
+                
+        $this->db->like('post_description', $keyword);  
+                
+        $this->db->like('post_text', $keyword);  
+                
+        $this->db->like('post_url', $keyword);  
+                
+        $this->db->like('post_seo_description', $keyword);  
+        
+        return $this->db->count_all_results();
+    }
+
+
+    
+    
+    
+    /**
+    *  Get One posts
+    *
+    *  @param id : Integer
+    *
+    *  @return array
+    *
+    */
+    public function get_one($id) 
+    {
+        $this->db->where('post_id', $id);
+        $result = $this->db->get('posts');
+
+        if ($result->num_rows() == 1) 
+        {
+            return $result->row_array();
+        } 
+        else 
+        {
+            return array();
+        }
+    }
+
+    
+    
+    
+    /**
+    *  Default form data posts
+    *  @return array
+    *
+    */
+    public function add()
+    {
+        $data = array(
+            
+                'post_title' => '',
+            
+                'post_description' => '',
+            
+                'post_text' => '',
+            
+                'post_date_create' => '',
+            
+                'post_date_update' => '',
+            
+                'post_url' => '',
+            
+                'post_type' => '',
+            
+                'post_seo_description' => '',
+            
+                'user_id' => '',
+            
+                'post_comment_status' => '',
+            
+        );
+
+        return $data;
+    }
+
+    
+    
+    
+    
+    /**
+    *  Save data Post
+    *
+    *  @return void
+    *
+    */
+    public function save() 
+    {
+        if (!$this->input->post('post_url')){
+            $post_url = $this->get_lnk($this->input->post('post_title'));
+        }else{
+            $post_url = $this->input->post('post_url');
+        }
+        $data = array(
+        
+            'post_title' => strip_tags($this->input->post('post_title', TRUE)),
+        
+            'post_description' => strip_tags($this->input->post('post_description', TRUE)),
+        
+            'post_text' => $this->input->post('post_text'),
+        
+            'post_date_create' => strip_tags($this->input->post('post_date_create', TRUE)),
+        
+            'post_date_update' => strip_tags($this->input->post('post_date_update', TRUE)),
+        
+            'post_url' => $post_url,
+        
+             'post_type' => 'page',
+        
+            'post_seo_description' => strip_tags($this->input->post('post_seo_description', TRUE)),
+        
+            'user_id' => 1,
+        
+            'post_status' => strip_tags($this->input->post('post_status', TRUE)),
+        
+        );
+        
+        
+        $this->db->insert('posts', $data);
+    }
+    
+    
+    
+
+    
+    /**
+    *  Update modify data
+    *
+    *  @param id : Integer
+    *
+    *  @return void
+    *
+    */
+    public function update($id)
+    {
+        $data = array(
+        
+                'post_title' => strip_tags($this->input->post('post_title', TRUE)),
+        
+                'post_description' => strip_tags($this->input->post('post_description', TRUE)),
+        
+                'post_text' => $this->input->post('post_text'),
+        
+                'post_date_create' => strip_tags($this->input->post('post_date_create', TRUE)),
+        
+                'post_date_update' => strip_tags($this->input->post('post_date_update', TRUE)),
+        
+
+        
+                'post_type' => 'page',
+        
+                'post_seo_description' => strip_tags($this->input->post('post_seo_description', TRUE)),
+        
+                'user_id' => 1,
+        
+                'post_status' => strip_tags($this->input->post('post_status', TRUE)),
+        
+        );
+        
+        
+        $this->db->where('post_id', $id);
+        $this->db->update('posts', $data);
+    }
+
+
+    
+    
+    
+    /**
+    *  Delete data by id
+    *
+    *  @param id : Integer
+    *
+    *  @return void
+    *
+    */
+    public function destroy($id)
+    {       
+        $this->db->where('post_id', $id);
+        $this->db->delete('posts');
+        
+    }
+
+
+
+
+ function translit($str) {
+        $rus = array('А', 'Б', 'В', 'Г', 'Д', 'Е', 'Ё', 'Ж', 'З', 'И', 'Й', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'У', 'Ф', 'Х', 'Ц', 'Ч', 'Ш', 'Щ', 'Ъ', 'Ы', 'Ь', 'Э', 'Ю', 'Я', 'а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з', 'и', 'й', 'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'ъ', 'ы', 'ь', 'э', 'ю', 'я');
+        $lat = array('A', 'B', 'V', 'G', 'D', 'E', 'E', 'Gh', 'Z', 'I', 'Y', 'K', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'U', 'F', 'H', 'C', 'Ch', 'Sh', 'Sch', 'Y', 'Y', 'Y', 'E', 'Yu', 'Ya', 'a', 'b', 'v', 'g', 'd', 'e', 'e', 'gh', 'z', 'i', 'y', 'k', 'l', 'm', 'n', 'o', 'p', 'r', 's', 't', 'u', 'f', 'h', 'c', 'ch', 'sh', 'sch', 'y', 'y', 'y', 'e', 'yu', 'ya');
+        return str_replace($rus, $lat, $str);
+    }
+
+
+    function get_lnk ($title) {
+
+
+        $link = $this->translit($title);
+        $link = strtr($link, array('.'=>''));
+        $link = strtr($link, array('+'=>''));
+
+
+        $link = preg_replace(array('/\'/', '/[^a-zA-Z0-9\-.+]+/', '/(^_|_$)/'), array('', '-', ''), $link);
+        $link = preg_replace('{-(-)*}', '-', $link);
+        $link = preg_replace('{^-}', '', $link);
+        $link = preg_replace('/\s/', '-', $link);
+        $link = mb_strtolower ($link);
+
+        return $link;
+    }
+
+
+    
+
+
+
+}

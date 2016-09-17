@@ -16,7 +16,7 @@ class Catalog_Model extends User_Model
                         ON cp.category_id = p.category_id
                       LEFT OUTER JOIN catalog AS ck
                         ON ck.catalog_id = cp.catalog_id   
-                    WHERE cp.catalog_id = $id
+                    WHERE ck.catalog_id = $id
                     AND p.product_active = 1
                     GROUP BY p.id_product
                     ORDER BY p.id_product DESC
@@ -36,9 +36,10 @@ class Catalog_Model extends User_Model
                       LEFT OUTER JOIN catalog AS ck
                         ON ck.catalog_id = cp.catalog_id
                          AND p.product_active = 1   
-                WHERE cp.category_id = ".(int)$id;
+                WHERE ck.catalog_id = ".(int)$id;
 
         return $this->db->query($sql)->row('count');
+        //var_dump($this->db->last_query());die;
     }
 
     public function get_catalog($id)

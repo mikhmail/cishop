@@ -53,14 +53,14 @@
 
                             <li class="menu-node menu-node--top
                         ">
-                                <a href="<?php echo base_url(); ?>/delivery" class="menu-link">
+                                <a href="<?php echo base_url(); ?>page/delivery" class="menu-link">
                                     Доставка
                                 </a>
                             </li>
 
                             <li class="menu-node menu-node--top
                         ">
-                                <a href="<?php echo base_url(); ?>feedback" class="menu-link">
+                                <a href="<?php echo base_url(); ?>page/contacts" class="menu-link">
                                     Обратная связь
                                 </a>
                             </li>
@@ -84,7 +84,9 @@
                 <div class="lg-grid-3
                   right
                   sm-hidden xs-hidden">
-                    сюда можно вставить социальные кнопки
+                    <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+<script src="//yastatic.net/share2/share.js"></script>
+<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,gplus,twitter,lj"></div>
                 </div>
 
             </div>
@@ -102,7 +104,7 @@
                     sm-padded-inner-bottom">
                         <div class="mc-grid-12
                       xs-padded-inner-bottom">
-                            <a href="<?=base_url()?>" class="logo"><img src="/images/logo.png" alt="diamondmosaic.com.ua"></a>
+                            <a href="<?=base_url()?>" class="logo"><img src="<?=base_url()?>images/logo.png" alt="diamondmosaic.com.ua"></a>
 
                         </div>
 
@@ -248,7 +250,7 @@
                                 <li class="menu-node menu-node--main_lvl_1
                 ">
 
-                                    <a href="<?=base_url()?>blogs/blog" class="menu-link
+                                    <a href="<?=base_url()?>news/0/" class="menu-link
                   ">
                                         Статьи
 
@@ -259,7 +261,7 @@
                                 <li class="menu-node menu-node--main_lvl_1
                 ">
 
-                                    <a href="<?=base_url()?>page/o-magazine" class="menu-link
+                                    <a href="<?=base_url()?>page/about" class="menu-link
                   ">
                                         О магазине
 
@@ -270,7 +272,7 @@
                                 <li class="menu-node menu-node--main_lvl_1
                 ">
 
-                                    <a href="<?=base_url()?>page/dostavka-i-oplata" class="menu-link
+                                    <a href="<?=base_url()?>page/delivery" class="menu-link
                   ">
                                         Доставка и оплата
 
@@ -362,7 +364,7 @@
 
                     <li class="menu-node menu-node--footer
                         ">
-                        <a href="<?=base_url()?>page/feedback" class="menu-link">
+                        <a href="<?=base_url()?>page/contacts" class="menu-link">
                             Обратная связь
                         </a>
                     </li>
@@ -831,7 +833,7 @@
 
                 <li class="menu-node
                     ">
-                    <a href="<?=base_url()?>blogs/blog" class="menu-link">
+                    <a href="<?=base_url()?>news/0/" class="menu-link">
                         Статьи
                     </a>
                 </li>
@@ -845,22 +847,7 @@
 
                 <li class="menu-node
                     ">
-                    <a href="<?=base_url()?>page/feedback" class="menu-link">
-                        Обратная связь
-                    </a>
-                </li>
-
-
-                <li class="menu-node
-                    menu-node--current">
-                    <a href="<?=base_url()?>page/delivery" class="menu-link">
-                        Доставка
-                    </a>
-                </li>
-
-                <li class="menu-node
-                    ">
-                    <a href="<?=base_url()?>page/feedback" class="menu-link">
+                    <a href="<?=base_url()?>page/contacts" class="menu-link">
                         Обратная связь
                     </a>
                 </li>
@@ -986,6 +973,71 @@
 
             return $.parseJSON( '{'+ result.join(',') +'}' );
         };
+
+  // ui для панели
+$( function(){
+
+  $( '.js-panel-link' ).on( '_click tap', function( e ){alert(1);exit;
+    e.preventDefault();
+
+    if( $(this).hasClass( 'js-panel-close' ) ){
+      return;
+    }
+
+    var
+      params = getParams( $(this) ),
+      $unit  = $(this),
+      $panels_trig = $( '.js-panel-link.js-panel-close' );
+
+    if( $panels_trig.length > 0 ){
+      $panels_trig
+        .trigger( 'click' );
+    }
+
+    // flag;
+    params.panel = true;
+
+    $( 'body' )
+      //.css( 'overflow', 'hidden' )
+      .addClass( 'lock_scroll' )
+      .append( '<div class="overlay" />');
+
+    $( params.target ).show();
+
+    setParams( $( '.overlay' ), params );
+
+
+    window.setTimeout( function(){
+      $unit
+        .toggleClass( 'js-panel-close' );
+    }, 200 );
+  });
+
+  $( document ).on( '_click tap', '.js-panel-close, .overlay', function( e ){
+    e.preventDefault();
+    var
+      params = getParams( $( '.overlay' ) );
+
+    if( params.panel ){
+      $( params.target ).hide();
+      $( '.overlay' ).remove();
+      $( 'body' )
+        .removeClass( 'lock_scroll' );
+
+      window.setTimeout( function(){
+        $( '.js-panel-link' )
+          .removeClass( 'js-panel-close' );
+      }, 200 );
+    }
+  });
+
+  $( window ).on( 'resize', function(){
+    if( $(window).width() > 800 ){
+      $( '.overlay' )
+        .trigger( 'click' );
+    }
+  });
+});
 
     </script>
 

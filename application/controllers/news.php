@@ -40,7 +40,7 @@ class News extends BaseController {
             10
         );
 
-        $data['title'] = 'Новости';
+        $data['title'] = 'Статьи';
         $data['description'] = '';
         $data['keywords'] = 'купить алмазною вышивку';
 

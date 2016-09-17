@@ -58,7 +58,7 @@
                                 array(
                                  'name'         => 'product_description',
                                  'id'           => 'product_description',                       
-                                 'class'        => 'form-control input-sm  required',
+                                 'class'        => 'form-control input-sm',
                                  'placeholder'  => 'Product Description',
                                  
                                  ),

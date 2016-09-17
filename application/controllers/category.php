@@ -32,6 +32,7 @@ class Category extends BaseController {
             'base_url' => '/category/'.$id.'/'.$separate.'/',
             'total_rows' => $this->categories_model->count_all($id),
             'uri_segment' => 4,
+            'per_page' => 12
         );
 
         $this->pagination->initialize($config);
@@ -39,7 +40,7 @@ class Category extends BaseController {
         $data['products'] = $this->categories_model->pagination(
             $id,
             $start,
-            9
+            $config['per_page']
         );
 
         $category = $this->categories_model->get_category($id);

@@ -141,7 +141,7 @@ class products extends MY_Controller
                     array(
                         'field' => 'product_description',
                         'label' => 'Product Description',
-                        'rules' => 'trim|xss_clean|required'
+                        'rules' => 'trim|xss_clean'
                         ),
                     
                     array(

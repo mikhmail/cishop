@@ -1,7 +1,7 @@
 <div class="slider slider--index">	
 	<ul id="mycarousel" class="jcarousel-skin-name">
 				<li class="slider-image _owl-lazy">
-					<img class="owl-lazy" src="/images/slider/index_slider_1-loaded.jpg" alt="" />
+					<img class="owl-lazy" src="<?=base_url()?>images/slider/index_slider_1-loaded.jpg" alt="" />
 				  </li>
 
 	</ul>
@@ -14,24 +14,27 @@
 	<ul class="tabs-controls tabs-controls--horizontal">
         <li class="tabs-node mc-grid-12 tabs-node--active" data-params="target: '#frontpage'">Новинки</li>
         <li class="tabs-node mc-grid-12" data-params="target: '#popular'">Популярные товары</li>
-        <li class="tabs-node mc-grid-12" data-params="target: '#hits'">Акция! </li>
+        <li class="tabs-node mc-grid-12" data-params="target: '#action'">Акция! </li>
 	</ul>
 	
 	<div id="frontpage" class="tabs-content tabs-content--active">
         <div class="collection-product_list grid-row-inner grid-inline">
+            <?$data['products'] = $this->product_model->get_new_products();?>
 			<?php $this->load->view('widgets/products_main',$data); ?>
 		</div>
 	</div>
   
   <div id="popular" class="tabs-content">
         <div class="collection-product_list grid-row-inner grid-inline">
-		345
+             <?$data['products'] = $this->product_model->get_popular_products();?>
+		<?php $this->load->view('widgets/products_main',$data); ?>
 	</div>
 	</div>
 	
-  <div id="hits" class="tabs-content">
+  <div id="action" class="tabs-content">
         <div class="collection-product_list grid-row-inner grid-inline">
-		123
+             <?$data['products'] = $this->product_model->get_action_products();?>
+		<?php $this->load->view('widgets/products_main',$data); ?>
 	</div>
 	</div>
  

@@ -52,7 +52,7 @@
                   lg-grid-2 sm-grid-3 _mc-grid-12
                   padded-sides">
                                 <a href="<?php echo base_url();?>product/<?=$id;?>" class="image-square">
-                                    <img class="cart-img" src="<?=$i['img'];?>">
+                                    <img class="cart-img" src="<?=base_url()?><?=$i['img'];?>">
                                 </a>
                             </div>
 

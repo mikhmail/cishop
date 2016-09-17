@@ -15,8 +15,9 @@ class Main extends BaseController {
 
     public function index()
     {
+        $this->load->model('product_model');
         $data = $this->user_model->_default();
-        $data['products'] = $this->user_model->get_products();
+       
 
         $data['title'] = 'алмазная вышивка';
         $data['description'] = '';
