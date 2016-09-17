@@ -21,10 +21,13 @@ $(function(){
         }
     });
 
+
     // Cart PopUp
+
     $(".various").fancybox({
         fitToView	: false,
-        autoSize	: true,
+        autoSize	: false,
+        'width'         : 890,
         closeClick	: false,
         closeBtn	: false,
         openEffect	: 'fade',
@@ -35,6 +38,7 @@ $(function(){
 
             // Remove item from cart
             $('button[name="remove"]').on('click',function(e){
+			
                 e.preventDefault();
                 cart.remove($(this).attr('id'));
                 $(this).parent().parent().fadeOut('fast');
@@ -63,28 +67,35 @@ $(function(){
 
             // Clear cart
             $('button[name="clear"]').on('click',function(){
+
                 cart.clear();
                 $.fancybox.close();
             });
 
         }
     });
+
+
 });
+
+
+
 
 /* Cart functional
 ----------------------------------------------------------------------------------------------------------------------*/
 
 var items = {};
-var cart = {
+var cart = { 
     add: function(id,num,price,name,img){
-        var el_item = $('span.item'),
-            el_total = $('span.total'),
+	
+      var   el_item = $('span.cart_widget-items_count'),
+            el_total = $('span.cart_widget-items_price'),
             count = Number(el_item.text()),
             total = Number(el_total.text());
 
-        //c.log(name);
-
         el_total.text((total+(price*num)).toFixed(2));
+		el_item.text(count+1);
+
         if(typeof items[id] != 'undefined'){
             items[id].count = items[id].count + num;
             items[id].price = price;
@@ -99,9 +110,10 @@ var cart = {
                 name:name,
                 img:img
             };
-            el_item.text(count+1);
+            
         }
         this.sync();
+
     },
     remove: function(id){
         delete items[id];
@@ -110,6 +122,7 @@ var cart = {
     clear: function(){
         items = {};
         this.recalculate();
+
     },
     edit: function(id,count){
         if(count == 0){
@@ -118,11 +131,13 @@ var cart = {
         }
         items[id].count = count;
         items[id].total = items[id].price * count;
+
+        $('#total_'+id+'').text(items[id].total);
         this.recalculate();
     },
     recalculate: function(){
-        var el_item = $('span.item'),
-            el_total = $('span.total'),
+      var   el_item = $('span.cart_widget-items_count'),
+            el_total = $('span.cart_widget-items_price'),
             item = 0,
             total = 0;
         $.each(items,function(i) {
@@ -131,6 +146,8 @@ var cart = {
         });
         el_item.text(item);
         el_total.text(total);
+       
+       $('#total').text(total);
         this.sync();
     },
     check_num: function(el){
@@ -149,7 +166,7 @@ var cart = {
     },
     init: function(){
         $.getJSON(''+base_url+'cart/init/',{},function(data,status){
-            if(status && !$.isEmptyObject(data))
+            if(status && !$.isEmptyObject(data)) 
                 items = data;
             else
                 items = {};
@@ -160,10 +177,30 @@ var cart = {
 // Start cart
 cart.init();
 
+
+// cart clear
+ $('button[name="clear"]').on('click',function(){
+	cart.clear();
+      $.fancybox.close();
+     location.reload();
+});
+
+// Remove item from cart
+$('button[name="remove"]').on('click',function(e){
+
+    e.preventDefault();
+    cart.remove($(this).attr('id'));
+    $(this).parent().parent().fadeOut('fast');
+    setTimeout(function(){
+        if($('#cart').find('tr:visible').size() == 1)
+            $.fancybox.close();
+    },300);
+});
+
 // Add product to cart
 $(".add").on('click',function(){
-    var el = $(this).parent().find('input:text');
-
+    var el = $('#product_count');
+	
     // Check Num
     if(cart.check_num(el)){
         cart.add(
@@ -172,6 +209,8 @@ $(".add").on('click',function(){
             Number(el.attr('data-price')),
             el.attr('data-name'),
             el.attr('data-img')
+			
+			
         );
     }
 

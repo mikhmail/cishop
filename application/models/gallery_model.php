@@ -22,7 +22,7 @@ class Gallery_model extends CI_Model {
 
 		);
 
-
+		$images = array();
 		$this->load->library('upload', $config);
 
 		foreach ($files as $key => $image) {

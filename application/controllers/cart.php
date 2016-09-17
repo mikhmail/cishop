@@ -23,6 +23,35 @@ class Cart extends BaseController {
         die(json_encode($this->cart));
     }
 
+    public function basket()
+    {   $id_product = $this->uri->segment(3);
+
+        $c= $_SESSION['cart'][$this->uri->segment(3)];?>
+            <li class="basket_item">
+
+                <a href="<?echo base_url('product').'/'. $id_product?>" class="basket_item-image">
+                    <img width="75" src="<? echo base_url(). $c['img'];?>">
+                </a>
+
+                <a href="<?echo base_url('product').'/'. $id_product?>" class="basket_item-title">Футболка Lino Blue Stripe </a>
+
+                <div class="basket_item-details right">
+
+                    <span class="basket_item-count"><?=$c['count']?></span> x
+                                                        <span class="basket_item-price prices">
+                                                          <span class="prices-current"><?=$c['price']?>&nbsp;<?=$this->lang->line('currency');?></span>
+                                                        </span>
+
+
+                    <button name="remove" id="<?=$id_product?>" class="fa fa-times">
+
+                </div>
+            </li>
+        <?
+    }
+
+
+
     public function checkout()
     {
         $this->load->model('orders_model');
@@ -60,7 +89,8 @@ class Cart extends BaseController {
 
 
             // Save data
-            if($id = $this->orders_model->order_create($this->cart,$this->user)){
+            $id = $this->orders_model->order_create($this->cart,$this->user);
+            if($id){    
                 $this->user['order_id'] = $id;
 
                 // Send email about order
@@ -76,7 +106,8 @@ class Cart extends BaseController {
                 $_SESSION['cart'] = $this->cart = array();
             }
         }
-
+        
+        $data['order_id'] = $id;
         $data['title'] = 'Корзина';
         $data['description'] = '';
         $data['keywords'] = 'купить алмазною вышивку';

@@ -189,7 +189,7 @@ class catalogs extends CI_Model
         
             'catalog_title' => strip_tags($this->input->post('catalog_title', TRUE)),
         
-            'catalog_url' => strip_tags($this->input->post('catalog_url', TRUE)),
+            'catalog_url' => $this->get_lnk($this->input->post('catalog_title', TRUE)),
         
             'catalog_seo_description' => strip_tags($this->input->post('catalog_seo_description', TRUE)),
         
@@ -221,7 +221,7 @@ class catalogs extends CI_Model
         
                 'catalog_title' => strip_tags($this->input->post('catalog_title', TRUE)),
         
-                'catalog_url' => strip_tags($this->input->post('catalog_url', TRUE)),
+
         
                 'catalog_seo_description' => strip_tags($this->input->post('catalog_seo_description', TRUE)),
         
@@ -261,8 +261,29 @@ class catalogs extends CI_Model
 
 
 
-    
+    function translit($str) {
+        $rus = array('А', 'Б', 'В', 'Г', 'Д', 'Е', 'Ё', 'Ж', 'З', 'И', 'Й', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'У', 'Ф', 'Х', 'Ц', 'Ч', 'Ш', 'Щ', 'Ъ', 'Ы', 'Ь', 'Э', 'Ю', 'Я', 'а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з', 'и', 'й', 'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'ъ', 'ы', 'ь', 'э', 'ю', 'я');
+        $lat = array('A', 'B', 'V', 'G', 'D', 'E', 'E', 'Gh', 'Z', 'I', 'Y', 'K', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'U', 'F', 'H', 'C', 'Ch', 'Sh', 'Sch', 'Y', 'Y', 'Y', 'E', 'Yu', 'Ya', 'a', 'b', 'v', 'g', 'd', 'e', 'e', 'gh', 'z', 'i', 'y', 'k', 'l', 'm', 'n', 'o', 'p', 'r', 's', 't', 'u', 'f', 'h', 'c', 'ch', 'sh', 'sch', 'y', 'y', 'y', 'e', 'yu', 'ya');
+        return str_replace($rus, $lat, $str);
+    }
 
+
+    function get_lnk ($title) {
+
+
+        $link = $this->translit($title);
+        $link = strtr($link, array('.'=>''));
+        $link = strtr($link, array('+'=>''));
+
+
+        $link = preg_replace(array('/\'/', '/[^a-zA-Z0-9\-.+]+/', '/(^_|_$)/'), array('', '-', ''), $link);
+        $link = preg_replace('{-(-)*}', '-', $link);
+        $link = preg_replace('{^-}', '', $link);
+        $link = preg_replace('/\s/', '-', $link);
+        $link = mb_strtolower ($link);
+
+        return $link;
+    }
 
 
 }

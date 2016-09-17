@@ -102,7 +102,7 @@
     </div><!--/ Panel Footer -->       
 </div><!--/ Panel -->
 <?php echo form_close(); ?>
-<script src="<?echo base_url()?>additions/ckeditor/ckeditor.js"></script>
+<script src="<?echo base_url()?>assets/ckeditor/ckeditor.js"></script>
 <script type="text/javascript">
     CKEDITOR.replace('post_text');
 </script>

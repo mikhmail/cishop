@@ -259,7 +259,7 @@ class productss extends CI_Model
         
             'product_title' => strip_tags($this->input->post('product_title', TRUE)),
         
-            'product_description' => strip_tags($this->input->post('product_description', TRUE)),
+            'product_description' => $this->input->post('product_description', TRUE),
         
             'product_price' => strip_tags($this->input->post('product_price', TRUE)),
         
@@ -379,8 +379,8 @@ class productss extends CI_Model
                 'category_id' => strip_tags($this->input->post('category_id', TRUE)),
         
                 'product_title' => strip_tags($this->input->post('product_title', TRUE)),
-        
-                'product_description' => strip_tags($this->input->post('product_description', TRUE)),
+
+                'product_description' => $this->input->post('product_description', TRUE),
         
                 'product_price' => strip_tags($this->input->post('product_price', TRUE)),
         

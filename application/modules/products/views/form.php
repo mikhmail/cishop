@@ -54,7 +54,7 @@
                    <label for="product_description" class="col-sm-2 control-label">Описание <span class="required-input">*</span></label>
                 <div class="col-sm-6">                                   
                   <?php                  
-                   echo form_input(
+                   echo form_textarea(
                                 array(
                                  'name'         => 'product_description',
                                  'id'           => 'product_description',                       
@@ -497,4 +497,8 @@
           </div>
     </div><!--/ Panel Footer -->       
 </div><!--/ Panel -->
-<?php echo form_close(); ?>  
+<?php echo form_close(); ?>
+<script src="<?echo base_url()?>assets/ckeditor/ckeditor.js"></script>
+<script type="text/javascript">
+    CKEDITOR.replace('product_description');
+</script>
