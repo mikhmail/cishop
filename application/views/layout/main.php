@@ -52,14 +52,14 @@
                             </li>
 
                             <li class="menu-node menu-node--top
-                        ">
+     ">
                                 <a href="<?php echo base_url(); ?>page/delivery" class="menu-link">
                                     Доставка
                                 </a>
                             </li>
 
                             <li class="menu-node menu-node--top
-                        ">
+     ">
                                 <a href="<?php echo base_url(); ?>page/contacts" class="menu-link">
                                     Обратная связь
                                 </a>
@@ -259,7 +259,7 @@
                                 </li>
 
                                 <li class="menu-node menu-node--main_lvl_1
-                ">
+                  ">
 
                                     <a href="<?=base_url()?>page/about" class="menu-link
                   ">
@@ -270,7 +270,7 @@
                                 </li>
 
                                 <li class="menu-node menu-node--main_lvl_1
-                ">
+                  ">
 
                                     <a href="<?=base_url()?>page/delivery" class="menu-link
                   ">
@@ -281,7 +281,7 @@
                                 </li>
 
                                 <li class="menu-node menu-node--main_lvl_1
-                ">
+                  ">
 
                                     <a href="<?=base_url()?>page/contacts/" class="menu-link
                   ">
@@ -355,15 +355,13 @@
                     padded-inner">
                 <ul class="footer_block-content menu menu--footer menu--vertical">
 
-                    <li class="menu-node menu-node--footer
-                        ">
+                    <li class="menu-node menu-node--footer">
                         <a href="<?=base_url()?>page/delivery" class="menu-link">
                             Доставка
                         </a>
                     </li>
 
-                    <li class="menu-node menu-node--footer
-                        ">
+                    <li class="menu-node menu-node--footer">
                         <a href="<?=base_url()?>page/contacts" class="menu-link">
                             Обратная связь
                         </a>
@@ -533,7 +531,7 @@
 
 
                             <a href="<?=base_url()?>collection/golfy" class="menu-link menu-link
-                        ">
+     ">
                                 Гольфы
                             </a>
 
@@ -546,7 +544,7 @@
 
 
                             <a href="<?=base_url()?>collection/platishki" class="menu-link menu-link
-                        ">
+     ">
                                 Платишки
                             </a>
 
@@ -559,7 +557,7 @@
 
 
                             <a href="<?=base_url()?>collection/futbolochki" class="menu-link menu-link
-                        ">
+     ">
                                 Футболочки
                             </a>
 
@@ -572,7 +570,7 @@
 
 
                             <a href="<?=base_url()?>collection/shtanishki" class="menu-link menu-link
-                        ">
+     ">
                                 Штанишки
                             </a>
 
@@ -585,25 +583,25 @@
                             <ul class="menu menu--vertical menu--collapse">
 
                                 <li class="menu-node menu-node--collection_lvl_3
-                              ">
+           ">
                                     <a href="<?=base_url()?>collection/shortiki-i-yubochki" class="menu-link menu-link
-                                ">
+             ">
                                         Шортики и юбочки
                                     </a>
                                 </li>
 
                                 <li class="menu-node menu-node--collection_lvl_3
-                              ">
+           ">
                                     <a href="<?=base_url()?>collection/bryuchki" class="menu-link menu-link
-                                ">
+             ">
                                         Брючки
                                     </a>
                                 </li>
 
                                 <li class="menu-node menu-node--collection_lvl_3
-                              ">
+           ">
                                     <a href="<?=base_url()?>collection/legginsy" class="menu-link menu-link
-                                ">
+             ">
                                         Леггинсы
                                     </a>
                                 </li>
@@ -619,7 +617,7 @@
 
 
                             <a href="<?=base_url()?>collection/sumochki" class="menu-link menu-link
-                        ">
+     ">
                                 Сумочки
                             </a>
 
@@ -632,7 +630,7 @@
 
 
                             <a href="<?=base_url()?>collection/zakolochki" class="menu-link menu-link
-                        ">
+     ">
                                 Заколочки
                             </a>
 
@@ -645,9 +643,9 @@
                             <ul class="menu menu--vertical menu--collapse">
 
                                 <li class="menu-node menu-node--collection_lvl_3
-                              ">
+           ">
                                     <a href="<?=base_url()?>collection/korony" class="menu-link menu-link
-                                ">
+             ">
                                         Короны
                                     </a>
                                 </li>
@@ -663,7 +661,7 @@
 
 
                             <a href="<?=base_url()?>collection/kombinezonchiki" class="menu-link menu-link
-                        ">
+     ">
                                 Комбинезончики
                             </a>
 
@@ -701,7 +699,7 @@
 
 
                             <a href="<?=base_url()?>collection/shtany" class="menu-link menu-link
-                        ">
+     ">
                                 Штаны
                             </a>
 
@@ -714,7 +712,7 @@
 
 
                             <a href="<?=base_url()?>collection/futbolki" class="menu-link menu-link
-                        ">
+     ">
                                 Футболки
                             </a>
 
@@ -727,7 +725,7 @@
 
 
                             <a href="<?=base_url()?>collection/noski" class="menu-link menu-link
-                        ">
+     ">
                                 Носки
                             </a>
 
@@ -740,7 +738,7 @@
 
 
                             <a href="<?=base_url()?>collection/kombinezony" class="menu-link menu-link
-                        ">
+     ">
                                 Комбинезоны
                             </a>
 
@@ -832,7 +830,7 @@
 
 
                 <li class="menu-node
-                    ">
+ ">
                     <a href="<?=base_url()?>news/0/" class="menu-link">
                         Статьи
                     </a>
@@ -846,7 +844,7 @@
                 </li>
 
                 <li class="menu-node
-                    ">
+ ">
                     <a href="<?=base_url()?>page/contacts" class="menu-link">
                         Обратная связь
                     </a>
@@ -864,22 +862,21 @@
 
 <script type="text/javascript" src="<?php echo base_url(); ?>js/main.js"></script>
 
-<script src="<?php echo base_url(); ?>assets/fancyBox/source/jquery.fancybox.js?v=2.1.4"
-        type="text/javascript"></script>
+<script src="<?php echo base_url(); ?>assets/fancyBox/source/jquery.fancybox.js?v=2.1.4" type="text/javascript"></script>
 
 <?php if ($this->uri->segment(1) == 'product'): ?>
-    <script src="<?php echo base_url(); ?>assets/fancyBox/source/helpers/jquery.fancybox-buttons.js"
-            type="text/javascript"></script>
-    <script src="<?php echo base_url(); ?>assets/fancyBox/source/helpers/jquery.fancybox-thumbs.js"
-            type="text/javascript"></script>
+    <script src="<?php echo base_url(); ?>assets/fancyBox/source/helpers/jquery.fancybox-buttons.js" type="text/javascript"></script>
+    <script src="<?php echo base_url(); ?>assets/fancyBox/source/helpers/jquery.fancybox-thumbs.js" type="text/javascript"></script>
 <?php endif; ?>
 
 <?php if ($this->uri->segment(1) == 'cart'): ?>
-<script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.maskedinput.js"></script>
-<script type="text/javascript">
-    $("#client_phone").mask("(099) 999-99-99");
-</script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.maskedinput.js"></script>
+    <script type="text/javascript">
+        $("#client_phone").mask("(099) 999-99-99");
+    </script>
 <?php endif; ?>
+
+
 
 
     <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.jcarousel.min.js"></script>
@@ -929,8 +926,10 @@
         });
 
 
+        // =======================================================================================
+        //                                     getParams
+        // =======================================================================================
 
-        //GetParams
        getParams = function( $obj ){
             var
                 readyParams = $obj.data( 'readyParams' ),
@@ -951,7 +950,9 @@
         };
 
 
-//prepareJSON
+        // =======================================================================================
+        //                                     prepareJSON
+        // =======================================================================================
         prepareJSON = function( string ){
             if( !string ){
                 return {};
@@ -974,7 +975,10 @@
             return $.parseJSON( '{'+ result.join(',') +'}' );
         };
 
-  // ui для панели
+
+        // =======================================================================================
+        //                                     IU для панели
+        // =======================================================================================
 $( function(){
 
   $( '.js-panel-link' ).on( '_click tap', function( e ){alert(1);exit;

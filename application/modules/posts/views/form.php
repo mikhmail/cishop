@@ -72,6 +72,16 @@
                  <?php echo form_error('post_text');?>
                 </div>
               </div> <!--/ Post Text -->
+
+            <div class="form-group">
+                 <label for="images" class="col-sm-2 control-label">Загрузить картинку</label>
+                <div class="col-sm-6">
+                    <p class="operate">
+                     <a class="btn btn-success"><span id="swfu"><span id="swfu-placeholder"></span></span></a>
+
+                    </p>
+                 </div>
+            </div>
 			  
 			  <div class="form-group">
                    <label for="post_status" class="col-sm-2 control-label">Активен? <span class="required-input">*</span></label>
@@ -93,7 +103,7 @@
           <div class="row"> 
               <div class="col-md-10 col-sm-12 col-md-offset-2 col-sm-offset-0">
                    <a href="<?php echo site_url('posts'); ?>" class="btn btn-default">
-                       <i class="glyphicon glyphicon-chevron-left"></i> Назад                   </a> 
+                       <i class="glyphicon glyphicon-chevron-left"></i> Назад</a>
                     <button type="submit" class="btn btn-primary" name="post">
                         <i class="glyphicon glyphicon-floppy-save"></i> Подтвердить 
                     </button>                  

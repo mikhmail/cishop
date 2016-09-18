@@ -292,6 +292,7 @@ class posts extends MY_Controller
         }       
     }
 
-}
+
+}//end class
 
 ?>

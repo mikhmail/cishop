@@ -32,7 +32,7 @@ class Gallery_model extends CI_Model {
 			$_FILES['images[]']['error']= $image['error'];
 			$_FILES['images[]']['size']= $image['size'];
 
-			switch ($image['type']) {
+            switch ($image['type']) {
 				case 'image/jpeg':
 					$extension = '.jpg';
 					break;

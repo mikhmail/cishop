@@ -2,331 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cb51880-de88-4a21-b368-ba7fd4fd1743" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\CHANGES.md" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\LICENSE.md" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\README.md" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\adapters\jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\build-config.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\ckeditor.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\config.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\contents.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\af.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\ar.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\bg.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\bn.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\bs.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\ca.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\cs.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\cy.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\da.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\de-ch.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\de.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\el.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\en-au.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\en-ca.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\en-gb.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\en.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\eo.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\es.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\et.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\eu.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\fa.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\fi.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\fo.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\fr-ca.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\fr.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\gl.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\gu.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\he.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\hi.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\hr.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\hu.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\id.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\is.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\it.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\ja.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\ka.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\km.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\ko.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\ku.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\lt.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\lv.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\mk.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\mn.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\ms.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\nb.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\nl.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\no.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\pl.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\pt-br.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\pt.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\ro.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\ru.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\si.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\sk.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\sl.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\sq.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\sr-latn.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\sr.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\sv.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\th.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\tr.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\tt.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\ug.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\uk.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\vi.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\zh-cn.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\lang\zh.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\a11yhelp.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\_translationstatus.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\af.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\ar.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\bg.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\ca.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\cs.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\cy.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\da.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\de-ch.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\de.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\el.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\en-gb.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\en.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\eo.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\es.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\et.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\eu.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\fa.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\fi.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\fo.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\fr-ca.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\fr.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\gl.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\gu.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\he.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\hi.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\hr.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\hu.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\id.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\it.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\ja.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\km.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\ko.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\ku.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\lt.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\lv.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\mk.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\mn.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\nb.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\nl.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\no.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\pl.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\pt-br.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\pt.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\ro.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\ru.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\si.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\sk.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\sl.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\sq.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\sr-latn.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\sr.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\sv.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\th.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\tr.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\tt.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\ug.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\uk.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\vi.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\zh-cn.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\a11yhelp\dialogs\lang\zh.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\about\dialogs\about.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\about\dialogs\hidpi\logo_ckeditor.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\about\dialogs\logo_ckeditor.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\clipboard\dialogs\paste.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\dialog\dialogDefinition.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\icons.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\icons_hidpi.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\image\dialogs\image.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\image\images\noimage.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\link\dialogs\anchor.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\link\dialogs\link.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\link\images\anchor.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\link\images\hidpi\anchor.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\magicline\images\hidpi\icon-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\magicline\images\hidpi\icon.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\magicline\images\icon-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\magicline\images\icon.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\pastefromword\filter\default.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\scayt\CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\scayt\LICENSE.md" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\scayt\README.md" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\scayt\dialogs\options.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\scayt\dialogs\toolbar.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\_translationstatus.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\af.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\ar.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\bg.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\ca.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\cs.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\cy.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\da.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\de-ch.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\de.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\el.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\en-gb.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\en.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\eo.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\es.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\et.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\eu.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\fa.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\fi.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\fr-ca.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\fr.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\gl.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\he.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\hr.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\hu.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\id.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\it.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\ja.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\km.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\ko.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\ku.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\lt.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\lv.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\nb.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\nl.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\no.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\pl.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\pt-br.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\pt.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\ru.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\si.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\sk.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\sl.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\sq.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\sv.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\th.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\tr.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\tt.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\ug.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\uk.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\vi.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\zh-cn.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\lang\zh.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\specialchar\dialogs\specialchar.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\table\dialogs\table.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\tabletools\dialogs\tableCell.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\wsc\LICENSE.md" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\wsc\README.md" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\wsc\dialogs\ciframe.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\wsc\dialogs\tmpFrameset.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\wsc\dialogs\wsc.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\wsc\dialogs\wsc.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\plugins\wsc\dialogs\wsc_ie.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\css\samples.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\img\github-top.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\img\header-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\img\header-separator.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\img\logo.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\img\navigation-tip.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\js\sample.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\js\sf.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\old\ajax.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\old\api.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\old\appendto.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\old\assets\inlineall\logo.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\old\assets\outputxhtml\outputxhtml.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\old\assets\posteddata.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\old\assets\sample.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\old\assets\uilanguages\languages.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\old\datafiltering.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\old\dialog\assets\my_dialog.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\old\dialog\dialog.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\old\divreplace.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\old\enterkey\enterkey.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\old\htmlwriter\assets\outputforflash\outputforflash.fla" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\old\htmlwriter\assets\outputforflash\outputforflash.swf" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\old\htmlwriter\assets\outputforflash\swfobject.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\old\htmlwriter\outputforflash.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\old\htmlwriter\outputhtml.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\old\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\old\inlineall.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\old\inlinebycode.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\old\inlinetextarea.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\old\jquery.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\old\magicline\magicline.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\old\readonly.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\old\replacebyclass.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\old\replacebycode.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\old\sample.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\old\sample.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\old\sample_posteddata.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\old\tabindex.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\old\toolbar\toolbar.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\old\uicolor.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\old\uilanguages.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\old\wysiwygarea\fullpage.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\old\xhtmlstyle.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\toolbarconfigurator\css\fontello.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\toolbarconfigurator\font\LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\toolbarconfigurator\font\config.json" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\toolbarconfigurator\font\fontello.eot" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\toolbarconfigurator\font\fontello.svg" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\toolbarconfigurator\font\fontello.ttf" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\toolbarconfigurator\font\fontello.woff" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\toolbarconfigurator\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\toolbarconfigurator\js\abstracttoolbarmodifier.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\toolbarconfigurator\js\fulltoolbareditor.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\toolbarconfigurator\js\toolbarmodifier.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\toolbarconfigurator\js\toolbartextmodifier.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\toolbarconfigurator\lib\codemirror\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\toolbarconfigurator\lib\codemirror\codemirror.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\toolbarconfigurator\lib\codemirror\codemirror.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\toolbarconfigurator\lib\codemirror\javascript.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\toolbarconfigurator\lib\codemirror\neo.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\toolbarconfigurator\lib\codemirror\show-hint.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\samples\toolbarconfigurator\lib\codemirror\show-hint.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\skins\moono\dialog.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\skins\moono\dialog_ie.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\skins\moono\dialog_ie7.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\skins\moono\dialog_ie8.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\skins\moono\dialog_iequirks.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\skins\moono\editor.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\skins\moono\editor_gecko.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\skins\moono\editor_ie.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\skins\moono\editor_ie7.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\skins\moono\editor_ie8.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\skins\moono\editor_iequirks.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\skins\moono\icons.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\skins\moono\icons_hidpi.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\skins\moono\images\arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\skins\moono\images\close.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\skins\moono\images\hidpi\close.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\skins\moono\images\hidpi\lock-open.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\skins\moono\images\hidpi\lock.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\skins\moono\images\hidpi\refresh.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\skins\moono\images\lock-open.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\skins\moono\images\lock.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\skins\moono\images\refresh.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\skins\moono\images\spinner.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\skins\moono\readme.md" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\ckeditor\styles.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\fancyBox\.gitattributes" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\fancyBox\CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\fancyBox\README.md" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\fancyBox\demo\1_b.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\fancyBox\demo\1_s.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\fancyBox\demo\2_b.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\fancyBox\demo\2_s.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\fancyBox\demo\3_b.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\fancyBox\demo\3_s.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\fancyBox\demo\4_b.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\fancyBox\demo\4_s.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\openserver\domains\ci3\additions\fancyBox\demo\5_b" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/template.php" afterPath="$PROJECT_DIR$/application/views/template.php" />
     </list>
     <ignored path="ci-gen.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -351,28 +27,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/main/index.php">
+      <file leaf-file-name="form.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/modules/posts/views/form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="62" selection-start="173" selection-end="173" vertical-scroll-proportion="-2.1290324">
+            <state line="76" column="23" selection-start="3686" selection-end="4064" vertical-scroll-proportion="-13.580646">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cart_form.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/cart/cart_form.php">
+      <file leaf-file-name="view.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/modules/pages/views/view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="78" selection-start="1626" selection-end="1626" vertical-scroll-proportion="-12.774194">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="checkout.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/views/cart/checkout.php">
+      <file leaf-file-name="form.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/modules/pages/views/form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="82" selection-start="1683" selection-end="1683" vertical-scroll-proportion="0.37971953">
+            <state line="83" column="18" selection-start="4044" selection-end="4044" vertical-scroll-proportion="0.4680851">
               <folding />
             </state>
           </provider>
@@ -381,7 +57,61 @@
       <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/layout/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="92" selection-start="4393" selection-end="4393" vertical-scroll-proportion="-17.741936">
+            <state line="852" column="17" selection-start="27249" selection-end="27249" vertical-scroll-proportion="6.290323">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="template.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/template.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="180" column="8" selection-start="6684" selection-end="6684" vertical-scroll-proportion="-13.290322">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="upload.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/upload.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="62" column="32" selection-start="1241" selection-end="1241" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="products.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/modules/products/controllers/products.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/contact.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="5" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base_controller.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/base_controller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="5" selection-start="784" selection-end="952" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gallery_model.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/gallery_model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="164" column="8" selection-start="4067" selection-end="4190" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -401,22 +131,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/application/modules/products/views/form.php" />
-        <option value="$PROJECT_DIR$/application/modules/products/controllers/products.php" />
-        <option value="$PROJECT_DIR$/application/views/widgets/products_cat.php" />
-        <option value="$PROJECT_DIR$/application/views/widgets/products.php" />
-        <option value="$PROJECT_DIR$/application/models/categories_model.php" />
-        <option value="$PROJECT_DIR$/application/models/catalog_model.php" />
         <option value="$PROJECT_DIR$/application/controllers/category.php" />
         <option value="$PROJECT_DIR$/application/controllers/catalogs.php" />
         <option value="$PROJECT_DIR$/application/controllers/main.php" />
         <option value="$PROJECT_DIR$/application/modules/products/models/productss.php" />
         <option value="$PROJECT_DIR$/application/views/widgets/products_main.php" />
         <option value="$PROJECT_DIR$/application/models/product_model.php" />
-        <option value="$PROJECT_DIR$/application/views/layout/main.php" />
         <option value="$PROJECT_DIR$/application/views/main/index.php" />
         <option value="$PROJECT_DIR$/application/views/cart/cart_form.php" />
         <option value="$PROJECT_DIR$/application/views/cart/checkout.php" />
+        <option value="$PROJECT_DIR$/application/views/layout/main.php" />
+        <option value="$PROJECT_DIR$/application/modules/posts/controllers/posts.php" />
+        <option value="$PROJECT_DIR$/application/models/gallery_model.php" />
+        <option value="$PROJECT_DIR$/application/controllers/upload.php" />
+        <option value="$PROJECT_DIR$/application/views/template.php" />
+        <option value="$PROJECT_DIR$/application/modules/posts/views/form.php" />
+        <option value="$PROJECT_DIR$/application/modules/pages/views/form.php" />
       </list>
     </option>
   </component>
@@ -459,7 +189,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
@@ -535,6 +264,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ci-gen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ci3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -553,117 +308,30 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="widgets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ci-gen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ci3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="product" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ci-gen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ci3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ci-gen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ci3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ci-gen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ci3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cart" />
+              <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-    <property name="options.searchVisible" value="true" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PublishConfig" serverName="cishop" serverId="66b911dd-c92e-4dd5-8e35-43f5837939b0">
     <servers>
@@ -678,9 +346,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\openserver\domains\ci3\application\controllers" />
       <recent name="D:\openserver\domains\ci3\application\modules" />
       <recent name="D:\openserver\domains\ci3\application\models" />
-      <recent name="D:\openserver\domains\ci3\application\controllers" />
       <recent name="D:\openserver\domains\ci3\application\modules\users\views" />
       <recent name="D:\openserver\domains\ci3\application\modules\orders\views" />
     </key>
@@ -707,14 +375,14 @@
     </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Remote">
       <JSRemoteDebuggerConfigurationSettings>
-        <option name="engineId" />
+        <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSRemoteDebuggerConfigurationSettings>
       <method>
         <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="66b911dd-c92e-4dd5-8e35-43f5837939b0" server_name="cishop">
       <method>
         <option name="FtpUpload" enabled="false">
           <server_id />
@@ -756,15 +424,15 @@
     <option name="totallyTimeSpent" value="103465000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1170" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1170" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22554784" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22822021" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -774,8 +442,8 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -836,114 +504,114 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/controllers/post.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/widgets/products_cat.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="24" selection-start="582" selection-end="2638" vertical-scroll-proportion="0.7626753">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/catalogs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="28" selection-start="949" selection-end="949" vertical-scroll-proportion="0.29969105">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/blog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/catalog_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="10" selection-start="804" selection-end="804" vertical-scroll-proportion="0.56642634">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="46" selection-start="393" selection-end="432" vertical-scroll-proportion="0.16271885">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/user_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="10" selection-start="351" selection-end="351" vertical-scroll-proportion="0.29454172">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/product/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/products/models/productss.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="397" column="8" selection-start="9658" selection-end="9658" vertical-scroll-proportion="0.77033985">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/widgets/products_main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="60" selection-end="60" vertical-scroll-proportion="0.07119741">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/product_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="58" selection-start="1648" selection-end="1648" vertical-scroll-proportion="0.838311">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="35" selection-start="374" selection-end="374" vertical-scroll-proportion="0.38516992">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/layout/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="92" selection-start="4393" selection-end="4393" vertical-scroll-proportion="-17.741936">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/main/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="62" selection-start="173" selection-end="173" vertical-scroll-proportion="-2.1290324">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/cart/cart_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="78" selection-start="1626" selection-end="1626" vertical-scroll-proportion="-12.774194">
+        <state line="54" column="78" selection-start="1626" selection-end="1626" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/cart/checkout.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="82" selection-start="1683" selection-end="1683" vertical-scroll-proportion="0.37971953">
+        <state line="71" column="0" selection-start="2261" selection-end="2261" vertical-scroll-proportion="0.403452">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/posts/controllers/posts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="292" column="5" selection-start="8664" selection-end="8664" vertical-scroll-proportion="1.7476828">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/pages/models/pagess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="299" column="26" selection-start="6423" selection-end="6423" vertical-scroll-proportion="6.177453">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/product_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="58" selection-start="1648" selection-end="1648" vertical-scroll-proportion="0.7054583">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/products/models/productss.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="358" column="60" selection-start="8321" selection-end="8373" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/base_controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="5" selection-start="784" selection-end="952" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/gallery_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="164" column="8" selection-start="4067" selection-end="4190" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/products/controllers/products.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="5" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/layout/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="852" column="17" selection-start="27249" selection-end="27249" vertical-scroll-proportion="6.290323">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="180" column="8" selection-start="6684" selection-end="6684" vertical-scroll-proportion="-13.290322">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="32" selection-start="1241" selection-end="1241" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/posts/views/form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="23" selection-start="3686" selection-end="4064" vertical-scroll-proportion="-13.580646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/pages/views/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/pages/views/form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="18" selection-start="4044" selection-end="4044" vertical-scroll-proportion="0.4680851">
           <folding />
         </state>
       </provider>

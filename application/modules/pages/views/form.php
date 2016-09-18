@@ -74,6 +74,16 @@
               </div> <!--/ Post Text -->
 
           <div class="form-group">
+                 <label for="images" class="col-sm-2 control-label">Загрузить картинку</label>
+                <div class="col-sm-6">
+                    <p class="operate">
+                     <a class="btn btn-success"><span id="swfu"><span id="swfu-placeholder"></span></span></a>
+
+                    </p>
+                 </div>
+            </div>
+
+          <div class="form-group">
                <label for="post_status" class="col-sm-2 control-label">Ссылка</label>
             <div class="col-sm-6">
 
