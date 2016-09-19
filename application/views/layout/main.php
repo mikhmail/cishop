@@ -102,21 +102,20 @@
                     sm-center
                     grid-inline grid-inline-middle
                     sm-padded-inner-bottom">
-                        <div class="mc-grid-12
-                      xs-padded-inner-bottom">
+                        <div class="lg-grid-4 mc-grid-12 xs-padded-inner-bottom">
                             <a href="<?=base_url()?>" class="logo"><img src="<?=base_url()?>images/logo.png" alt="diamondmosaic.com.ua"></a>
 
                         </div>
 
-                        <div class="lg-grid-6 mc-grid-12
+                        <div class="mc-grid-12
                       left mc-center
                       lg-padded-inner-left mc-padded-zero
                       xs-hidden">
 
                             <div class="editor
                           lg-left mc-center">
-                                <h4>Добро пожаловать в Diamondmosaic!</h4>
-                                <h5>Интернет магазин алмазной вышивки</h5>
+                                <h3>Производство наборов для творчества<br>
+                                    в технике алмазная вышивка</h3>
                             </div>
 
 

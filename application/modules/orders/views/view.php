@@ -12,7 +12,7 @@
 <section class="panel panel-default">
     <header class="panel-heading">
         <div class="row">
-            <div class="col-md-8 col-xs-3">                
+            <div class="col-md-1 col-xs-3">
                 <?php
                                   echo anchor(
                                            site_url('orders/add'),
@@ -22,6 +22,26 @@
                  ?>
                 
             </div>
+            <div class="col-md-4 col-xs-9">
+
+                 <?php echo form_open(site_url('orders/filter'), 'role="filter" class="form"') ;?>
+                           <div class="input-group pull-right">
+                               <select name="filter" class="form-control input-sm " id="filter">
+                                    <option value="">Выбрать :</option>
+                                    <option value="1">Сегодня</option>
+                                    <option value="2">Вчера</option>
+                                    <option value="3">Неделя</option>
+                                    <option value="4">Месяц</option>
+                                </select>
+                               <span class="input-group-btn">
+                                      <button class="btn btn-primary btn-sm" type="submit"><i class="glyphicon glyphicon-search"></i> Показать</button>
+                                 </span>
+                           </div>
+
+               </form>
+                <?php echo form_close(); ?>
+            </div>
+
             <div class="col-md-4 col-xs-9">
                                            
                  <?php echo form_open(site_url('orders/search'), 'role="search" class="form"') ;?>       
@@ -55,7 +75,8 @@
                 
                     <th>Адрес доставки</th>   
                 
-                    <th>Товары</th>   
+                    <th>Товары</th>
+                    <th>Сумма</th>
                 
                     <th>Дата покупки</th>   
                 
@@ -90,20 +111,25 @@
                <td><?php
 
                    $content = unserialize(stripslashes($orders['order_content']));
+                          $summ = 0;
                       foreach ($content as $id_product => $product_) {
 
                           $this->load->model('products/productss');
                           $product = $this->productss->get_one($id_product);
                         //var_dump($product);
-                        echo '<img src="/images/products/thumbs/'.$product['product_image_front'].'"><br>';
-                        echo $product['product_title'] .' ('.$product_['count'].' шт. &#8727; '. $product_['price'] .' = <b>'.$product_['total']. currency . '</b>)'.'<hr>';
+                        echo '<a href="'.base_url().'product/'.$id_product.'" target="_blank">Артикул: <b>'. $id_product.'</b><br>';
+                        echo $product['product_title'].'<br>';
+                        echo '<img src="'.base_url().'/images/products/thumbs/'.$product['product_image_front'].'"><br>';
+                        echo  $product_['count'].' шт. &#8727; '. $product_['price'] .' = <b>'.$product_['total']. currency . '</b></a>'.'<hr>';
 
+                        $summ += $product_['total'];
                       }
+
 
 			   ?></td>
                
                
-               
+                <td><?php  echo '<h3>'. $summ . '</h2>'. currency;?></td>
                <td><?php echo $orders['order_date_create']; ?></td>
                
                

@@ -65,6 +65,9 @@ class orderss extends CI_Model
     public function count_all()
     {
         $this->db->from('orders');
+        $this->db->join('status', 'status.status_id = orders.status_id');
+		$this->db->join('delivery_method', 'delivery_method.delivery_id = orders.delivery_id');
+		$this->db->join('payment_method', 'payment_method.payment_id = orders.payment_id');
         return $this->db->count_all_results();
     }
     
@@ -89,7 +92,12 @@ class orderss extends CI_Model
                 
         $this->db->like('order_address', $keyword);  
                 
-        $this->db->like('order_content', $keyword);  
+        $this->db->like('order_content', $keyword);
+
+        $this->db->join('status', 'status.status_id = orders.status_id');
+		$this->db->join('delivery_method', 'delivery_method.delivery_id = orders.delivery_id');
+		$this->db->join('payment_method', 'payment_method.payment_id = orders.payment_id');
+        $this->db->order_by('order_id', 'DESC');
         
         $this->db->limit($limit, $offset);
         $result = $this->db->get('orders');
@@ -104,9 +112,6 @@ class orderss extends CI_Model
         }
     }
 
-    
-    
-    
     
     
     /**
@@ -127,13 +132,93 @@ class orderss extends CI_Model
                 
         $this->db->like('order_address', $keyword);  
                 
-        $this->db->like('order_content', $keyword);  
+        $this->db->like('order_content', $keyword);
+
+        $this->db->join('status', 'status.status_id = orders.status_id');
+		$this->db->join('delivery_method', 'delivery_method.delivery_id = orders.delivery_id');
+		$this->db->join('payment_method', 'payment_method.payment_id = orders.payment_id');
+        $this->db->order_by('order_id', 'DESC');
         
         return $this->db->count_all_results();
     }
 
 
-    
+public function get_filter($limit, $offset)
+    {
+        $filter = $this->session->userdata('filter');
+
+        switch ($filter) {
+            case 1:
+                $date = date("Y-m-d");
+                $where = " orders.order_date_create LIKE '".$date."%' ";
+                break;
+            case 2:
+                $date = date("Y-m-d", strtotime('-1 day'));
+                $where = " orders.order_date_create LIKE '".$date."%' ";
+                break;
+            case 3: // неделя
+                 $date = date("Y-m-d", strtotime('-1 week'));
+                 $where = " orders.order_date_create >= '".$date."%' ";
+                 break;
+            case 4: // месяц
+                 $date = date("Y-m-d", strtotime('-1 month'));
+                 $where = " orders.order_date_create >= '".$date."%' ";
+                 break;
+        }
+
+        $this->db->join('status', 'status.status_id = orders.status_id');
+		$this->db->join('delivery_method', 'delivery_method.delivery_id = orders.delivery_id');
+		$this->db->join('payment_method', 'payment_method.payment_id = orders.payment_id');
+        $this->db->order_by('order_id', 'DESC');
+
+        $this->db->where($where, NULL, FALSE);
+        $this->db->limit($limit, $offset);
+        $result = $this->db->get('orders');
+//echo $this->db->last_query();die;
+        if ($result->num_rows() > 0)
+        {
+            return $result->result_array();
+        }
+        else
+        {
+            return array();
+        }
+    }
+
+
+public function count_all_filter()
+    {
+         $filter = $this->session->userdata('filter');
+
+        switch ($filter) {
+            case 1: // сегодня
+                $date = date("Y-m-d");
+                $where = " orders.order_date_create LIKE '".$date."%' ";
+                break;
+            case 2: // вчера
+                $date = date("Y-m-d", strtotime('-1 day'));
+                $where = " orders.order_date_create LIKE '".$date."%' ";
+                break;
+            case 3: // неделя
+                 $date = date("Y-m-d", strtotime('-1 week'));
+                $where = " orders.order_date_create >= '".$date."%' ";
+                 break;
+            case 4: // месяц
+                 $date = date("Y-m-d", strtotime('-1 month'));
+                 $where = " orders.order_date_create >= '".$date."%' ";
+                 break;
+        }
+        $this->db->from('orders');
+        $this->db->join('status', 'status.status_id = orders.status_id');
+		$this->db->join('delivery_method', 'delivery_method.delivery_id = orders.delivery_id');
+		$this->db->join('payment_method', 'payment_method.payment_id = orders.payment_id');
+        $this->db->order_by('order_id', 'DESC');
+
+        $this->db->where($where, NULL, FALSE);
+       return $this->db->count_all_results();
+        //echo $this->db->last_query();die;
+    }
+
     
     
     /**

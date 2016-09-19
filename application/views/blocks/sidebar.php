@@ -41,6 +41,15 @@
       <div class="sidebar_block">
         <div class="sidebar_block-title">Бесплатная доставка</div>
         <div class="sidebar_block-content editor">
-          <p>Бесплатная доставка</p> 			<p>при заказе от 3000р!</p>
+          <p>Бесплатная доставка</p> 			<p>при заказе от 1000грн!</p>
         </div>
       </div>
+
+<div class="sidebar_block">
+    <div class="sidebar_block-title">Почему выбирают нас</div>
+    <div class="sidebar_block-content editor">
+    <p>Гибкая система скидок</p>
+    <p>Бесплатная доставка</p>
+    <p>Индивидуальный подход</p>
+    </div>
+</div>

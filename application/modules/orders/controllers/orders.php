@@ -56,7 +56,6 @@ class orders extends MY_Controller
 	      
     }
 
-    
 
     /**
     * Call Form to Add  New orders
@@ -287,6 +286,40 @@ class orders extends MY_Controller
         $data['pagination']     = $this->pagination->create_links();
         $data['orderss']       = $this->orderss->get_search($config['per_page'], $this->uri->segment(3));
        
+        $this->template->render('orders/view',$data);
+    }
+
+
+
+    /**
+    * fILTER orders ""
+    *
+    */
+    public function filter()
+    {
+       if($this->input->post('filter')){
+            //$keyword = $this->input->post('q');
+
+            $this->session->set_userdata(
+                        array('filter' => $this->input->post('filter',TRUE))
+            );
+        }
+
+         $config = array(
+            'base_url'          => site_url('orders/filter/'),
+            'total_rows'        => $this->orderss->count_all_filter(),
+            'per_page'          => $this->config->item('per_page'),
+            'uri_segment'       => 3,
+            'num_links'         => 9,
+            'use_page_numbers'  => FALSE
+        );
+
+        $this->pagination->initialize($config);
+        $data['total']          = $config['total_rows'];
+        $data['number']         = (int)$this->uri->segment(3) +1;
+        $data['pagination']     = $this->pagination->create_links();
+        $data['orderss']       = $this->orderss->get_filter($config['per_page'], $this->uri->segment(3));
+
         $this->template->render('orders/view',$data);
     }
     

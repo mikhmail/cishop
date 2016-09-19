@@ -23,6 +23,10 @@ class Main extends BaseController {
         $data['description'] = '';
         $data['keywords'] = 'купить алмазною вышивку';
 
+        //$data['path'] = realpath(APPPATH . '../images/slider');
+        //$data['path_url'] = base_url() . 'images/slider/';
+        //$data['files'] = scandir($data['path']); // Берём всё содержимое директории
+
         $this->layout('main/index',$data);
     }
 }

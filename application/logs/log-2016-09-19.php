@@ -70,3 +70,121 @@ ERROR - 2016-09-19 12:15:51 --> Severity: Notice  --> Undefined index: cart D:\o
 ERROR - 2016-09-19 12:15:51 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 180
 ERROR - 2016-09-19 12:16:44 --> Severity: Notice  --> Undefined index: cart D:\openserver\domains\ci3\application\views\layout\main.php 180
 ERROR - 2016-09-19 12:16:44 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 12:23:02 --> Severity: Notice  --> Undefined index: cart D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 12:23:02 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 12:24:11 --> Severity: Notice  --> Undefined index: cart D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 12:24:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 12:24:38 --> Severity: Notice  --> Undefined index: cart D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 12:24:38 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 12:26:30 --> Severity: Notice  --> Undefined index: cart D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 12:26:30 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 12:28:11 --> Severity: Notice  --> Undefined index: cart D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 12:28:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 12:28:53 --> Severity: Notice  --> Undefined index: cart D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 12:28:53 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 12:38:47 --> Severity: Notice  --> Undefined index: cart D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 12:38:47 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 12:48:01 --> Severity: Notice  --> Undefined index: cart D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 12:48:01 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 12:48:01 --> Severity: Notice  --> Undefined variable: k D:\openserver\domains\ci3\application\views\main\index.php 14
+ERROR - 2016-09-19 12:48:28 --> Severity: Notice  --> Undefined index: cart D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 12:48:28 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 12:49:05 --> Severity: Notice  --> Undefined index: cart D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 12:49:05 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 12:53:19 --> Severity: Notice  --> Undefined index: cart D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 12:53:19 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 12:53:19 --> Severity: Notice  --> Undefined variable: folder D:\openserver\domains\ci3\application\views\main\index.php 9
+ERROR - 2016-09-19 12:53:19 --> Severity: Notice  --> Undefined variable: folder D:\openserver\domains\ci3\application\views\main\index.php 9
+ERROR - 2016-09-19 12:53:19 --> Severity: Notice  --> Undefined variable: folder D:\openserver\domains\ci3\application\views\main\index.php 9
+ERROR - 2016-09-19 12:53:19 --> Severity: Notice  --> Undefined variable: folder D:\openserver\domains\ci3\application\views\main\index.php 9
+ERROR - 2016-09-19 12:53:19 --> Severity: Notice  --> Undefined variable: folder D:\openserver\domains\ci3\application\views\main\index.php 9
+ERROR - 2016-09-19 12:54:33 --> Severity: Notice  --> Undefined index: cart D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 12:54:33 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 12:54:33 --> Severity: Notice  --> Undefined variable: folder D:\openserver\domains\ci3\application\views\main\index.php 10
+ERROR - 2016-09-19 12:54:33 --> Severity: Notice  --> Undefined variable: folder D:\openserver\domains\ci3\application\views\main\index.php 10
+ERROR - 2016-09-19 12:54:33 --> Severity: Notice  --> Undefined variable: folder D:\openserver\domains\ci3\application\views\main\index.php 10
+ERROR - 2016-09-19 12:54:33 --> Severity: Notice  --> Undefined variable: folder D:\openserver\domains\ci3\application\views\main\index.php 10
+ERROR - 2016-09-19 12:54:33 --> Severity: Notice  --> Undefined variable: folder D:\openserver\domains\ci3\application\views\main\index.php 10
+ERROR - 2016-09-19 12:55:28 --> Severity: Notice  --> Undefined index: cart D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 12:55:28 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 12:55:56 --> Severity: Notice  --> Undefined index: cart D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 12:55:56 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 12:56:28 --> Severity: Notice  --> Undefined index: cart D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 12:56:28 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 12:57:19 --> Severity: Notice  --> Undefined index: cart D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 12:57:19 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 12:58:31 --> Severity: Notice  --> Undefined index: cart D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 12:58:31 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 13:16:25 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 13:16:39 --> Severity: Notice  --> Undefined index: cart D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 13:16:39 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 13:16:41 --> Severity: Notice  --> Undefined index: cart D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 13:16:41 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-19 13:17:30 --> Language file contains no data: language/russian/email_lang.php
+ERROR - 2016-09-19 13:17:30 --> Could not find the language line "email_sent"
+ERROR - 2016-09-19 13:25:36 --> Severity: Notice  --> Use of undefined constant base_url - assumed 'base_url' D:\openserver\domains\ci3\application\modules\orders\views\view.php 99
+ERROR - 2016-09-19 13:25:36 --> Severity: Notice  --> Use of undefined constant base_url - assumed 'base_url' D:\openserver\domains\ci3\application\modules\orders\views\view.php 99
+ERROR - 2016-09-19 13:42:16 --> Severity: Notice  --> Undefined index: status_color D:\openserver\domains\ci3\application\modules\orders\views\view.php 114
+ERROR - 2016-09-19 13:42:16 --> Severity: Notice  --> Undefined index: status_name D:\openserver\domains\ci3\application\modules\orders\views\view.php 114
+ERROR - 2016-09-19 13:42:16 --> Severity: Notice  --> Undefined index: delivery_name D:\openserver\domains\ci3\application\modules\orders\views\view.php 116
+ERROR - 2016-09-19 13:42:16 --> Severity: Notice  --> Undefined index: payment_name D:\openserver\domains\ci3\application\modules\orders\views\view.php 118
+ERROR - 2016-09-19 13:48:38 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 13:48:39 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 13:54:45 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 15:06:41 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 15:06:44 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 15:07:27 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 15:07:33 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 15:08:38 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 15:08:48 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 15:08:50 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 15:09:41 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 15:12:22 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 15:12:23 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 15:12:28 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 15:12:30 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 15:12:36 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 15:44:16 --> Severity: Notice  --> Undefined index: status_color D:\openserver\domains\ci3\application\modules\orders\views\view.php 134
+ERROR - 2016-09-19 15:44:16 --> Severity: Notice  --> Undefined index: status_name D:\openserver\domains\ci3\application\modules\orders\views\view.php 134
+ERROR - 2016-09-19 15:44:16 --> Severity: Notice  --> Undefined index: delivery_name D:\openserver\domains\ci3\application\modules\orders\views\view.php 136
+ERROR - 2016-09-19 15:44:16 --> Severity: Notice  --> Undefined index: payment_name D:\openserver\domains\ci3\application\modules\orders\views\view.php 138
+ERROR - 2016-09-19 15:44:24 --> Severity: Notice  --> Undefined index: status_color D:\openserver\domains\ci3\application\modules\orders\views\view.php 134
+ERROR - 2016-09-19 15:44:24 --> Severity: Notice  --> Undefined index: status_name D:\openserver\domains\ci3\application\modules\orders\views\view.php 134
+ERROR - 2016-09-19 15:44:24 --> Severity: Notice  --> Undefined index: delivery_name D:\openserver\domains\ci3\application\modules\orders\views\view.php 136
+ERROR - 2016-09-19 15:44:24 --> Severity: Notice  --> Undefined index: payment_name D:\openserver\domains\ci3\application\modules\orders\views\view.php 138
+ERROR - 2016-09-19 15:44:46 --> Severity: Notice  --> Undefined index: status_color D:\openserver\domains\ci3\application\modules\orders\views\view.php 134
+ERROR - 2016-09-19 15:44:46 --> Severity: Notice  --> Undefined index: status_name D:\openserver\domains\ci3\application\modules\orders\views\view.php 134
+ERROR - 2016-09-19 15:44:46 --> Severity: Notice  --> Undefined index: delivery_name D:\openserver\domains\ci3\application\modules\orders\views\view.php 136
+ERROR - 2016-09-19 15:44:46 --> Severity: Notice  --> Undefined index: payment_name D:\openserver\domains\ci3\application\modules\orders\views\view.php 138
+ERROR - 2016-09-19 15:44:50 --> Severity: Notice  --> Undefined index: status_color D:\openserver\domains\ci3\application\modules\orders\views\view.php 134
+ERROR - 2016-09-19 15:44:50 --> Severity: Notice  --> Undefined index: status_name D:\openserver\domains\ci3\application\modules\orders\views\view.php 134
+ERROR - 2016-09-19 15:44:50 --> Severity: Notice  --> Undefined index: delivery_name D:\openserver\domains\ci3\application\modules\orders\views\view.php 136
+ERROR - 2016-09-19 15:44:50 --> Severity: Notice  --> Undefined index: payment_name D:\openserver\domains\ci3\application\modules\orders\views\view.php 138
+ERROR - 2016-09-19 15:45:20 --> Severity: Notice  --> Undefined index: status_color D:\openserver\domains\ci3\application\modules\orders\views\view.php 134
+ERROR - 2016-09-19 15:45:20 --> Severity: Notice  --> Undefined index: status_name D:\openserver\domains\ci3\application\modules\orders\views\view.php 134
+ERROR - 2016-09-19 15:45:20 --> Severity: Notice  --> Undefined index: delivery_name D:\openserver\domains\ci3\application\modules\orders\views\view.php 136
+ERROR - 2016-09-19 15:45:20 --> Severity: Notice  --> Undefined index: payment_name D:\openserver\domains\ci3\application\modules\orders\views\view.php 138
+ERROR - 2016-09-19 15:45:32 --> Severity: Notice  --> Undefined index: status_color D:\openserver\domains\ci3\application\modules\orders\views\view.php 134
+ERROR - 2016-09-19 15:45:32 --> Severity: Notice  --> Undefined index: status_name D:\openserver\domains\ci3\application\modules\orders\views\view.php 134
+ERROR - 2016-09-19 15:45:32 --> Severity: Notice  --> Undefined index: delivery_name D:\openserver\domains\ci3\application\modules\orders\views\view.php 136
+ERROR - 2016-09-19 15:45:32 --> Severity: Notice  --> Undefined index: payment_name D:\openserver\domains\ci3\application\modules\orders\views\view.php 138
+ERROR - 2016-09-19 15:45:41 --> Severity: Notice  --> Undefined index: status_color D:\openserver\domains\ci3\application\modules\orders\views\view.php 134
+ERROR - 2016-09-19 15:45:41 --> Severity: Notice  --> Undefined index: status_name D:\openserver\domains\ci3\application\modules\orders\views\view.php 134
+ERROR - 2016-09-19 15:45:41 --> Severity: Notice  --> Undefined index: delivery_name D:\openserver\domains\ci3\application\modules\orders\views\view.php 136
+ERROR - 2016-09-19 15:45:41 --> Severity: Notice  --> Undefined index: payment_name D:\openserver\domains\ci3\application\modules\orders\views\view.php 138
+ERROR - 2016-09-19 15:49:05 --> Severity: Notice  --> Undefined index: status_color D:\openserver\domains\ci3\application\modules\orders\views\view.php 135
+ERROR - 2016-09-19 15:49:05 --> Severity: Notice  --> Undefined index: status_name D:\openserver\domains\ci3\application\modules\orders\views\view.php 135
+ERROR - 2016-09-19 15:49:05 --> Severity: Notice  --> Undefined index: delivery_name D:\openserver\domains\ci3\application\modules\orders\views\view.php 137
+ERROR - 2016-09-19 15:49:05 --> Severity: Notice  --> Undefined index: payment_name D:\openserver\domains\ci3\application\modules\orders\views\view.php 139
+ERROR - 2016-09-19 16:11:40 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 16:21:47 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN `status` ON `status`.`status_id` = `orders`.`status_id`
+JOIN `delivery_meth' at line 2
+ERROR - 2016-09-19 16:21:47 --> Language file contains no data: language/russian/db_lang.php
+ERROR - 2016-09-19 16:21:47 --> Could not find the language line "db_error_heading"
+ERROR - 2016-09-19 17:25:09 --> Severity: Notice  --> Undefined variable: where D:\openserver\domains\ci3\application\modules\orders\models\orderss.php 170
+ERROR - 2016-09-19 17:25:09 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+ORDER BY `order_id` DESC
+LIMIT 10' at line 6
+ERROR - 2016-09-19 17:25:09 --> Language file contains no data: language/russian/db_lang.php
+ERROR - 2016-09-19 17:25:09 --> Could not find the language line "db_error_heading"
+ERROR - 2016-09-19 17:25:09 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at D:\openserver\domains\ci3\system\core\Exceptions.php:186) D:\openserver\domains\ci3\system\core\Common.php 441

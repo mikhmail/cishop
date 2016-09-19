@@ -3,9 +3,17 @@
     <div class="slider-container owl-carousel js-slider--index owl-loaded owl-drag">
      <div class="jcarousel">
           <ul>
-              <li><img src="<?=base_url()?>images/slider/index_slider_1-loaded.jpg" alt="" /> </li>
-              <li><img src="<?=base_url()?>images/slider/index_slider_2-loaded.jpg" alt="" /> </li>
-
+                <?
+                 $folder = realpath(APPPATH . '../images/slider');
+                 $files = scandir($folder);
+                 foreach($files as $file) {
+                            if(($file == '.') || ($file == '..')) continue;
+                            $f0 = $folder.$file;
+                            if(!is_dir($f0)) {
+                              echo '<li><img src="'.base_url().'images/slider/'.$file.'"></li>';
+                            }
+                    }
+                ?>
           </ul>
      </div>
 
