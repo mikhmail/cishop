@@ -92,9 +92,7 @@
               </div>
           </div> <!--/ Order EMAIN -->
                           
-               <div class="form-group">
-                   <label for="order_content" class="col-sm-2 control-label">Покупка <span class="required-input">*</span></label>
-                <div class="col-sm-6">                                   
+
                   <?php
                   $this->load->model('products/productss');
                   $products = $this->productss->get_all(1000,0);
@@ -107,16 +105,28 @@
 
                   $content = unserialize(stripslashes($orders['order_content']));
                     //var_dump($content);die;
-                  foreach ($content as $id_product => $content){
+               if(count($content)>0){
+                  foreach ($content as $id_product => $content){?>
 
-
-                            echo form_dropdown(
+            <div id="<?=$id_product?>">
+                <div class="form-group" >
+                   <label for="order_content" class="col-sm-2 control-label">Товар
+                       <a name="<?=$id_product?>" class="btn btn-sm btn-danger" data-tooltip="tooltip" data-placement="top" title="delete_product" data-original-title="Удалить"><i class="glyphicon glyphicon-trash"></i></a>
+                                       
+                   </label>
+                <div class="col-sm-6 panel-footer" >
+                   <?         echo form_dropdown(
                                 'id_product_'.$id_product,
                                 $product,
                                 set_value('id_product',$id_product),
-                                'class="form-control input-sm required" id='.$id_product.''
+                                'class="form-control input-sm required " id='.$id_product.''
                             );
-                      echo form_input(
+                   ?>
+                    </div></div>
+                <div class="form-group">
+                   <label for="order_content" class="col-sm-2 control-label">Кол-во </label>
+                <div class="col-sm-6 panel-footer">
+                    <?  echo form_input(
                           array(
                               'name'         => 'count_'.$id_product,
                               'class'        => 'form-control input-sm  required',
@@ -125,19 +135,24 @@
                           ),
                           set_value('count',$content['count'])
                       );
-
-                      echo form_input(
+                    ?>
+                 </div></div>
+              <div class="form-group">
+                   <label for="order_content" class="col-sm-2 control-label">Цена </label>
+                <div class="col-sm-6 panel-footer">
+                 <?     echo form_input(
                           array(
                               'name'         => 'price_'.$id_product,
                               'id'         => 'price_'.$id_product,
-                              'class'        => 'form-control input-sm  required',
+                              'class'        => 'form-control input-sm  required ',
                               'placeholder'  => 'Order price',
                               'maxlength'=>'100'
                           ),
                           set_value('price',$content['price'])
                       );
-
-                      echo form_input(
+                ?>
+                   </div></div>
+                 <?     echo form_input(
                           array(
                               'name'         => 'name_product_'.$id_product,
                               'class'        => 'form-control input-sm',
@@ -156,13 +171,13 @@
                           ),
                           set_value('img',$content['img'])
                       );
-
+                    ?></div><?
                   }
-
+                }
                   ?>
                  <?php echo form_error('order_content');?>
-                </div>
-              </div> <!--/ Order Content -->
+
+<!--/ Order Content -->
           <script>
               $(document).ready(function(){
 
@@ -204,6 +219,12 @@
                       });
 
                   });
+
+                $('a[title=delete_product]').click(function() {
+                    if(confirm('Удалить?'))
+                        $('#'+this.name+'').remove();
+                 });
+
               });
           </script>
                <div class="form-group">

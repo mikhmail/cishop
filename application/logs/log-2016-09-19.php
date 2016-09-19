@@ -188,3 +188,48 @@ LIMIT 10' at line 6
 ERROR - 2016-09-19 17:25:09 --> Language file contains no data: language/russian/db_lang.php
 ERROR - 2016-09-19 17:25:09 --> Could not find the language line "db_error_heading"
 ERROR - 2016-09-19 17:25:09 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at D:\openserver\domains\ci3\system\core\Exceptions.php:186) D:\openserver\domains\ci3\system\core\Common.php 441
+ERROR - 2016-09-19 17:39:20 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 17:40:12 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 17:41:12 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 17:41:17 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 17:42:55 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 17:42:59 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 17:43:04 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 17:49:00 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 17:58:00 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 17:58:38 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 17:58:48 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 17:59:46 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 18:00:58 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 18:01:37 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 18:02:23 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 18:03:42 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 18:04:59 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 18:05:20 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 18:05:32 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 18:08:25 --> Language file contains no data: language/russian/form_validation_lang.php
+ERROR - 2016-09-19 18:08:35 --> Language file contains no data: language/russian/form_validation_lang.php
+ERROR - 2016-09-19 18:08:48 --> Language file contains no data: language/russian/form_validation_lang.php
+ERROR - 2016-09-19 18:09:20 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 18:10:26 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 18:10:34 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 18:12:01 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 18:13:01 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 18:15:40 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 18:16:32 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 18:19:07 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 18:20:27 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 18:25:06 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 18:26:18 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 18:26:53 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 18:26:59 --> Language file contains no data: language/russian/form_validation_lang.php
+ERROR - 2016-09-19 18:27:41 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 18:28:28 --> Language file contains no data: language/russian/form_validation_lang.php
+ERROR - 2016-09-19 18:28:28 --> Severity: Notice  --> Undefined variable: order_content D:\openserver\domains\ci3\application\modules\orders\models\orderss.php 422
+ERROR - 2016-09-19 18:28:28 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at D:\openserver\domains\ci3\system\core\Exceptions.php:186) D:\openserver\domains\ci3\system\libraries\Session.php 689
+ERROR - 2016-09-19 18:28:28 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at D:\openserver\domains\ci3\system\core\Exceptions.php:186) D:\openserver\domains\ci3\system\helpers\url_helper.php 543
+ERROR - 2016-09-19 18:28:34 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\modules\orders\views\view.php 131
+ERROR - 2016-09-19 18:28:49 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\modules\orders\views\form.php 108
+ERROR - 2016-09-19 18:30:32 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\modules\orders\views\view.php 131
+ERROR - 2016-09-19 18:30:34 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 18:31:07 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map

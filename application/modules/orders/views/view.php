@@ -7,6 +7,7 @@
                 
                 ?>
 	</div>
+
 </div><!-- /.row -->
 
 <section class="panel panel-default">
@@ -22,12 +23,27 @@
                  ?>
                 
             </div>
+
             <div class="col-md-4 col-xs-9">
 
                  <?php echo form_open(site_url('orders/filter'), 'role="filter" class="form"') ;?>
+                 <?php $filter = array(''=>'Выбрать фильтр :', 1=>'Сегодня',2=>'Вчера',3=>'Неделя',4=>'Месяц');?>
+                <div class="input-group pull-right">
+                    <?
+                     echo form_dropdown(
+                               'filter',
+                               $filter,
+                               set_value('filter', $this->session->userdata('filter') ),
+                               'class="form-control input-sm"'
+                               );
+                    ?>
+                    <span class="input-group-btn">
+                                      <button class="btn btn-primary btn-sm" type="submit"><i class="glyphicon glyphicon-search"></i> Показать</button>
+                                 </span>
+                </div><!--
                            <div class="input-group pull-right">
                                <select name="filter" class="form-control input-sm " id="filter">
-                                    <option value="">Выбрать :</option>
+                                    <option value="">Выбрать фильтр :</option>
                                     <option value="1">Сегодня</option>
                                     <option value="2">Вчера</option>
                                     <option value="3">Неделя</option>
@@ -37,7 +53,7 @@
                                       <button class="btn btn-primary btn-sm" type="submit"><i class="glyphicon glyphicon-search"></i> Показать</button>
                                  </span>
                            </div>
-
+                -->
                </form>
                 <?php echo form_close(); ?>
             </div>
@@ -112,6 +128,7 @@
 
                    $content = unserialize(stripslashes($orders['order_content']));
                           $summ = 0;
+                      if(count($content)>0){
                       foreach ($content as $id_product => $product_) {
 
                           $this->load->model('products/productss');
@@ -124,8 +141,7 @@
 
                         $summ += $product_['total'];
                       }
-
-
+                   }
 			   ?></td>
                
                

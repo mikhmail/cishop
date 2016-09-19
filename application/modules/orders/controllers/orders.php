@@ -37,6 +37,13 @@ class orders extends MY_Controller
     */
     public function index() 
     {
+
+        $this->session->set_userdata(
+                        array(  'keyword' => '',
+                                'filter' => ''
+                        )
+            );
+
         $config = array(
             'base_url'          => site_url('orders/index/'),
             'total_rows'        => $this->orderss->count_all(),
