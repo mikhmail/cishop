@@ -877,10 +877,30 @@
 <?php endif; ?>
 
 
-
-
     <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.jcarousel.min.js"></script>
     <script type="text/javascript">
+$(function() {
+         // ========================================================================
+        //                              jcarousel
+        // ========================================================================
+             $('.jcarousel')
+                .jcarousel({
+                    // Конфигурация инициализации
+                    wrap: 'circular'
+                    })
+
+                .jcarouselAutoscroll({
+                    interval: 4000,
+                    target: '+=1',
+                    autostart: true
+                });
+            // Инициализация прокрутки слайдера
+                $('.owl-prev').jcarouselControl({
+                  target: '-=1'
+                });
+                $('.owl-next').jcarouselControl({
+                  target: '+=1'
+                });
 
         // ========================================================================
         //                              TABS
@@ -977,9 +997,9 @@
 
 
         // =======================================================================================
-        //                                     IU для панели
+        //                                     IU для панели не работает...
         // =======================================================================================
-$( function(){
+
 
   $( '.js-panel-link' ).on( '_click tap', function( e ){alert(1);exit;
     e.preventDefault();
@@ -1041,7 +1061,8 @@ $( function(){
         .trigger( 'click' );
     }
   });
-});
+
+});//jquery
 
     </script>
 

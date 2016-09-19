@@ -6148,5 +6148,22 @@ footer {
   width: 70px;
 }
 
-
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+/* Контейнер с изображениями */
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    /* Optional, required in this case since it's a <ul> element */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* Отдельный элемент списка */
+.jcarousel li {
+    float: left;
+    width: 868px;
+}
 

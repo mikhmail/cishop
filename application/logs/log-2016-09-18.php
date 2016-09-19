@@ -160,3 +160,44 @@ ERROR - 2016-09-18 13:48:24 --> 404 Page Not Found --> assets/bootstrap/css/boot
 ERROR - 2016-09-18 13:48:44 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
 ERROR - 2016-09-18 13:52:57 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
 ERROR - 2016-09-18 13:54:06 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-18 14:00:24 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-18 15:27:47 --> Severity: Notice  --> Undefined index: cart D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-18 15:27:47 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-18 15:58:35 --> Severity: Notice  --> Undefined index: cart D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-18 15:58:35 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-18 19:51:13 --> Severity: Notice  --> Undefined index: cart D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-18 19:51:13 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-18 19:52:03 --> Language file contains no data: language/russian/form_validation_lang.php
+ERROR - 2016-09-18 19:52:44 --> Language file contains no data: language/russian/form_validation_lang.php
+ERROR - 2016-09-18 19:52:44 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-18 19:52:44 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-18 19:52:44 --> upload_no_file_selected
+ERROR - 2016-09-18 19:52:44 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-18 19:52:44 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-18 19:52:44 --> upload_no_file_selected
+ERROR - 2016-09-18 19:52:44 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-18 19:52:44 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-18 19:52:44 --> upload_no_file_selected
+ERROR - 2016-09-18 19:52:44 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-18 19:52:44 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-18 19:52:44 --> upload_no_file_selected
+ERROR - 2016-09-18 19:52:44 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-18 19:52:44 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-18 19:52:44 --> upload_no_file_selected
+ERROR - 2016-09-18 19:52:55 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-18 19:53:41 --> Severity: Notice  --> Undefined index: cart D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-18 19:53:41 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-18 19:54:13 --> Severity: Notice  --> Undefined index: cart D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-18 19:54:13 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-18 19:55:03 --> Severity: Notice  --> Undefined index: cart D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-18 19:55:03 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-18 19:55:05 --> Severity: Notice  --> Undefined index: cart D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-18 19:55:05 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-18 19:55:17 --> Severity: Notice  --> Undefined index: cart D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-18 19:55:17 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-18 19:55:19 --> Severity: Notice  --> Undefined index: cart D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-18 19:55:19 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-18 19:55:28 --> Severity: Notice  --> Undefined index: cart D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-18 19:55:28 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-18 19:55:50 --> Severity: Notice  --> Undefined index: cart D:\openserver\domains\ci3\application\views\layout\main.php 180
+ERROR - 2016-09-18 19:55:50 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 180

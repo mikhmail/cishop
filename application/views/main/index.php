@@ -1,11 +1,19 @@
-<div class="slider slider--index">	
-	<ul id="mycarousel" class="jcarousel-skin-name">
-				<li class="slider-image _owl-lazy">
-					<img class="owl-lazy" src="<?=base_url()?>images/slider/index_slider_1-loaded.jpg" alt="" />
-				  </li>
+<div class="slider slider--index xs-hidden">
 
-	</ul>
+    <div class="slider-container owl-carousel js-slider--index owl-loaded owl-drag">
+     <div class="jcarousel">
+          <ul>
+              <li><img src="<?=base_url()?>images/slider/index_slider_1-loaded.jpg" alt="" /> </li>
+              <li><img src="<?=base_url()?>images/slider/index_slider_2-loaded.jpg" alt="" /> </li>
+
+          </ul>
+     </div>
+
+        <div class="owl-nav slider-control"><div class="owl-prev slider-left"><i class="fa fa-angle-left"></i></div><div class="owl-next slider-right"><i class="fa fa-angle-right"></i></div></div>
+    </div>
 </div>
+
+
 
 
 
