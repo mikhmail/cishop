@@ -36,6 +36,13 @@ class products extends MY_Controller
     */
     public function index() 
     {
+
+        $this->session->set_userdata(
+                        array(  'keyword' => '',
+                                'filter' => ''
+                        )
+            );
+
         $config = array(
             'base_url'          => site_url('products/index/'),
             'total_rows'        => $this->productss->count_all(),
@@ -51,6 +58,7 @@ class products extends MY_Controller
         $data['pagination']     = $this->pagination->create_links();
         $data['number']         = (int)$this->uri->segment(3) +1;
         $data['productss']       = $this->productss->get_all($config['per_page'], $this->uri->segment(3));
+        $data['categories'] = $this->productss->get_categories();
         $this->template->render('products/view',$data);
 	      
     }
@@ -323,7 +331,42 @@ class products extends MY_Controller
         $data['number']         = (int)$this->uri->segment(3) +1;
         $data['pagination']     = $this->pagination->create_links();
         $data['productss']       = $this->productss->get_search($config['per_page'], $this->uri->segment(3));
+        $data['categories'] = $this->productss->get_categories();
        
+        $this->template->render('products/view',$data);
+    }
+
+
+     /**
+    * Search products like ""
+    *
+    */
+    public function filter()
+    {
+        if($this->input->post('filter')){
+            //$keyword = $this->input->post('q');
+
+            $this->session->set_userdata(
+                        array('filter' => $this->input->post('filter',TRUE))
+            );
+        }
+
+         $config = array(
+            'base_url'          => site_url('products/filter/'),
+            'total_rows'        => $this->productss->count_all_filter(),
+            'per_page'          => $this->config->item('per_page'),
+            'uri_segment'       => 3,
+            'num_links'         => 9,
+            'use_page_numbers'  => FALSE
+        );
+
+        $this->pagination->initialize($config);
+        $data['total']          = $config['total_rows'];
+        $data['number']         = (int)$this->uri->segment(3) +1;
+        $data['pagination']     = $this->pagination->create_links();
+        $data['productss']       = $this->productss->get_filter($config['per_page'], $this->uri->segment(3));
+        $data['categories'] = $this->productss->get_categories();
+
         $this->template->render('products/view',$data);
     }
     

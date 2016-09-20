@@ -40,21 +40,7 @@
                     <span class="input-group-btn">
                                       <button class="btn btn-primary btn-sm" type="submit"><i class="glyphicon glyphicon-search"></i> Показать</button>
                                  </span>
-                </div><!--
-                           <div class="input-group pull-right">
-                               <select name="filter" class="form-control input-sm " id="filter">
-                                    <option value="">Выбрать фильтр :</option>
-                                    <option value="1">Сегодня</option>
-                                    <option value="2">Вчера</option>
-                                    <option value="3">Неделя</option>
-                                    <option value="4">Месяц</option>
-                                </select>
-                               <span class="input-group-btn">
-                                      <button class="btn btn-primary btn-sm" type="submit"><i class="glyphicon glyphicon-search"></i> Показать</button>
-                                 </span>
-                           </div>
-                -->
-               </form>
+                </div>
                 <?php echo form_close(); ?>
             </div>
 

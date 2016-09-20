@@ -462,3 +462,39 @@ ERROR - 2016-09-20 18:05:24 --> Could not find the language line "email_sent"
 ERROR - 2016-09-20 18:10:57 --> Language file contains no data: language/russian/email_lang.php
 ERROR - 2016-09-20 18:10:57 --> Could not find the language line "email_sent"
 ERROR - 2016-09-20 18:15:27 --> Language file contains no data: language/russian/form_validation_lang.php
+ERROR - 2016-09-20 18:20:57 --> Severity: Notice  --> Undefined variable: where D:\openserver\domains\ci3\application\modules\orders\models\orderss.php 225
+ERROR - 2016-09-20 18:20:57 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+ORDER BY `order_id` DESC' at line 6
+ERROR - 2016-09-20 18:20:57 --> Language file contains no data: language/russian/db_lang.php
+ERROR - 2016-09-20 18:20:57 --> Could not find the language line "db_error_heading"
+ERROR - 2016-09-20 18:20:57 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at D:\openserver\domains\ci3\system\core\Exceptions.php:186) D:\openserver\domains\ci3\system\core\Common.php 441
+ERROR - 2016-09-20 18:22:43 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+ORDER BY `order_id` DESC' at line 6
+ERROR - 2016-09-20 18:22:43 --> Language file contains no data: language/russian/db_lang.php
+ERROR - 2016-09-20 18:22:43 --> Could not find the language line "db_error_heading"
+ERROR - 2016-09-20 18:24:04 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''2000-01-01
+ORDER BY `order_id` DESC' at line 6
+ERROR - 2016-09-20 18:24:04 --> Language file contains no data: language/russian/db_lang.php
+ERROR - 2016-09-20 18:24:04 --> Could not find the language line "db_error_heading"
+ERROR - 2016-09-20 18:24:26 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''2000-01-01%
+ORDER BY `order_id` DESC' at line 6
+ERROR - 2016-09-20 18:24:26 --> Language file contains no data: language/russian/db_lang.php
+ERROR - 2016-09-20 18:24:26 --> Could not find the language line "db_error_heading"
+ERROR - 2016-09-20 18:26:40 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-20 18:27:08 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-20 18:27:10 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-20 18:27:12 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-20 18:27:36 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-20 18:27:37 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-20 18:27:39 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-20 18:27:55 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-20 18:28:04 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-20 18:28:05 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-20 18:28:17 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-20 18:29:19 --> Severity: Notice  --> Undefined variable: categories D:\openserver\domains\ci3\application\modules\products\views\view.php 35
+ERROR - 2016-09-20 18:29:19 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\system\helpers\form_helper.php 332
+ERROR - 2016-09-20 18:32:42 --> Severity: Notice  --> Undefined variable: categories D:\openserver\domains\ci3\application\modules\products\views\view.php 35
+ERROR - 2016-09-20 18:32:42 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\system\helpers\form_helper.php 332
+ERROR - 2016-09-20 18:34:43 --> 404 Page Not Found --> products/filter
+ERROR - 2016-09-20 18:34:51 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-20 18:36:17 --> 404 Page Not Found --> products/filter

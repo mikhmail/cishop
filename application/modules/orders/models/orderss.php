@@ -172,6 +172,10 @@ public function get_filter($limit, $offset)
                  $date = date("Y-m-d", strtotime('-1 month'));
                  $where = " orders.order_date_create >= '".$date."%' ";
                  break;
+            default:
+                //$date = date("Y-m-d", strtotime('-1 month'));
+                 $where = " orders.order_date_create >= '2000-01-01%' ";
+                 break;
         }
 
         $this->db->join('status', 'status.status_id = orders.status_id');
@@ -214,6 +218,10 @@ public function count_all_filter()
             case 4: // месяц
                  $date = date("Y-m-d", strtotime('-1 month'));
                  $where = " orders.order_date_create >= '".$date."%' ";
+                 break;
+            default:
+                //$date = date("Y-m-d", strtotime('-1 month'));
+                 $where = " orders.order_date_create >= '2000-01-01%' ";
                  break;
         }
         $this->db->from('orders');

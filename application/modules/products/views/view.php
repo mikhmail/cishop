@@ -12,7 +12,7 @@
 <section class="panel panel-default">
     <header class="panel-heading">
         <div class="row">
-            <div class="col-md-8 col-xs-3">                
+            <div class="col-md-1 col-xs-3">
                 <?php
                                   echo anchor(
                                            site_url('products/add'),
@@ -22,6 +22,28 @@
                  ?>
                 
             </div>
+
+
+            <div class="col-md-4 col-xs-9">
+
+                 <?php echo form_open(site_url('products/filter'), 'role="filter" class="form"') ;?>
+                 <?php //$categories = array(''=>'Выбрать фильтр :', 1=>'Сегодня',2=>'Вчера',3=>'Неделя',4=>'Месяц');?>
+                <div class="input-group pull-right">
+                    <?
+                     echo form_dropdown(
+                               'filter',
+                               $categories,
+                               set_value('filter', $this->session->userdata('filter') ),
+                               'class="form-control input-sm"'
+                               );
+                    ?>
+                    <span class="input-group-btn">
+                                      <button class="btn btn-primary btn-sm" type="submit"><i class="glyphicon glyphicon-search"></i> Показать</button>
+                                 </span>
+                </div>
+                <?php echo form_close(); ?>
+            </div>
+
             <div class="col-md-4 col-xs-9">
                                            
                  <?php echo form_open(site_url('products/search'), 'role="search" class="form"') ;?>       

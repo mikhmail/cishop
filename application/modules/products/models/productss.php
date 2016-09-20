@@ -64,6 +64,7 @@ class productss extends CI_Model
     public function count_all()
     {
         $this->db->from('products');
+        $this->db->join('categories', 'products.category_id = categories.category_id');
         return $this->db->count_all_results();
     }
     
@@ -516,5 +517,48 @@ $where = "product_title LIKE '%$keyword%' OR product_description LIKE '%$keyword
     }
 
 
+public function get_filter($limit, $offset)
+    {
+        $filter = $this->session->userdata('filter');
 
-}
+		$this->db->select('*');
+		$this->db->from('products');
+		$this->db->join('categories', 'products.category_id = categories.category_id');
+        $this->db->where('products.category_id', $filter);
+        $this->db->order_by('id_product', 'DESC');
+
+		$this->db->limit($limit, $offset);
+
+		$result = $this->db->get();
+
+
+        if ($result->num_rows() > 0)
+        {
+            return $result->result_array();
+        }
+        else
+        {
+            return array();
+        }
+        
+    }
+
+
+public function count_all_filter()
+    {
+         $filter = $this->session->userdata('filter');
+
+		$this->db->select('*');
+		$this->db->from('products');
+		$this->db->join('categories', 'products.category_id = categories.category_id');
+        $this->db->where('products.category_id', $filter);
+        $this->db->order_by('id_product', 'DESC');
+
+	 return $this->db->count_all_results();
+        
+      
+    }
+
+
+
+}//end class
