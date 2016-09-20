@@ -271,10 +271,10 @@ class orders extends MY_Controller
     {
         if($this->input->post('q'))
         {
-            $keyword = $this->input->post('q');
+            //$keyword = $this->input->post('q');
             
             $this->session->set_userdata(
-                        array('keyword' => $this->input->post('q',TRUE))
+                        array('keyword' => trim(stripslashes ($_POST['q'])))
                     );
         }
         

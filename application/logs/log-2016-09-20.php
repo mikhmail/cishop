@@ -442,3 +442,22 @@ ERROR - 2016-09-20 17:20:47 --> upload_no_file_selected
 ERROR - 2016-09-20 17:20:47 --> Language file contains no data: language/russian/upload_lang.php
 ERROR - 2016-09-20 17:20:47 --> Could not find the language line "upload_no_file_selected"
 ERROR - 2016-09-20 17:20:47 --> upload_no_file_selected
+ERROR - 2016-09-20 17:23:36 --> Severity: Notice  --> Undefined index: cart D:\openserver\domains\ci3\application\views\layout\main.php 179
+ERROR - 2016-09-20 17:23:36 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 179
+ERROR - 2016-09-20 17:24:18 --> Severity: Notice  --> Undefined index: cart D:\openserver\domains\ci3\application\views\layout\main.php 179
+ERROR - 2016-09-20 17:24:18 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 179
+ERROR - 2016-09-20 17:50:01 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order_phone LIKE '%almaz_33%' order_address LIKE '%almaz_33%'
+ORDER BY `order_id' at line 6
+ERROR - 2016-09-20 17:50:01 --> Language file contains no data: language/russian/db_lang.php
+ERROR - 2016-09-20 17:50:01 --> Could not find the language line "db_error_heading"
+ERROR - 2016-09-20 17:58:25 --> Severity: Notice  --> Undefined index: category_title D:\openserver\domains\ci3\application\modules\products\views\view.php 92
+ERROR - 2016-09-20 17:58:25 --> Severity: Notice  --> Undefined index: category_title D:\openserver\domains\ci3\application\modules\products\views\view.php 92
+ERROR - 2016-09-20 17:58:25 --> Severity: Notice  --> Undefined index: category_title D:\openserver\domains\ci3\application\modules\products\views\view.php 92
+ERROR - 2016-09-20 18:05:01 --> Severity: Notice  --> Undefined index: cart D:\openserver\domains\ci3\application\views\layout\main.php 179
+ERROR - 2016-09-20 18:05:01 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 179
+ERROR - 2016-09-20 18:05:07 --> Severity: Notice  --> Undefined index: cart D:\openserver\domains\ci3\application\views\layout\main.php 179
+ERROR - 2016-09-20 18:05:07 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 179
+ERROR - 2016-09-20 18:05:24 --> Language file contains no data: language/russian/email_lang.php
+ERROR - 2016-09-20 18:05:24 --> Could not find the language line "email_sent"
+ERROR - 2016-09-20 18:10:57 --> Language file contains no data: language/russian/email_lang.php
+ERROR - 2016-09-20 18:10:57 --> Could not find the language line "email_sent"

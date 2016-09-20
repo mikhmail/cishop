@@ -86,7 +86,7 @@ $(function(){
 
 var items = {};
 var cart = { 
-    add: function(id,num,price,name,img){
+    add: function(id,num,price,name,img,article){
 	
       var   el_item = $('span.cart_widget-items_count'),
             el_total = $('span.cart_widget-items_price'),
@@ -102,13 +102,16 @@ var cart = {
             items[id].total = items[id].total + price*num;
             items[id].name = name;
             items[id].img = img;
+            items[id].article = article;
+
         } else {
             items[id] = {
                 count:num,
                 price:price,
                 total:price*num,
                 name:name,
-                img:img
+                img:img,
+                article:article
             };
             
         }
@@ -208,9 +211,8 @@ $(".add").on('click',function(){
             Number(el.val()),
             Number(el.attr('data-price')),
             el.attr('data-name'),
-            el.attr('data-img')
-			
-			
+            el.attr('data-img'),
+            el.attr('data-article')
         );
     }
 

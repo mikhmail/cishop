@@ -86,13 +86,17 @@ class orderss extends CI_Model
     {
         $keyword = $this->session->userdata('keyword');
                 
-        $this->db->like('order_name', $keyword);  
+        //$this->db->or_like('order_name', $keyword);
                 
-        $this->db->like('order_phone', $keyword);  
+        //$this->db->or_like('order_phone', $keyword);
                 
-        $this->db->like('order_address', $keyword);  
+        //$this->db->or_like('order_address', $keyword);
                 
-        $this->db->like('order_content', $keyword);
+        //$this->db->or_like('order_content', $keyword);
+
+        $where = "order_content LIKE '%$keyword%' OR order_name LIKE '%$keyword%' OR order_phone LIKE '%$keyword%' OR order_address LIKE '%$keyword%'";
+
+        $this->db->where($where);
 
         $this->db->join('status', 'status.status_id = orders.status_id');
 		$this->db->join('delivery_method', 'delivery_method.delivery_id = orders.delivery_id');
@@ -101,7 +105,7 @@ class orderss extends CI_Model
         
         $this->db->limit($limit, $offset);
         $result = $this->db->get('orders');
-
+//echo $this->db->last_query();die;
         if ($result->num_rows() > 0) 
         {
             return $result->result_array();
@@ -125,14 +129,18 @@ class orderss extends CI_Model
     {
         $keyword = $this->session->userdata('keyword');
         $this->db->from('orders');        
-                
-        $this->db->like('order_name', $keyword);  
-                
-        $this->db->like('order_phone', $keyword);  
-                
-        $this->db->like('order_address', $keyword);  
-                
-        $this->db->like('order_content', $keyword);
+
+         //$this->db->or_like('order_name', $keyword);
+
+        //$this->db->or_like('order_phone', $keyword);
+
+        //$this->db->or_like('order_address', $keyword);
+
+        //$this->db->or_like('order_content', $keyword);
+
+        $where = "order_content LIKE '%$keyword%' OR order_name LIKE '%$keyword%' OR order_phone LIKE '%$keyword%' OR order_address LIKE '%$keyword%'";
+
+        $this->db->where($where);
 
         $this->db->join('status', 'status.status_id = orders.status_id');
 		$this->db->join('delivery_method', 'delivery_method.delivery_id = orders.delivery_id');

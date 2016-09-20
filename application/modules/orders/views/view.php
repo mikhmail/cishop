@@ -136,7 +136,7 @@
                           $this->load->model('products/productss');
                           $product = $this->productss->get_one($id_product);
                         //var_dump($product);
-                        echo '<a href="'.base_url().'product/'.$id_product.'" target="_blank">Артикул: <b>'. $id_product.'</b><br>';
+                        echo '<a href="'.base_url().'product/'.$id_product.'" target="_blank">Артикул: <b>'. $product['product_article'].'</b><br>';
                         echo $product['product_title'].'<br>';
                         echo '<img src="'.base_url().'/images/products/thumbs/'.$product['product_image_front'].'"><br>';
                         echo  $product_['count'].' шт. &#8727; '. $product_['price'] .' = <b>'.$product_['total']. currency . '</b></a>'.'<hr>';

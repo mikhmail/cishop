@@ -72,7 +72,7 @@
   
   <div class="product-sku js-product-sku">
     Артикул:
-    <span class="product-sku_field js-product-sku_field"><?=$product->id_product;?></span>
+    <span class="product-sku_field js-product-sku_field"><?=$product->product_article;?></span>
   </div>
 
   
@@ -127,6 +127,8 @@
                                         data-id="<?=$product->id_product;?>"
                                         data-price="<?=$product->product_price;?>"
                                         data-name="<?=$product->product_title;?>"
+                                        data-article="<?=$product->product_article;?>"
+                                                                                
                                         max="<?=$product->product_count;?>"
                                         data-img="/images/products/thumbs/<?=$product->product_image_front?>"
                                         size="3"

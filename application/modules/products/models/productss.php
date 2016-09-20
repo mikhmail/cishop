@@ -82,24 +82,13 @@ class productss extends CI_Model
     {
         $keyword = $this->session->userdata('keyword');
                 
-        $this->db->like('product_title', $keyword);  
-                
-        $this->db->like('product_description', $keyword);  
-                
-        $this->db->like('product_properties', $keyword);  
-                
-        $this->db->like('product_image_front', $keyword);  
-                
-        $this->db->like('product_image_1', $keyword);  
-                
-        $this->db->like('product_image_2', $keyword);  
-                
-        $this->db->like('product_image_3', $keyword);  
-                
-        $this->db->like('product_image_4', $keyword);  
-                
-        $this->db->like('product_image_5', $keyword);  
         
+
+$where = "product_title LIKE '%$keyword%' OR product_description LIKE '%$keyword%' OR product_properties LIKE '%$keyword%' OR product_article LIKE '%$keyword%'";
+
+        $this->db->where($where);
+
+        		$this->db->join('categories', 'products.category_id = categories.category_id');
         $this->db->limit($limit, $offset);
         $result = $this->db->get('products');
 
@@ -129,24 +118,13 @@ class productss extends CI_Model
     {
         $keyword = $this->session->userdata('keyword');
         $this->db->from('products');        
+		$this->db->join('categories', 'products.category_id = categories.category_id');
+        $where = "product_title LIKE '%$keyword%' OR product_description LIKE '%$keyword%' OR product_properties LIKE '%$keyword%' OR product_article LIKE '%$keyword%'";
+
+                $this->db->where($where);
+
                 
-        $this->db->like('product_title', $keyword);  
-                
-        $this->db->like('product_description', $keyword);  
-                
-        $this->db->like('product_properties', $keyword);  
-                
-        $this->db->like('product_image_front', $keyword);  
-                
-        $this->db->like('product_image_1', $keyword);  
-                
-        $this->db->like('product_image_2', $keyword);  
-                
-        $this->db->like('product_image_3', $keyword);  
-                
-        $this->db->like('product_image_4', $keyword);  
-                
-        $this->db->like('product_image_5', $keyword);  
+
         
         return $this->db->count_all_results();
     }
