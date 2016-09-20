@@ -46,7 +46,10 @@
             <thead>
               <tr>
                 <th class="header">#</th>
-                
+
+                  <th class="header">Артикул</th>
+
+
                     <th>Категория</th>   
                 
                     <th>Название</th>   
@@ -55,8 +58,9 @@
                 
                     <th>Цена</th>   
                 
-                    <th>Акционная цена</th>   
-                
+                    <th>Акционная цена</th>
+                    <th>Оптовая цена</th>
+
                     <th>Акция?</th>   
                 
                     <th>Активный?</th>   
@@ -80,7 +84,10 @@
              
                <?php foreach ($productss as $products) : ?>
               <tr>
-              	<td><?php echo $number++;; ?> </td>
+              	<td><?php echo $products['id_product']; ?> </td>
+
+                <td><?php echo $products['product_article']; ?> </td>
+
                
                <td><?php echo $products['category_title']; ?></td>
                
@@ -91,6 +98,7 @@
                <td><?php echo $products['product_price']; ?></td>
                
                <td><?php echo $products['product_action_price']; ?></td>
+               <td><?php echo $products['product_trade_price']; ?></td>
                
                <td><?php echo $products['product_status']? 'ДА':'НЕТ'; ?></td>
                

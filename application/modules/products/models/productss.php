@@ -277,7 +277,10 @@ class productss extends CI_Model
         
             'product_views' => '',
         
-            'product_properties' => $product_properties
+            'product_properties' => $product_properties,
+            'product_article' => strip_tags($this->input->post('product_article', TRUE)),
+            'product_trade_price' => strip_tags($this->input->post('product_trade_price', TRUE))
+
         
         );
         
@@ -397,7 +400,9 @@ class productss extends CI_Model
                 'product_date_update' => date('Y-m-d H:i:s'),
         
         
-                'product_properties' => $product_properties
+                'product_properties' => $product_properties,
+                'product_article' => strip_tags($this->input->post('product_article', TRUE)),
+                'product_trade_price' => strip_tags($this->input->post('product_trade_price', TRUE))
         
                
         );

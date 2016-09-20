@@ -8,12 +8,31 @@
                 ?>
 	</div>
 </div><!-- /.row -->
-
+<?//var_dump($products);die;?>
 <?php echo form_open_multipart(site_url('products/' . $action),'role="form" class="form-horizontal" id="form_products" parsley-validate'); ?>               
 <div class="panel panel-default">
     <div class="panel-heading"><i class="glyphicon glyphicon-signal"></i> </div>
      
       <div class="panel-body">
+
+      <div class="form-group">
+                   <label for="product_article" class="col-sm-2 control-label">Артикул <span class="required-input">*</span></label>
+                <div class="col-sm-6">
+                  <?php
+                   echo form_input(
+                                array(
+                                 'name'         => 'product_article',
+                                 'id'           => 'product_article',
+                                 'class'        => 'form-control input-sm  required',
+                                 'placeholder'  => 'Product article',
+                                 'maxlength'=>'255'
+                                 ),
+                                 set_value('product_article','')
+                           );
+                  ?>
+                 <?php echo form_error('product_article');?>
+                </div>
+              </div> <!--/ Product article -->
          
                        
                <div class="form-group">
@@ -106,6 +125,25 @@
                  <?php echo form_error('product_action_price');?>
                 </div>
               </div> <!--/ Product Action Price -->
+
+             <div class="form-group">
+                   <label for="product_trade_price" class="col-sm-2 control-label">Оптовая цена <span class="required-input">*</span></label>
+                <div class="col-sm-6">
+                  <?php
+                   echo form_input(
+                                array(
+                                 'name'         => 'product_trade_price',
+                                 'id'           => 'product_trade_price',
+                                 'class'        => 'form-control input-sm  required',
+                                 'placeholder'  => 'Product Trade Price',
+
+                                 ),
+                                 set_value('product_trade_price','')
+                           );
+                  ?>
+                 <?php echo form_error('product_trade_price');?>
+                </div>
+              </div> <!--/ Product Trade Price -->
                           
                <div class="form-group">
                    <label for="product_status" class="col-sm-2 control-label">Акция? <span class="required-input">*</span></label>

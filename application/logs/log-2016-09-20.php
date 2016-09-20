@@ -287,3 +287,158 @@ ERROR - 2016-09-20 16:48:47 --> 404 Page Not Found --> assets/bootstrap/css/boot
 ERROR - 2016-09-20 16:49:10 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
 ERROR - 2016-09-20 16:50:21 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
 ERROR - 2016-09-20 16:51:16 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-20 17:03:17 --> Severity: Notice  --> Undefined index: product_id D:\openserver\domains\ci3\application\modules\products\views\view.php 86
+ERROR - 2016-09-20 17:03:17 --> Severity: Notice  --> Undefined index: product_id D:\openserver\domains\ci3\application\modules\products\views\view.php 86
+ERROR - 2016-09-20 17:03:17 --> Severity: Notice  --> Undefined index: product_id D:\openserver\domains\ci3\application\modules\products\views\view.php 86
+ERROR - 2016-09-20 17:03:17 --> Severity: Notice  --> Undefined index: product_id D:\openserver\domains\ci3\application\modules\products\views\view.php 86
+ERROR - 2016-09-20 17:03:17 --> Severity: Notice  --> Undefined index: product_id D:\openserver\domains\ci3\application\modules\products\views\view.php 86
+ERROR - 2016-09-20 17:03:17 --> Severity: Notice  --> Undefined index: product_id D:\openserver\domains\ci3\application\modules\products\views\view.php 86
+ERROR - 2016-09-20 17:03:17 --> Severity: Notice  --> Undefined index: product_id D:\openserver\domains\ci3\application\modules\products\views\view.php 86
+ERROR - 2016-09-20 17:03:17 --> Severity: Notice  --> Undefined index: product_id D:\openserver\domains\ci3\application\modules\products\views\view.php 86
+ERROR - 2016-09-20 17:03:17 --> Severity: Notice  --> Undefined index: product_id D:\openserver\domains\ci3\application\modules\products\views\view.php 86
+ERROR - 2016-09-20 17:03:17 --> Severity: Notice  --> Undefined index: product_id D:\openserver\domains\ci3\application\modules\products\views\view.php 86
+ERROR - 2016-09-20 17:05:15 --> Severity: Notice  --> Undefined index: article D:\openserver\domains\ci3\application\modules\products\views\view.php 88
+ERROR - 2016-09-20 17:05:15 --> Severity: Notice  --> Undefined index: article D:\openserver\domains\ci3\application\modules\products\views\view.php 88
+ERROR - 2016-09-20 17:05:15 --> Severity: Notice  --> Undefined index: article D:\openserver\domains\ci3\application\modules\products\views\view.php 88
+ERROR - 2016-09-20 17:05:15 --> Severity: Notice  --> Undefined index: article D:\openserver\domains\ci3\application\modules\products\views\view.php 88
+ERROR - 2016-09-20 17:05:15 --> Severity: Notice  --> Undefined index: article D:\openserver\domains\ci3\application\modules\products\views\view.php 88
+ERROR - 2016-09-20 17:05:15 --> Severity: Notice  --> Undefined index: article D:\openserver\domains\ci3\application\modules\products\views\view.php 88
+ERROR - 2016-09-20 17:05:15 --> Severity: Notice  --> Undefined index: article D:\openserver\domains\ci3\application\modules\products\views\view.php 88
+ERROR - 2016-09-20 17:05:15 --> Severity: Notice  --> Undefined index: article D:\openserver\domains\ci3\application\modules\products\views\view.php 88
+ERROR - 2016-09-20 17:05:15 --> Severity: Notice  --> Undefined index: article D:\openserver\domains\ci3\application\modules\products\views\view.php 88
+ERROR - 2016-09-20 17:05:15 --> Severity: Notice  --> Undefined index: article D:\openserver\domains\ci3\application\modules\products\views\view.php 88
+ERROR - 2016-09-20 17:08:13 --> Language file contains no data: language/russian/form_validation_lang.php
+ERROR - 2016-09-20 17:08:13 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:08:13 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:08:13 --> upload_no_file_selected
+ERROR - 2016-09-20 17:08:13 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:08:13 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:08:13 --> upload_no_file_selected
+ERROR - 2016-09-20 17:08:13 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:08:13 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:08:13 --> upload_no_file_selected
+ERROR - 2016-09-20 17:08:13 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:08:13 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:08:13 --> upload_no_file_selected
+ERROR - 2016-09-20 17:08:13 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:08:13 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:08:13 --> upload_no_file_selected
+ERROR - 2016-09-20 17:08:13 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:08:13 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:08:13 --> upload_no_file_selected
+ERROR - 2016-09-20 17:11:05 --> Language file contains no data: language/russian/form_validation_lang.php
+ERROR - 2016-09-20 17:11:05 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:11:05 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:11:05 --> upload_no_file_selected
+ERROR - 2016-09-20 17:11:05 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:11:05 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:11:05 --> upload_no_file_selected
+ERROR - 2016-09-20 17:11:05 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:11:05 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:11:05 --> upload_no_file_selected
+ERROR - 2016-09-20 17:11:05 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:11:05 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:11:05 --> upload_no_file_selected
+ERROR - 2016-09-20 17:11:05 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:11:05 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:11:05 --> upload_no_file_selected
+ERROR - 2016-09-20 17:11:05 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:11:05 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:11:05 --> upload_no_file_selected
+ERROR - 2016-09-20 17:11:53 --> Language file contains no data: language/russian/form_validation_lang.php
+ERROR - 2016-09-20 17:11:53 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:11:53 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:11:53 --> upload_no_file_selected
+ERROR - 2016-09-20 17:11:53 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:11:53 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:11:53 --> upload_no_file_selected
+ERROR - 2016-09-20 17:11:53 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:11:53 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:11:53 --> upload_no_file_selected
+ERROR - 2016-09-20 17:11:53 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:11:53 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:11:53 --> upload_no_file_selected
+ERROR - 2016-09-20 17:11:53 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:11:53 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:11:53 --> upload_no_file_selected
+ERROR - 2016-09-20 17:11:53 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:11:53 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:11:53 --> upload_no_file_selected
+ERROR - 2016-09-20 17:12:27 --> Language file contains no data: language/russian/form_validation_lang.php
+ERROR - 2016-09-20 17:12:27 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:12:27 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:12:27 --> upload_no_file_selected
+ERROR - 2016-09-20 17:12:27 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:12:27 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:12:27 --> upload_no_file_selected
+ERROR - 2016-09-20 17:12:27 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:12:27 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:12:27 --> upload_no_file_selected
+ERROR - 2016-09-20 17:12:27 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:12:27 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:12:27 --> upload_no_file_selected
+ERROR - 2016-09-20 17:12:27 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:12:27 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:12:27 --> upload_no_file_selected
+ERROR - 2016-09-20 17:12:27 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:12:27 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:12:27 --> upload_no_file_selected
+ERROR - 2016-09-20 17:16:29 --> Language file contains no data: language/russian/form_validation_lang.php
+ERROR - 2016-09-20 17:16:29 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:16:29 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:16:29 --> upload_no_file_selected
+ERROR - 2016-09-20 17:16:29 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:16:29 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:16:29 --> upload_no_file_selected
+ERROR - 2016-09-20 17:16:29 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:16:29 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:16:29 --> upload_no_file_selected
+ERROR - 2016-09-20 17:16:29 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:16:29 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:16:29 --> upload_no_file_selected
+ERROR - 2016-09-20 17:16:29 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:16:29 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:16:29 --> upload_no_file_selected
+ERROR - 2016-09-20 17:16:29 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:16:29 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:16:29 --> upload_no_file_selected
+ERROR - 2016-09-20 17:16:40 --> Language file contains no data: language/russian/form_validation_lang.php
+ERROR - 2016-09-20 17:16:40 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:16:40 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:16:40 --> upload_no_file_selected
+ERROR - 2016-09-20 17:16:40 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:16:40 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:16:40 --> upload_no_file_selected
+ERROR - 2016-09-20 17:16:40 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:16:40 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:16:40 --> upload_no_file_selected
+ERROR - 2016-09-20 17:16:40 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:16:40 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:16:40 --> upload_no_file_selected
+ERROR - 2016-09-20 17:16:40 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:16:40 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:16:40 --> upload_no_file_selected
+ERROR - 2016-09-20 17:16:40 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:16:40 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:16:40 --> upload_no_file_selected
+ERROR - 2016-09-20 17:16:44 --> Severity: Notice  --> Undefined index: product_trade_price D:\openserver\domains\ci3\application\modules\products\views\add.php 141
+ERROR - 2016-09-20 17:18:10 --> Severity: Notice  --> Undefined index: product_trade_price D:\openserver\domains\ci3\application\modules\products\views\add.php 141
+ERROR - 2016-09-20 17:20:47 --> Language file contains no data: language/russian/form_validation_lang.php
+ERROR - 2016-09-20 17:20:47 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:20:47 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:20:47 --> upload_no_file_selected
+ERROR - 2016-09-20 17:20:47 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:20:47 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:20:47 --> upload_no_file_selected
+ERROR - 2016-09-20 17:20:47 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:20:47 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:20:47 --> upload_no_file_selected
+ERROR - 2016-09-20 17:20:47 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:20:47 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:20:47 --> upload_no_file_selected
+ERROR - 2016-09-20 17:20:47 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:20:47 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:20:47 --> upload_no_file_selected
+ERROR - 2016-09-20 17:20:47 --> Language file contains no data: language/russian/upload_lang.php
+ERROR - 2016-09-20 17:20:47 --> Could not find the language line "upload_no_file_selected"
+ERROR - 2016-09-20 17:20:47 --> upload_no_file_selected
