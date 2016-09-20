@@ -233,3 +233,251 @@ ERROR - 2016-09-19 18:28:49 --> Severity: Warning  --> Invalid argument supplied
 ERROR - 2016-09-19 18:30:32 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\modules\orders\views\view.php 131
 ERROR - 2016-09-19 18:30:34 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
 ERROR - 2016-09-19 18:31:07 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 19:46:20 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 19:46:39 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 19:48:00 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 19:49:57 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 19:50:03 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 19:50:41 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 19:50:43 --> Language file contains no data: language/russian/form_validation_lang.php
+ERROR - 2016-09-19 19:50:44 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 19:53:50 --> Language file contains no data: language/russian/form_validation_lang.php
+ERROR - 2016-09-19 20:00:40 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 20:07:15 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 20:07:43 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 20:07:44 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 20:11:54 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 20:18:45 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 20:18:54 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 20:19:08 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 20:19:15 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 20:24:30 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 20:26:23 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 20:27:16 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 20:30:20 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 20:31:33 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 20:55:45 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 20:55:51 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 21:05:09 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 21:06:41 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 21:07:17 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 21:07:27 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 21:07:43 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 21:07:46 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 21:08:20 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 21:08:34 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 21:08:43 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 21:08:45 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 21:09:13 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 21:12:56 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 21:13:28 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 21:14:15 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 21:14:21 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 21:16:40 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 21:28:08 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 21:28:26 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 21:31:38 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 21:32:07 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 21:33:02 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:09:41 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:09:43 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:11:10 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:12:15 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:13:47 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:14:28 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:15:39 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:17:01 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:17:50 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:19:01 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:23:24 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:25:51 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:26:13 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:26:23 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:26:25 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:27:11 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:27:49 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:28:16 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:31:03 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:31:19 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:32:04 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:32:08 --> Language file contains no data: language/russian/form_validation_lang.php
+ERROR - 2016-09-19 22:32:08 --> Severity: Notice  --> Undefined offset: 2 D:\openserver\domains\ci3\application\modules\orders\models\orderss.php 391
+ERROR - 2016-09-19 22:32:08 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\models\orderss.php 402
+ERROR - 2016-09-19 22:32:08 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\models\orderss.php 403
+ERROR - 2016-09-19 22:32:08 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at D:\openserver\domains\ci3\system\core\Exceptions.php:186) D:\openserver\domains\ci3\system\libraries\Session.php 689
+ERROR - 2016-09-19 22:32:08 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at D:\openserver\domains\ci3\system\core\Exceptions.php:186) D:\openserver\domains\ci3\system\helpers\url_helper.php 543
+ERROR - 2016-09-19 22:32:27 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:32:29 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:32:35 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:32:41 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\views\view.php 138
+ERROR - 2016-09-19 22:32:41 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\views\view.php 139
+ERROR - 2016-09-19 22:32:50 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:33:12 --> Language file contains no data: language/russian/form_validation_lang.php
+ERROR - 2016-09-19 22:33:12 --> Severity: Notice  --> Undefined offset: 2 D:\openserver\domains\ci3\application\modules\orders\models\orderss.php 391
+ERROR - 2016-09-19 22:33:12 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\models\orderss.php 402
+ERROR - 2016-09-19 22:33:12 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\models\orderss.php 403
+ERROR - 2016-09-19 22:33:12 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at D:\openserver\domains\ci3\system\core\Exceptions.php:186) D:\openserver\domains\ci3\system\libraries\Session.php 689
+ERROR - 2016-09-19 22:33:12 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at D:\openserver\domains\ci3\system\core\Exceptions.php:186) D:\openserver\domains\ci3\system\helpers\url_helper.php 543
+ERROR - 2016-09-19 22:33:19 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\views\view.php 138
+ERROR - 2016-09-19 22:33:19 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\views\view.php 139
+ERROR - 2016-09-19 22:33:20 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:33:23 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:33:55 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:34:04 --> Language file contains no data: language/russian/form_validation_lang.php
+ERROR - 2016-09-19 22:34:04 --> Severity: Notice  --> Undefined offset: 2 D:\openserver\domains\ci3\application\modules\orders\models\orderss.php 391
+ERROR - 2016-09-19 22:34:04 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\models\orderss.php 402
+ERROR - 2016-09-19 22:34:04 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\models\orderss.php 403
+ERROR - 2016-09-19 22:34:04 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at D:\openserver\domains\ci3\system\core\Exceptions.php:186) D:\openserver\domains\ci3\system\libraries\Session.php 689
+ERROR - 2016-09-19 22:34:04 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at D:\openserver\domains\ci3\system\core\Exceptions.php:186) D:\openserver\domains\ci3\system\helpers\url_helper.php 543
+ERROR - 2016-09-19 22:34:08 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:34:09 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:34:15 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:34:22 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:34:29 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\views\view.php 138
+ERROR - 2016-09-19 22:34:29 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\views\view.php 139
+ERROR - 2016-09-19 22:34:29 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:34:34 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:34:42 --> Language file contains no data: language/russian/form_validation_lang.php
+ERROR - 2016-09-19 22:34:43 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\views\view.php 138
+ERROR - 2016-09-19 22:34:43 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\views\view.php 139
+ERROR - 2016-09-19 22:34:43 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:34:49 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:34:55 --> Language file contains no data: language/russian/form_validation_lang.php
+ERROR - 2016-09-19 22:34:55 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\views\view.php 138
+ERROR - 2016-09-19 22:34:55 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\views\view.php 139
+ERROR - 2016-09-19 22:34:55 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:34:59 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\views\view.php 138
+ERROR - 2016-09-19 22:34:59 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\views\view.php 139
+ERROR - 2016-09-19 22:34:59 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:35:04 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:38:11 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:39:24 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:40:10 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:42:51 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:43:23 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:43:36 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:44:04 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:45:59 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:47:53 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:52:14 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:53:52 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:53:57 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:54:00 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:54:35 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:54:47 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:54:49 --> Language file contains no data: language/russian/form_validation_lang.php
+ERROR - 2016-09-19 22:54:49 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\views\view.php 138
+ERROR - 2016-09-19 22:54:49 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\views\view.php 139
+ERROR - 2016-09-19 22:54:49 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:54:56 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:54:57 --> Language file contains no data: language/russian/form_validation_lang.php
+ERROR - 2016-09-19 22:54:57 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\views\view.php 138
+ERROR - 2016-09-19 22:54:57 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\views\view.php 139
+ERROR - 2016-09-19 22:54:58 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:55:00 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:56:04 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:56:09 --> Language file contains no data: language/russian/form_validation_lang.php
+ERROR - 2016-09-19 22:56:09 --> Severity: Notice  --> Undefined offset: 2 D:\openserver\domains\ci3\application\modules\orders\models\orderss.php 391
+ERROR - 2016-09-19 22:56:09 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\models\orderss.php 402
+ERROR - 2016-09-19 22:56:09 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\models\orderss.php 403
+ERROR - 2016-09-19 22:56:09 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at D:\openserver\domains\ci3\system\core\Exceptions.php:186) D:\openserver\domains\ci3\system\libraries\Session.php 689
+ERROR - 2016-09-19 22:56:09 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at D:\openserver\domains\ci3\system\core\Exceptions.php:186) D:\openserver\domains\ci3\system\helpers\url_helper.php 543
+ERROR - 2016-09-19 22:56:11 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:56:14 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:56:32 --> Language file contains no data: language/russian/form_validation_lang.php
+ERROR - 2016-09-19 22:56:33 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\views\view.php 138
+ERROR - 2016-09-19 22:56:33 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\views\view.php 139
+ERROR - 2016-09-19 22:56:33 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:56:36 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:56:40 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:57:59 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:58:05 --> Language file contains no data: language/russian/form_validation_lang.php
+ERROR - 2016-09-19 22:58:05 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\views\view.php 138
+ERROR - 2016-09-19 22:58:05 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\views\view.php 139
+ERROR - 2016-09-19 22:58:05 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:58:09 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:58:12 --> Language file contains no data: language/russian/form_validation_lang.php
+ERROR - 2016-09-19 22:58:12 --> Severity: Notice  --> Undefined offset: 2 D:\openserver\domains\ci3\application\modules\orders\models\orderss.php 391
+ERROR - 2016-09-19 22:58:12 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\models\orderss.php 402
+ERROR - 2016-09-19 22:58:12 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\models\orderss.php 403
+ERROR - 2016-09-19 22:58:12 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at D:\openserver\domains\ci3\system\core\Exceptions.php:186) D:\openserver\domains\ci3\system\libraries\Session.php 689
+ERROR - 2016-09-19 22:58:12 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at D:\openserver\domains\ci3\system\core\Exceptions.php:186) D:\openserver\domains\ci3\system\helpers\url_helper.php 543
+ERROR - 2016-09-19 22:58:15 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:58:16 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:58:57 --> Language file contains no data: language/russian/form_validation_lang.php
+ERROR - 2016-09-19 22:58:58 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\views\view.php 138
+ERROR - 2016-09-19 22:58:58 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\views\view.php 139
+ERROR - 2016-09-19 22:58:58 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:59:01 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:59:10 --> Language file contains no data: language/russian/form_validation_lang.php
+ERROR - 2016-09-19 22:59:10 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\views\view.php 138
+ERROR - 2016-09-19 22:59:10 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\views\view.php 139
+ERROR - 2016-09-19 22:59:10 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:59:13 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 22:59:37 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:01:02 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:01:25 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:01:38 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:02:54 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:03:54 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:04:26 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:05:56 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:07:59 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:09:55 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:11:15 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:11:49 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:12:23 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:13:56 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:14:05 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:14:46 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:14:54 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:15:55 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:17:37 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:18:16 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:19:55 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:23:48 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:25:01 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:26:34 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:27:27 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:29:44 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:30:24 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:30:50 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:31:27 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:32:06 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:33:47 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:34:02 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:35:49 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:37:02 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:38:04 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:38:23 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:39:00 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:39:05 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:39:54 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:41:30 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:41:40 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:42:00 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:42:12 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:42:22 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:43:23 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:44:10 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:45:24 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:46:48 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:47:58 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:48:20 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:49:26 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:52:29 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:55:49 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:57:37 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:57:53 --> Language file contains no data: language/russian/form_validation_lang.php
+ERROR - 2016-09-19 23:57:54 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\views\view.php 138
+ERROR - 2016-09-19 23:57:54 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\views\view.php 139
+ERROR - 2016-09-19 23:57:54 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:58:01 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:58:28 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:58:47 --> Language file contains no data: language/russian/form_validation_lang.php
+ERROR - 2016-09-19 23:58:47 --> Severity: Notice  --> Undefined index: product_title D:\openserver\domains\ci3\application\modules\orders\views\view.php 138
+ERROR - 2016-09-19 23:58:47 --> Severity: Notice  --> Undefined index: product_image_front D:\openserver\domains\ci3\application\modules\orders\views\view.php 139
+ERROR - 2016-09-19 23:58:48 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:58:56 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:59:31 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-19 23:59:45 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map

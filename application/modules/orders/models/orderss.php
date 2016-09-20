@@ -313,7 +313,7 @@ public function count_all_filter()
                 ];
             }
 
-
+        ($order_content)? $order_content : '';
         //var_dump($order_content);die;
 
         $data = array(
@@ -385,6 +385,9 @@ public function count_all_filter()
     public function update($id)
     {
         //var_dump($this->input->post());die;
+
+        $order_content = array();
+        
         foreach ($this->input->post() as $key => $value){
             if (stristr($key, 'id_product')) {
 
@@ -409,6 +412,12 @@ public function count_all_filter()
 
         //var_dump($order_content);die;
 
+        if (count($order_content)>=1){
+            $order_content = addslashes(serialize($order_content));
+        }
+
+        
+        
         $data = array(
         
                 'order_name' => strip_tags($this->input->post('order_name', TRUE)),
@@ -419,7 +428,7 @@ public function count_all_filter()
 
                 'order_email' => strip_tags($this->input->post('order_email', TRUE)),
         
-                'order_content' => addslashes(serialize($order_content)),
+                'order_content' => $order_content,
         
         
                 'order_date_update' => date('Y-m-d H:i:s'),

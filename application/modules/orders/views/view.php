@@ -126,8 +126,10 @@
 			   
                <td><?php
 
+                $summ = 0;
+                if ($orders['order_content']){
                    $content = unserialize(stripslashes($orders['order_content']));
-                          $summ = 0;
+
                       if(count($content)>0){
                       foreach ($content as $id_product => $product_) {
 
@@ -142,10 +144,11 @@
                         $summ += $product_['total'];
                       }
                    }
+                }
 			   ?></td>
                
                
-                <td><?php  echo '<h3>'. $summ . '</h2>'. currency;?></td>
+                <td><?php  echo '<h2><span class="label label-success">'. $summ . '</span></h2>'. currency;?></td>
                <td><?php echo $orders['order_date_create']; ?></td>
                
                
