@@ -498,3 +498,61 @@ ERROR - 2016-09-20 18:32:42 --> Severity: Warning  --> Invalid argument supplied
 ERROR - 2016-09-20 18:34:43 --> 404 Page Not Found --> products/filter
 ERROR - 2016-09-20 18:34:51 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
 ERROR - 2016-09-20 18:36:17 --> 404 Page Not Found --> products/filter
+ERROR - 2016-09-20 19:28:05 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\modules\products\controllers\products.php 473
+ERROR - 2016-09-20 19:35:54 --> Severity: Notice  --> Undefined variable: xls D:\openserver\domains\ci3\application\modules\products\controllers\products.php 487
+ERROR - 2016-09-20 19:35:54 --> Severity: 4096  --> Argument 1 passed to PHPExcel_Writer_Excel5::__construct() must be an instance of PHPExcel, null given, called in D:\openserver\domains\ci3\application\modules\products\controllers\products.php on line 487 and defined D:\openserver\domains\ci3\application\third_party\PHPExcel\Writer\Excel5.php 106
+ERROR - 2016-09-20 19:43:05 --> Severity: Notice  --> Undefined index: nid D:\openserver\domains\ci3\application\modules\products\controllers\products.php 451
+ERROR - 2016-09-20 19:43:05 --> Severity: Notice  --> Undefined index: vid D:\openserver\domains\ci3\application\modules\products\controllers\products.php 452
+ERROR - 2016-09-20 19:43:05 --> Severity: Notice  --> Undefined index: type D:\openserver\domains\ci3\application\modules\products\controllers\products.php 453
+ERROR - 2016-09-20 19:43:05 --> Severity: Notice  --> Undefined index: language D:\openserver\domains\ci3\application\modules\products\controllers\products.php 454
+ERROR - 2016-09-20 19:43:05 --> Severity: Notice  --> Undefined index: title D:\openserver\domains\ci3\application\modules\products\controllers\products.php 455
+ERROR - 2016-09-20 19:43:05 --> Severity: Notice  --> Undefined index: uid D:\openserver\domains\ci3\application\modules\products\controllers\products.php 456
+ERROR - 2016-09-20 19:43:05 --> Severity: Notice  --> Undefined index: status D:\openserver\domains\ci3\application\modules\products\controllers\products.php 457
+ERROR - 2016-09-20 19:43:05 --> Severity: Notice  --> Undefined index: created D:\openserver\domains\ci3\application\modules\products\controllers\products.php 458
+ERROR - 2016-09-20 19:43:05 --> Severity: Notice  --> Undefined index: changed D:\openserver\domains\ci3\application\modules\products\controllers\products.php 459
+ERROR - 2016-09-20 19:43:05 --> Severity: Notice  --> Undefined index: nid D:\openserver\domains\ci3\application\modules\products\controllers\products.php 451
+ERROR - 2016-09-20 19:43:05 --> Severity: Notice  --> Undefined index: vid D:\openserver\domains\ci3\application\modules\products\controllers\products.php 452
+ERROR - 2016-09-20 19:43:05 --> Severity: Notice  --> Undefined index: type D:\openserver\domains\ci3\application\modules\products\controllers\products.php 453
+ERROR - 2016-09-20 19:43:05 --> Severity: Notice  --> Undefined index: language D:\openserver\domains\ci3\application\modules\products\controllers\products.php 454
+ERROR - 2016-09-20 19:43:05 --> Severity: Notice  --> Undefined index: title D:\openserver\domains\ci3\application\modules\products\controllers\products.php 455
+ERROR - 2016-09-20 19:43:05 --> Severity: Notice  --> Undefined index: uid D:\openserver\domains\ci3\application\modules\products\controllers\products.php 456
+ERROR - 2016-09-20 19:43:05 --> Severity: Notice  --> Undefined index: status D:\openserver\domains\ci3\application\modules\products\controllers\products.php 457
+ERROR - 2016-09-20 19:43:05 --> Severity: Notice  --> Undefined index: created D:\openserver\domains\ci3\application\modules\products\controllers\products.php 458
+ERROR - 2016-09-20 19:43:05 --> Severity: Notice  --> Undefined index: changed D:\openserver\domains\ci3\application\modules\products\controllers\products.php 459
+ERROR - 2016-09-20 19:43:05 --> Severity: Notice  --> Undefined variable: PHPExcel D:\openserver\domains\ci3\application\modules\products\controllers\products.php 466
+ERROR - 2016-09-20 19:44:19 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\third_party\PHPExcel\Worksheet.php 2370
+ERROR - 2016-09-20 19:44:19 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\third_party\PHPExcel\Worksheet.php 2370
+ERROR - 2016-09-20 19:44:19 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at D:\openserver\domains\ci3\system\core\Exceptions.php:186) D:\openserver\domains\ci3\application\modules\products\controllers\products.php 456
+ERROR - 2016-09-20 19:44:19 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at D:\openserver\domains\ci3\system\core\Exceptions.php:186) D:\openserver\domains\ci3\application\modules\products\controllers\products.php 457
+ERROR - 2016-09-20 19:44:19 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at D:\openserver\domains\ci3\system\core\Exceptions.php:186) D:\openserver\domains\ci3\application\modules\products\controllers\products.php 458
+ERROR - 2016-09-20 19:44:19 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at D:\openserver\domains\ci3\system\core\Exceptions.php:186) D:\openserver\domains\ci3\application\modules\products\controllers\products.php 459
+ERROR - 2016-09-20 19:44:19 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at D:\openserver\domains\ci3\system\core\Exceptions.php:186) D:\openserver\domains\ci3\application\modules\products\controllers\products.php 460
+ERROR - 2016-09-20 19:44:19 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at D:\openserver\domains\ci3\system\core\Exceptions.php:186) D:\openserver\domains\ci3\application\modules\products\controllers\products.php 461
+ERROR - 2016-09-20 19:45:06 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\third_party\PHPExcel\Worksheet.php 2370
+ERROR - 2016-09-20 19:45:06 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\third_party\PHPExcel\Worksheet.php 2370
+ERROR - 2016-09-20 19:45:06 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at D:\openserver\domains\ci3\system\core\Exceptions.php:186) D:\openserver\domains\ci3\application\modules\products\controllers\products.php 456
+ERROR - 2016-09-20 19:45:06 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at D:\openserver\domains\ci3\system\core\Exceptions.php:186) D:\openserver\domains\ci3\application\modules\products\controllers\products.php 457
+ERROR - 2016-09-20 19:45:06 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at D:\openserver\domains\ci3\system\core\Exceptions.php:186) D:\openserver\domains\ci3\application\modules\products\controllers\products.php 458
+ERROR - 2016-09-20 19:45:06 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at D:\openserver\domains\ci3\system\core\Exceptions.php:186) D:\openserver\domains\ci3\application\modules\products\controllers\products.php 459
+ERROR - 2016-09-20 19:45:06 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at D:\openserver\domains\ci3\system\core\Exceptions.php:186) D:\openserver\domains\ci3\application\modules\products\controllers\products.php 460
+ERROR - 2016-09-20 19:45:06 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at D:\openserver\domains\ci3\system\core\Exceptions.php:186) D:\openserver\domains\ci3\application\modules\products\controllers\products.php 461
+ERROR - 2016-09-20 20:13:51 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-20 20:14:42 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-20 20:15:14 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-20 20:16:09 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-20 20:17:34 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-20 20:17:59 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-20 20:19:28 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-20 20:22:00 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-20 20:32:15 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-20 20:32:17 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-20 20:34:00 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-20 20:35:43 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-20 20:36:04 --> Severity: Notice  --> Undefined index: cart D:\openserver\domains\ci3\application\views\layout\main.php 179
+ERROR - 2016-09-20 20:36:04 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 179
+ERROR - 2016-09-20 20:36:28 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-20 20:36:35 --> Severity: Notice  --> Undefined index: cart D:\openserver\domains\ci3\application\views\layout\main.php 179
+ERROR - 2016-09-20 20:36:35 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\openserver\domains\ci3\application\views\layout\main.php 179
+ERROR - 2016-09-20 20:48:05 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-20 21:29:36 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-20 21:33:07 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map

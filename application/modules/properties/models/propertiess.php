@@ -70,7 +70,7 @@ class propertiess extends CI_Model
     {
         $keyword = $this->session->userdata('keyword');
                 
-        $this->db->like('title', $keyword);  
+        $this->db->or_like('title', $keyword);  
         
         $this->db->limit($limit, $offset);
         $result = $this->db->get('properties');
@@ -102,7 +102,7 @@ class propertiess extends CI_Model
         $keyword = $this->session->userdata('keyword');
         $this->db->from('properties');        
                 
-        $this->db->like('title', $keyword);  
+        $this->db->or_like('title', $keyword);  
         
         return $this->db->count_all_results();
     }

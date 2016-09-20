@@ -44,6 +44,17 @@
                 <?php echo form_close(); ?>
             </div>
 
+            <div class="col-md-1 col-xs-3">
+                <?php
+                                  echo anchor(
+                                           site_url('products/export/'.$this->session->userdata('filter')),
+                                            '<i class="glyphicon glyphicon-list-alt"></i>',
+                                            'class="btn btn-success btn-sm" data-tooltip="tooltip" data-placement="top" title="xls"'
+                                          );
+                 ?>
+
+            </div>
+
             <div class="col-md-4 col-xs-9">
                                            
                  <?php echo form_open(site_url('products/search'), 'role="search" class="form"') ;?>       
@@ -57,6 +68,9 @@
                </form> 
                 <?php echo form_close(); ?>
             </div>
+
+            
+
         </div>
     </header>
     

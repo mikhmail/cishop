@@ -70,7 +70,7 @@ class delivery_methods extends CI_Model
     {
         $keyword = $this->session->userdata('keyword');
                 
-        $this->db->like('delivery_name', $keyword);  
+        $this->db->or_like('delivery_name', $keyword);  
         
         $this->db->limit($limit, $offset);
         $result = $this->db->get('delivery_method');
@@ -102,7 +102,7 @@ class delivery_methods extends CI_Model
         $keyword = $this->session->userdata('keyword');
         $this->db->from('delivery_method');        
                 
-        $this->db->like('delivery_name', $keyword);  
+        $this->db->or_like('delivery_name', $keyword);  
         
         return $this->db->count_all_results();
     }

@@ -70,15 +70,15 @@ class postss extends CI_Model
     {
         $keyword = $this->session->userdata('keyword');
                 
-        $this->db->like('post_title', $keyword);  
+        $this->db->or_like('post_title', $keyword);  
                 
-        $this->db->like('post_description', $keyword);  
+        $this->db->or_like('post_description', $keyword);  
                 
-        $this->db->like('post_text', $keyword);  
+        $this->db->or_like('post_text', $keyword);  
                 
-        $this->db->like('post_url', $keyword);  
+        $this->db->or_like('post_url', $keyword);  
                 
-        $this->db->like('post_seo_description', $keyword);  
+        $this->db->or_like('post_seo_description', $keyword);  
         
         $this->db->limit($limit, $offset);
         $result = $this->db->get('posts');
@@ -110,15 +110,15 @@ class postss extends CI_Model
         $keyword = $this->session->userdata('keyword');
         $this->db->from('posts');        
                 
-        $this->db->like('post_title', $keyword);  
+        $this->db->or_like('post_title', $keyword);  
                 
-        $this->db->like('post_description', $keyword);  
+        $this->db->or_like('post_description', $keyword);  
                 
-        $this->db->like('post_text', $keyword);  
+        $this->db->or_like('post_text', $keyword);  
                 
-        $this->db->like('post_url', $keyword);  
+        $this->db->or_like('post_url', $keyword);  
                 
-        $this->db->like('post_seo_description', $keyword);  
+        $this->db->or_like('post_seo_description', $keyword);  
         
         return $this->db->count_all_results();
     }

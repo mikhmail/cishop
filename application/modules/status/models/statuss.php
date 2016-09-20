@@ -70,9 +70,9 @@ class statuss extends CI_Model
     {
         $keyword = $this->session->userdata('keyword');
                 
-        $this->db->like('status_name', $keyword);  
+        $this->db->or_like('status_name', $keyword);  
                 
-        $this->db->like('status_color', $keyword);  
+        $this->db->or_like('status_color', $keyword);  
         
         $this->db->limit($limit, $offset);
         $result = $this->db->get('status');
@@ -104,9 +104,9 @@ class statuss extends CI_Model
         $keyword = $this->session->userdata('keyword');
         $this->db->from('status');        
                 
-        $this->db->like('status_name', $keyword);  
+        $this->db->or_like('status_name', $keyword);  
                 
-        $this->db->like('status_color', $keyword);  
+        $this->db->or_like('status_color', $keyword);  
         
         return $this->db->count_all_results();
     }

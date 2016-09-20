@@ -424,6 +424,95 @@ class products extends MY_Controller
         }
     }
 
+
+    public function export($id=null){
+
+        $this->save_store($id);
+
+    }
+
+    function save_store ($id_category = NULL){
+
+
+
+        $this->db->select('*');
+        $this->db->from('products');
+        $this->db->join('categories', 'products.category_id = categories.category_id');
+        if ($id_category){
+            $this->db->where('products.category_id', $id_category);
+                   
+        }
+
+        $this->db->order_by('id_product', 'DESC');
+        $result = $this->db->get();
+
+        $store = $result->result_array();
+
+
+	//var_dump($store);die;
+
+		/*
+		// разкомментируйте строки ниже, если файл не будет загружаться
+		header("Content-Type: application/force-download");
+		header("Content-Type: application/octet-stream");
+		header("Content-Type: application/download");
+		*/
+		//стандартный заголовок, которого обычно хватает
+		header('Content-Type: text/x-csv; charset=utf-8');
+		header("Content-Disposition: attachment;filename=".date("d-m-Y")."-store_".$id_category.".xls");
+
+		$csv_output ='<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+		<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+		<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="author" content="Andrey" />
+		<title>export</title>
+		</head>
+		<body>';
+		$csv_output .='<table border="1">
+	<tr>
+		<th>ID</th>
+		<th>Артикул</th>
+		<th>Название</th>
+		<th>Описание</th>
+		<th>Категория</th>
+<th>Цена</th>
+<th>Акционная цена</th>
+<th>Оптовая цена</th>
+<th>Свойства продукта</th>
+<th>Картинка</th>
+
+
+
+
+	</tr>';
+		foreach($store as $product){
+			$csv_output .='
+	<tr>
+		<td>'.$product['id_product'].'</td>
+		<td>'.$product['product_article'].'</td>
+		<td>'.$product['product_title'].'</td>
+		<td>'.$product['product_description'].'</td>
+		<td>'.$product['category_title'].'</td>
+
+<td>'.$product['product_price'].'</td>
+<td>'.$product['product_action_price'].'</td>
+<td>'.$product['product_trade_price'].'</td>
+<td>'.$product['product_properties'].'</td>
+<td><a href="'.base_url().'product/'.$product['id_product'].'"><img src="'.base_url().'images/products/thumbs/'.$product['product_image_front'].'"></a></td>
+
+
+
+
+	</tr>';
+		}
+		$csv_output .= '</table>';
+		$csv_output .='</body></html>';
+		echo $csv_output;
+	}
+
+
+
 }
 
 ?>

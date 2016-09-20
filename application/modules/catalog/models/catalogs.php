@@ -70,13 +70,13 @@ class catalogs extends CI_Model
     {
         $keyword = $this->session->userdata('keyword');
                 
-        $this->db->like('catalog_title', $keyword);  
+        $this->db->or_like('catalog_title', $keyword);  
                 
-        $this->db->like('catalog_url', $keyword);  
+        $this->db->or_like('catalog_url', $keyword);  
                 
-        $this->db->like('catalog_seo_description', $keyword);  
+        $this->db->or_like('catalog_seo_description', $keyword);  
                 
-        $this->db->like('catalog_seo_keywords', $keyword);  
+        $this->db->or_like('catalog_seo_keywords', $keyword);  
         
         $this->db->limit($limit, $offset);
         $result = $this->db->get('catalog');
@@ -108,13 +108,13 @@ class catalogs extends CI_Model
         $keyword = $this->session->userdata('keyword');
         $this->db->from('catalog');        
                 
-        $this->db->like('catalog_title', $keyword);  
+        $this->db->or_like('catalog_title', $keyword);  
                 
-        $this->db->like('catalog_url', $keyword);  
+        $this->db->or_like('catalog_url', $keyword);  
                 
-        $this->db->like('catalog_seo_description', $keyword);  
+        $this->db->or_like('catalog_seo_description', $keyword);  
                 
-        $this->db->like('catalog_seo_keywords', $keyword);  
+        $this->db->or_like('catalog_seo_keywords', $keyword);  
         
         return $this->db->count_all_results();
     }

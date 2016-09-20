@@ -70,7 +70,7 @@ class payment_methods extends CI_Model
     {
         $keyword = $this->session->userdata('keyword');
                 
-        $this->db->like('payment_name', $keyword);  
+        $this->db->or_like('payment_name', $keyword);  
         
         $this->db->limit($limit, $offset);
         $result = $this->db->get('payment_method');
@@ -102,7 +102,7 @@ class payment_methods extends CI_Model
         $keyword = $this->session->userdata('keyword');
         $this->db->from('payment_method');        
                 
-        $this->db->like('payment_name', $keyword);  
+        $this->db->or_like('payment_name', $keyword);  
         
         return $this->db->count_all_results();
     }

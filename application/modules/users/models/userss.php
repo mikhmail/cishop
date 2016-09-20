@@ -70,13 +70,13 @@ class userss extends CI_Model
     {
         $keyword = $this->session->userdata('keyword');
                 
-        $this->db->like('user_name', $keyword);  
+        $this->db->or_like('user_name', $keyword);  
                 
-        $this->db->like('user_password_hash', $keyword);  
+        $this->db->or_like('user_password_hash', $keyword);  
                 
-        $this->db->like('user_email', $keyword);  
+        $this->db->or_like('user_email', $keyword);  
                 
-        $this->db->like('user_ip', $keyword);  
+        $this->db->or_like('user_ip', $keyword);  
         
         $this->db->limit($limit, $offset);
         $result = $this->db->get('users');
@@ -108,13 +108,13 @@ class userss extends CI_Model
         $keyword = $this->session->userdata('keyword');
         $this->db->from('users');        
                 
-        $this->db->like('user_name', $keyword);  
+        $this->db->or_like('user_name', $keyword);  
                 
-        $this->db->like('user_password_hash', $keyword);  
+        $this->db->or_like('user_password_hash', $keyword);  
                 
-        $this->db->like('user_email', $keyword);  
+        $this->db->or_like('user_email', $keyword);  
                 
-        $this->db->like('user_ip', $keyword);  
+        $this->db->or_like('user_ip', $keyword);  
         
         return $this->db->count_all_results();
     }

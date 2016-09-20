@@ -76,13 +76,13 @@ class categoriess extends CI_Model
     {
         $keyword = $this->session->userdata('keyword');
                 
-        $this->db->like('category_title', $keyword);  
+        $this->db->or_like('category_title', $keyword);  
                 
-        $this->db->like('category_url', $keyword);  
+        $this->db->or_like('category_url', $keyword);  
                 
-        $this->db->like('category_seo_description', $keyword);  
+        $this->db->or_like('category_seo_description', $keyword);  
                 
-        $this->db->like('category_seo_keywords', $keyword);  
+        $this->db->or_like('category_seo_keywords', $keyword);  
         
         $this->db->limit($limit, $offset);
         $result = $this->db->get('categories');
@@ -114,13 +114,13 @@ class categoriess extends CI_Model
         $keyword = $this->session->userdata('keyword');
         $this->db->from('categories');        
                 
-        $this->db->like('category_title', $keyword);  
+        $this->db->or_like('category_title', $keyword);  
                 
-        $this->db->like('category_url', $keyword);  
+        $this->db->or_like('category_url', $keyword);  
                 
-        $this->db->like('category_seo_description', $keyword);  
+        $this->db->or_like('category_seo_description', $keyword);  
                 
-        $this->db->like('category_seo_keywords', $keyword);  
+        $this->db->or_like('category_seo_keywords', $keyword);  
         
         return $this->db->count_all_results();
     }
