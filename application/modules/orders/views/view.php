@@ -81,7 +81,7 @@
               
             <thead>
               <tr>
-                <th class="header">#</th>
+                <th class="header">№ Заказа</th>
                 
                     <th>ФИО клиента</th>   
                 

@@ -461,3 +461,4 @@ ERROR - 2016-09-20 18:05:24 --> Language file contains no data: language/russian
 ERROR - 2016-09-20 18:05:24 --> Could not find the language line "email_sent"
 ERROR - 2016-09-20 18:10:57 --> Language file contains no data: language/russian/email_lang.php
 ERROR - 2016-09-20 18:10:57 --> Could not find the language line "email_sent"
+ERROR - 2016-09-20 18:15:27 --> Language file contains no data: language/russian/form_validation_lang.php

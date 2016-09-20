@@ -317,7 +317,9 @@ public function count_all_filter()
                     'price' => (int)$this->input->post('price'),
                     'total' => (int)$this->input->post('price') * (int)$this->input->post('count'),
                     'name' => $product['product_title'],
-                    'img' => '/images/products/thumbs/'. $product['product_image_front']
+                    'img' => '/images/products/thumbs/'. $product['product_image_front'],
+                    'article' => $product['product_article']
+
                 ];
             }
 
@@ -411,7 +413,9 @@ public function count_all_filter()
                         'price' => (int)$this->input->post('price_'.$id_product),
                         'total' => (int)$this->input->post('price_'.$id_product) * (int)$this->input->post('count_'.$id_product),
                         'name' => $product['product_title'],
-                        'img' => '/images/products/thumbs/'. $product['product_image_front']
+                        'img' => '/images/products/thumbs/'. $product['product_image_front'],
+                        'article' => $product['product_article']
+
                     ];
 
 
