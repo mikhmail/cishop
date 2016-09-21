@@ -101,7 +101,7 @@
              
                <?php foreach ($orderss as $orders) : ?>
               <tr>
-              	<td><?php echo $orders['order_id'] ?> </td>
+              	<td><h3><span class="label label-primary"><?php echo $orders['order_id'] ?> </span></h3></td>
                
                <td><?php echo $orders['order_name']; ?></td>
                

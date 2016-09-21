@@ -556,3 +556,4 @@ ERROR - 2016-09-20 20:36:35 --> Severity: Warning  --> Invalid argument supplied
 ERROR - 2016-09-20 20:48:05 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
 ERROR - 2016-09-20 21:29:36 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
 ERROR - 2016-09-20 21:33:07 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map
+ERROR - 2016-09-20 21:37:36 --> 404 Page Not Found --> assets/bootstrap/css/bootstrap.min.css.map

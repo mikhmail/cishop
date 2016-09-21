@@ -479,7 +479,7 @@ class products extends MY_Controller
 <th>Цена</th>
 <th>Акционная цена</th>
 <th>Оптовая цена</th>
-<th>Свойства продукта</th>
+<!--<th>Свойства продукта</th>-->
 <th>Картинка</th>
 
 
@@ -487,6 +487,10 @@ class products extends MY_Controller
 
 	</tr>';
 		foreach($store as $product){
+
+//$product_properties = unserialize ($products['product_properties']);
+
+
 			$csv_output .='
 	<tr>
 		<td>'.$product['id_product'].'</td>
@@ -498,7 +502,7 @@ class products extends MY_Controller
 <td>'.$product['product_price'].'</td>
 <td>'.$product['product_action_price'].'</td>
 <td>'.$product['product_trade_price'].'</td>
-<td>'.$product['product_properties'].'</td>
+
 <td><a href="'.base_url().'product/'.$product['id_product'].'"><img src="'.base_url().'images/products/thumbs/'.$product['product_image_front'].'"></a></td>
 
 

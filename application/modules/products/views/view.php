@@ -122,7 +122,7 @@
               <tr>
               	<td><?php echo $products['id_product']; ?> </td>
 
-                <td><?php echo $products['product_article']; ?> </td>
+                <td><b><?php echo $products['product_article']; ?></b></td>
 
                
                <td><?php echo $products['category_title']; ?></td>

@@ -180,7 +180,8 @@
                   <?php                  
                
 			   if ($products['product_properties']) { //var_dump($products['product_properties']);die;
-						$product_properties = unserialize ($products['product_properties']);
+						$product_properties = unserialize(stripslashes($products['product_properties']));
+
 						//var_dump($product_properties);die;
 					foreach ($properties as $id => $value) {?>
 				
